@@ -1,4 +1,4 @@
-name = Travel Salem
+name = Travel Salem 2016
 description = A Bootstrap Sub-theme.
 core = 7.x
 base theme = bootstrap
@@ -24,7 +24,7 @@ regions[page_bottom]    = 'Page bottom'
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 
-stylesheets[all][] = css/ts.css
+stylesheets[all][] = css/style.css
 
 
 ; For information on choosing the desired method, please read the Drupal
