@@ -1,0 +1,816 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us">
+<head>
+
+<title>Shortlist</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=7, IE=9">
+
+<link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.2/js/esri/css/esri.css" />
+<link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.2/js/dojo/dijit/themes/claro/claro.css">
+<link rel="stylesheet" type="text/css" href="colorbox/colorbox.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script type="text/javascript" src="lib/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="lib/IconSpecs.js"></script>
+<script type="text/javascript" src="lib/common/helper_functions.js"></script>
+<script type="text/javascript">var djConfig = {parseOnLoad: true};</script>
+<script type="text/javascript" src="http://serverapi.arcgisonline.com/jsapi/arcgis/?v=3.2"></script>
+<script type="text/javascript" src="colorbox/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="lib/jquery.animate-colors-min.js"></script>
+
+<!--Social Media Links-->
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher:'77225c91-2742-42f7-b1b4-bddda99a9bde'});</script>
+<!--END Social Media Links-->
+
+<!--Google Analytics Start-->
+<script type="text/javascript">
+  if (window.location.href.toLowerCase().indexOf("storymaps.esri.com") >= 0) {
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-26529417-1']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+		 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+  }
+</script>
+<!--Google Analytics End-->
+
+<script type="text/javascript">
+
+dojo.require("dijit.dijit");
+dojo.require("dijit.layout.BorderContainer");
+dojo.require("dijit.layout.ContentPane");
+dojo.require("esri.map");
+dojo.require("esri.arcgis.utils");
+
+/******************************************************
+********************  config section ******************
+*******************************************************/
+
+/* JADMOD -- changed WEBMAP_ID */
+var	WEBMAP_ID = "3b312364732f40db97dd4f7a1f3359e8"; // Master Map on TS Esri account
+// var	WEBMAP_ID = "bfb45ab887ef43cb8bdf8b50cccb0e0f"; // My map From JD
+// var	WEBMAP_ID = "356c404bf35246e29eff8fa5537f76d9"; // Travel Salem's map
+var	BOOKMARKS_ALIAS = "Region";
+
+// JADMOD Added support for additional colored layers
+var COLOR_ORDER = "ts_blue,ts_burgundy,ts_orange,ts_olive,ts_green,ts_yel_green,ts_dark_red"; 
+var BINGMAPS_KEY = "";
+					
+/******************************************************
+******************** app variables ********************
+*******************************************************/
+
+var COLOR_SCHEMES = [
+					{iconDir:"ts_blue",iconPrefix:"NumberIcon",color:"#025A8C"},
+					{iconDir:"ts_burgundy",iconPrefix:"NumberIcon",color:"#623049"},
+					{iconDir:"ts_orange",iconPrefix:"NumberIcon",color:"#E28237"},
+					{iconDir:"ts_olive",iconPrefix:"NumberIcon",color:"#87661D"},
+					{iconDir:"ts_green",iconPrefix:"NumberIcon",color:"#5D6F3B"},
+					{iconDir:"ts_yel_green",iconPrefix:"NumberIcon",color:"#DBAF00"},
+					{iconDir:"ts_dark_red",iconPrefix:"NumberIcon",color:"#943634"},
+					];
+
+var COLOR_DIM = "#E7E7E7";
+var COLOR_FULL = "#FFFFFF";
+
+var _lutIconSpecs = {
+	tiny:new IconSpecs(22,28,3,8),
+	medium:new IconSpecs(24,30,3,8),
+	large:new IconSpecs(32,40,3,11)
+}
+	
+var _contentLayers = [];
+
+var _isMobile = isMobile();
+var _isIE = (navigator.appVersion.indexOf("MSIE") > -1);
+
+var _map;
+
+var _bookmarks;
+
+var _layerCurrent;
+
+var _selected;
+
+var _initExtent;
+
+var _dojoReady = false;
+var _jqueryReady = false;
+
+/******************************************************
+************************* init ************************
+*******************************************************/
+
+dojo.addOnLoad(function() {_dojoReady = true;init()});
+jQuery(document).ready(function() {_jqueryReady = true;init()});
+
+/* init comes in two parts because of async call to 
+   createMap. */
+
+function init() {
+	
+	if (!_jqueryReady) return;
+	if (!_dojoReady) return;
+	
+	if (getParameterByName("webmap") != "") {
+		WEBMAP_ID = getParameterByName("webmap");
+	}
+	
+	if (getParameterByName("bookmarks_alias") != "") {
+		BOOKMARKS_ALIAS = getParameterByName("bookmarks_alias");
+	}
+	
+	if (getParameterByName("color_order") != "") {
+		COLOR_ORDER = getParameterByName("color_order")
+	}	
+	
+	$("#bookmarksTogText").html(BOOKMARKS_ALIAS+' &#x25BC;');
+	
+	$(this).resize(handleWindowResize);	
+	
+	$("#zoomIn").click(function(e) {
+        _map.setLevel(_map.getLevel()+1);
+    });
+	$("#zoomOut").click(function(e) {
+        _map.setLevel(_map.getLevel()-1);
+    });
+	$("#zoomExtent").click(function(e) {
+        _map.setExtent(_initExtent);
+    });	
+	
+	$(document).bind('cbox_complete', function(){
+		$(".details .leftDiv").height($(".details").height() - 65);
+	});  
+	
+	$("#bookmarksToggle").click(function(){
+		if ($("#bookmarksDiv").css('display')=='none'){
+		  $("#bookmarksTogText").html(BOOKMARKS_ALIAS+' &#x25B2;');
+		}
+		else{
+		  $("#bookmarksTogText").html(BOOKMARKS_ALIAS+' &#x25BC;');
+		}
+		$("#bookmarksDiv").slideToggle();
+	});
+		
+	var mapDeferred = esri.arcgis.utils.createMap(WEBMAP_ID, "map", {
+		mapOptions: {
+			slider: false,
+//			wrapAround180:false
+		},
+		ignorePopups: true,
+		bingMapsKey: BINGMAPS_KEY
+	});
+	
+	mapDeferred.addCallback(function(response) {	  
+		
+		document.title = response.itemInfo.item.title;
+		$("#title").html(response.itemInfo.item.title);
+		$("#subtitle").html(response.itemInfo.item.snippet);
+		
+		_map = response.map;
+		  
+		  //resize the map when the browser resizes
+		dojo.connect(dijit.byId('map'), 'resize', _map,_map.resize);
+		dojo.connect(_map, 'onExtentChange', refreshList);
+
+		// click action on the map where there's no graphic 
+		// causes a deselect.
+
+		dojo.connect(_map, 'onClick', function(event){
+			if (event.graphic == null) {
+				unselect();
+			}
+		});
+		
+		_bookmarks = response.itemInfo.itemData.bookmarks;
+		if (_bookmarks) {
+			loadBookmarks();
+			$("#bookmarksCon").show();
+		}
+		
+		var layers = response.itemInfo.itemData.operationalLayers; 
+		
+		if(_map.loaded){
+			initMap(layers);
+		} else {
+			dojo.connect(_map,"onLoad",function(){
+				initMap(layers);
+			});
+		}
+		
+	});
+	
+	mapDeferred.addErrback(function(error) {
+	  console.log("Map creation failed: ", dojo.toJson(error));
+	});
+	
+}
+
+function initMap(layers) {
+	
+	var supportLayers = [];
+	var pointLayers = [];
+	
+	$.each(layers,function(index,value){
+		if (value.url == null) {
+			if (value.featureCollection.layers[0].featureSet.geometryType == "esriGeometryPoint") {
+				pointLayers.push(value);
+			} else {
+				supportLayers.push(value);
+			}
+		} else {
+			// if the layer has an url property (meaning that it comes from a service), just
+			// keep going...it will remain in the map, but won't be query-able.
+		}
+	});
+	
+	_initExtent = _map.extent;
+	
+	var supportLayer;
+	$.each(supportLayers,function(index,value) {
+		supportLayer = _map.getLayer($.grep(_map.graphicsLayerIds, function(n,i){return _map.getLayer(n).id == value.featureCollection.layers[0].id})[0]);
+		if (supportLayer == null) return;
+		$.each(supportLayer.graphics,function(index,value) {
+			value.attributes.getValueCI = getValueCI; // assign extra method to handle case sensitivity
+		});
+		dojo.connect(supportLayer, "onMouseOver", baselayer_onMouseOver);
+		dojo.connect(supportLayer, "onMouseOut", baselayer_onMouseOut);
+		dojo.connect(supportLayer, "onClick", baselayer_onClick);
+	});
+	
+	if (COLOR_ORDER.split(",").length < pointLayers.length) {
+		// you have supplied fewer colors than point layers and
+		// therefore have lost your sorting privileges...
+		colorschemes = COLOR_SCHEMES;
+	} else {
+		// sort the colors
+		var colorschemes = getSortedColorSchemes();
+		// burn off any extra colors, if you have more colors
+		// than points.
+		while (pointLayers.length < colorschemes.length) {
+			colorschemes.shift()
+		};
+	}
+	
+	var contentLayer;
+	$.each(pointLayers,function(index,value) {
+		_map.removeLayer(_map.getLayer($.grep(_map.graphicsLayerIds, function(n,i){return _map.getLayer(n).id == value.featureCollection.layers[0].id})[0]));
+		if (index <= 7) {  // maximum of 4 point layers.
+			$.each(value.featureCollection.layers[0].featureSet.features,function(index,value) {
+				value.attributes.getValueCI = getValueCI; // assign extra method to handle case sensitivity
+			});
+			contentLayer = buildLayer(
+						value.featureCollection.layers[0].featureSet.features.sort(SortByID),
+						colorschemes[index].iconDir,
+						colorschemes[index].iconPrefix
+						);
+			contentLayer.color = colorschemes[index].color;
+			contentLayer.title = value.title;
+			dojo.connect(contentLayer, "onMouseOver", layer_onMouseOver);
+			dojo.connect(contentLayer, "onMouseOut", layer_onMouseOut);
+			dojo.connect(contentLayer, "onClick", layer_onClick);
+		
+			_map.addLayer(contentLayer);
+			_contentLayers.push(contentLayer);
+		}
+	});
+	
+	_contentLayers.reverse();
+	$.each(_contentLayers,function(index,value){
+// JADMOD Set the tab colors to the color of the corresponding layer, note that style clear:left causes tabs to display vertically      
+		$("#tabs").append('<div class="tab" style="display:block;height:41px;width:90px;background-color:'+colorschemes[6-index].color+'" onclick="activateLayer(_contentLayers['+index+'])">'+value.title+'</div>');
+	});
+
+	activateLayer(_contentLayers[0]);
+	dojo.connect(_map.infoWindow,"onHide",infoWindow_onHide);
+	handleWindowResize();
+	$("#zoomToggle").css("visibility","visible");
+	
+
+}
+
+/******************************************************
+******************** event handlers *******************
+*******************************************************/
+
+function tile_onMouseOver(e) {
+	 $(this).stop().animate({'background-color' : COLOR_FULL});
+}
+
+function tile_onMouseOut(e) {
+	
+	if (_selected != null) {
+		// does this tile represent the selected graphic?
+		var id = parseInt($(this).attr("id").substring(4));
+		if (_selected.attributes.getValueCI("Number") == id) {
+			return;
+		}
+	}
+	
+	$(this).stop().animate({'background-color' : COLOR_DIM});
+}
+
+function tile_onClick(e) {
+	var id = $(this).attr("id").substring(4);	
+	preSelection();
+	_selected = $.grep(_layerCurrent.graphics,function(n,i){return n.attributes.getValueCI("Number") == id})[0];
+	postSelection();
+}
+
+function infoWindow_onHide(event) {
+	unselect();
+}
+
+function baselayer_onMouseOver(event)
+{
+	if (_isMobile) return;	
+	_map.setMapCursor("pointer");
+	var graphic = event.graphic;
+	$("#hoverInfo").html(graphic.attributes.getValueCI("Title"));
+	var pt = event.screenPoint;
+	hoverInfoPos(pt.x,pt.y);
+}
+
+function baselayer_onMouseOut(event)
+{
+	if (_isMobile) return;	
+	_map.setMapCursor("default");
+	$("#hoverInfo").hide();
+}
+
+function baselayer_onClick(event) {
+	var feature = event.graphic;
+	_map.infoWindow.setTitle(event.graphic.attributes.getValueCI("Title"));
+	_map.infoWindow.setContent(event.graphic.attributes.getValueCI("Short_desc")+"<p><span class='infoWindowLink'>Details >></span></p>");
+	_map.infoWindow.show(event.mapPoint);	
+	$(".infoWindowLink").click(function(e) {
+        showDetails(feature);
+    });
+	$("#hoverInfo").hide();	
+}
+
+function layer_onClick(event)
+{
+	preSelection();		
+	_selected = event.graphic;
+	postSelection();
+}
+
+function layer_onMouseOver(event)
+{
+	if (_isMobile) return;
+	_map.setMapCursor("pointer");
+	var graphic = event.graphic;
+	if (graphic == _selected) return;
+	graphic.setSymbol(resizePictureMarkerSymbol(graphic.symbol, _lutIconSpecs["medium"]));
+	if (!_isIE) moveGraphicToFront(graphic);	
+	$("#hoverInfo").html(graphic.attributes.getValueCI("Title"));
+	var pt = _map.toScreen(graphic.geometry);
+	hoverInfoPos(pt.x,pt.y);
+}
+
+function layer_onMouseOut(event)
+{
+	if (_isMobile) return;	
+	_map.setMapCursor("default");
+	var graphic = event.graphic;	
+	if (graphic != _selected)
+		graphic.setSymbol(resizePictureMarkerSymbol(graphic.symbol, _lutIconSpecs["tiny"]));
+	$("#hoverInfo").hide();
+}
+
+
+/******************************************************
+****************** other functions ********************
+*******************************************************/
+
+function unselect() {
+	preSelection();		
+	_selected = null;
+	postSelection();
+}
+
+// sort items by numeric ID
+function SortByID(a, b){
+  var aID = a.attributes.getValueCI("Number");
+  var bID = b.attributes.getValueCI("Number"); 
+  return ((aID < bID) ? -1 : ((aID > bID) ? 1 : 0));
+}
+
+function loadBookmarks() {
+	
+	$.each(_bookmarks,function(index,value){$("#bookmarksDiv").append("<p><a>"+value.name+"</a></p>")});
+	
+	$("#bookmarksDiv a").click(function(e) {
+		var name = $(this).html();
+		var extent = new esri.geometry.Extent($.grep(_bookmarks,function(n,i){return n.name == name})[0].extent);
+		_map.setExtent(extent);	
+		$("#bookmarksTogText").html(BOOKMARKS_ALIAS+' &#x25BC;');
+		$("#bookmarksDiv").slideToggle();
+    });
+
+}
+
+function activateLayer(layer) {
+	preSelection();	
+	_selected = null;
+	postSelection();
+	_layerCurrent = layer;
+
+	var tab = $.grep($(".tab"),function(n,i){return $(n).html() == _layerCurrent.title})[0];
+	$(".tab").removeClass("tab-selected");
+	$(tab).addClass("tab-selected");
+
+	$.each(_contentLayers,function(index,value){
+		value.setVisibility(value == _layerCurrent);
+	});
+
+	$("#myList").empty();
+	
+	var display;
+	var tile;
+	var img;
+	var footer;
+	var num;
+	var title;
+	
+	$.each(_layerCurrent.graphics,function(index,value){
+		if (_map.extent.contains(value.geometry)) {
+			display = "visible"
+		} else {
+			display = "none";
+		}
+		tile = $('<li id="item'+value.attributes.getValueCI("Number")+'" style="display:'+display+'">');
+		img = $('<img src="'+value.attributes.getValueCI("Image_URL")+'">');
+    footer = $('<div class="footer"></div>');
+		num = $('<div class="num" style="background-color:'+_layerCurrent.color+'">'+value.attributes.getValueCI("Number")+'</div>');
+		title = $('<div class="blurb">'+value.attributes.getValueCI("Title")+'</div>');
+		$(footer).append(num);
+		$(footer).append(title);
+		$(tile).append(img);
+		$(tile).append(footer);
+		$("#myList").append(tile);
+	});
+	
+	// event handlers have to be re-assigned every time you load the list...
+	$("ul.tilelist li").mouseover(tile_onMouseOver);
+	$("ul.tilelist li").mouseout(tile_onMouseOut);
+	$("ul.tilelist li").click(tile_onClick);	
+	
+	$("ul.tilelist").animate({ scrollTop: 0 }, { duration: 200 } );
+	
+}
+
+function refreshList() {
+	var tile;
+	$.each(_layerCurrent.graphics,function(index,value){
+		//find the corresponding tile
+		tile = $.grep($("ul.tilelist li"),function(n,i){return n.id == "item"+value.attributes.getValueCI("Number")})[0];
+		if (_map.extent.contains(value.geometry)) {
+			if ($(tile).css("display") == "none") $(tile).stop().fadeIn();
+		} else {
+			if ($(tile).css("display") != "none") $(tile).stop().fadeOut(1000);
+		}		
+	});
+}
+
+function buildLayer(arr,iconDir,root) {
+	var layer = new esri.layers.GraphicsLayer();
+	var pt;
+	var sym;
+	var spec = _lutIconSpecs["tiny"];
+	$.each(arr,function(index,value){
+		pt = new esri.geometry.Point(value.geometry.x,value.geometry.y,value.geometry.spatialReference);
+		sym = createPictureMarkerSymbol("images/icons/"+iconDir+"/"+root+value.attributes.getValueCI("Number")+".png", _lutIconSpecs["tiny"]);
+		layer.add(new esri.Graphic(pt,sym,value.attributes));
+	});
+	return layer;
+}
+
+function getValueCI(field) {
+	var found;
+	$.each(this,function(index,value){
+		if (index.toUpperCase() == field.toUpperCase()) {
+			found = index;
+			return false;
+		}
+	});
+	return this[found];	
+}
+
+function handleWindowResize() {
+	
+	var heightDoc = getViewportDimensions()[1];
+	
+	$("#mainWindow").height(heightDoc - ($("#header").height()));
+	dijit.byId("mainWindow").layout();
+	$("#paneLeft").height($("#mainWindow").height() - 35);
+	$(".tilelist").height($("#paneLeft").height() - 18);
+	$("#map").height($("#mainWindow").height() - 35);
+	
+	adjustPopup();
+
+}
+
+function preSelection() 
+{
+	// return the soon-to-be formerly selected graphic icon to normal
+	// size & dim the corresponding tile.
+	
+	if (_selected) {
+		_selected.setSymbol(resizePictureMarkerSymbol(_selected.symbol, _lutIconSpecs["tiny"]));
+		var tile = $.grep($("ul.tilelist li"),function(n,i){return n.id == "item"+_selected.attributes.getValueCI("Number")})[0];
+		if ($(tile).attr("id") != $(this).attr("id")) $(tile).stop().animate({'background-color' : COLOR_DIM});
+	}
+		
+}
+
+function postSelection() {
+	
+	if (_selected == null) {
+		_map.infoWindow.hide();
+	} else {
+		
+		// make the selected location's icon LARGE
+		_selected.setSymbol(resizePictureMarkerSymbol(_selected.symbol, _lutIconSpecs["large"]));
+		
+		// calling moveToFront directly after messing
+		// with the symbol causes problems, so I
+		// put it on a delay and put it in a try/catch
+		// just to be safe...
+		setTimeout(function(){
+			try {
+				_selected.getDojoShape().moveToFront();
+			} catch (err) {
+				console.log("problem with 'moveToFront()'...");
+			}
+		},10);				
+		
+		_map.infoWindow.setTitle(_selected.attributes.getValueCI("Title"));
+		_map.infoWindow.setContent(_selected.attributes.getValueCI("Short_desc")+"<p><span class='infoWindowLink'>Details >></span></p>");
+		_map.infoWindow.show(_selected.geometry);	
+		$(".infoWindowLink").click(function(e) {
+			showDetails(_selected);
+		});		
+		
+		// light up the corresponding tile.
+
+		var tile = $.grep($("ul.tilelist li"),function(n,i){return n.id == "item"+_selected.attributes.getValueCI("Number")})[0]
+		$(tile).stop().animate({'background-color' : COLOR_FULL});
+
+	}
+
+	$("#hoverInfo").hide();
+	
+}
+
+function showDetails(graphic) {
+	
+  var mainDiv = $('<div class="details"></div>');
+  var titleDiv = $('<div class="title">'+graphic.attributes.getValueCI("Title")+'</div>');
+  var leftDiv = $('<div class="leftDiv"></div>');
+  var rightDiv = $('<div class="rightDiv"></div>');
+  
+  var imageDiv = $('<img src="'+graphic.attributes.getValueCI("Image_URL")+'">');	
+  var pictureFrame = $('<div class="pictureFrame"></div>');	
+  $(pictureFrame).append(imageDiv);
+  $(leftDiv).append(pictureFrame);
+  
+  if (graphic.attributes.getValueCI("Address") != null) {
+	if ($.trim(graphic.attributes.getValueCI("Address")) != '') {
+		var addressDiv = $('<div class="address">'+graphic.attributes.getValueCI("Address")+'</div>');
+		$(leftDiv).append(addressDiv); 
+	}
+  }
+
+  if (graphic.attributes.getValueCI("Hours") != null) {
+	  if ($.trim(graphic.attributes.getValueCI("Hours")) != '') {
+		  var hoursDiv = $('<div class="address">'+graphic.attributes.getValueCI("Hours")+'</div>');
+		  $(leftDiv).append(hoursDiv);  
+	  }
+  }  
+
+  if (graphic.attributes.getValueCI("Website") != null) {
+	  if ($.trim(graphic.attributes.getValueCI("Website")) != '') {
+		  var website = graphic.attributes.getValueCI("Website").toLowerCase();
+		  if (!(website.indexOf("http") >= 0)) {
+			  website = "http://"+website;
+		  }
+		  var websiteDiv = $('<div class="address"><a href="'+website+'" target="_blank">Website</a></div>');
+		  $(leftDiv).append(websiteDiv);  
+	  }
+  }  
+
+  if (graphic.attributes.getValueCI("Desc1") != null) {
+	  if ($.trim(graphic.attributes.getValueCI("Desc1")) != '') {
+		  $(rightDiv).append('<div class="desc">'+graphic.attributes.getValueCI("Desc1")+'</div>');
+	  }
+  }
+  if (graphic.attributes.getValueCI("Desc2") != null) {
+	  if ($.trim(graphic.attributes.getValueCI("Desc2")) != '') {
+		$(rightDiv).append('<p>');
+		$(rightDiv).append('<div class="desc">'+graphic.attributes.getValueCI("Desc2")+'</div>');
+	  }
+  }
+  if (graphic.attributes.getValueCI("Desc3") != null) {
+	  if ($.trim(graphic.attributes.getValueCI("Desc3")) != '') {
+		$(rightDiv).append('<p>');
+		$(rightDiv).append('<div class="desc">'+graphic.attributes.getValueCI("Desc3")+'</div>');
+	  }
+  }
+  if (graphic.attributes.getValueCI("Desc4") != null) {
+	  if ($.trim(graphic.attributes.getValueCI("Desc4")) != '') {
+		  $(rightDiv).append('<p>');
+		  $(rightDiv).append('<div class="desc">'+graphic.attributes.getValueCI("Desc4")+'</div>');
+	  }
+  }
+  if (graphic.attributes.getValueCI("Desc5") != null) {
+	  if ($.trim(graphic.attributes.getValueCI("Desc5")) != '') {
+		  $(rightDiv).append('<p>');
+		  $(rightDiv).append('<div class="desc">'+graphic.attributes.getValueCI("Desc5")+'</div>');
+	  }
+  }
+  
+
+  $(mainDiv).append(titleDiv);
+  $(mainDiv).append("<hr>"); 
+  $(mainDiv).append(leftDiv);
+  $(mainDiv).append(rightDiv);
+  
+  if ($(mainDiv).find(".desc").length > 0) {
+	  var lastDesc = $(mainDiv).find(".desc")[$(mainDiv).find(".desc").length - 1];
+	  $(lastDesc).css("margin-bottom","5px");
+  }
+  
+  $.fn.colorbox({
+	  html:mainDiv,
+	  open:true,
+	  maxHeight:$(document).height() - 100,
+	  maxWidth:"575px",
+	  scrolling:false
+  });
+  	
+}
+
+function hoverInfoPos(x,y){
+	if (x <= ($("#map").width())-230){
+		$("#hoverInfo").css("left",x+15);
+	}
+	else{
+		$("#hoverInfo").css("left",x-25-($("#hoverInfo").width()));
+	}
+	if (y >= ($("#hoverInfo").height())+50){
+		$("#hoverInfo").css("top",y-35-($("#hoverInfo").height()));
+	}
+	else{
+		$("#hoverInfo").css("top",y-15+($("#hoverInfo").height()));
+	}
+	$("#hoverInfo").show();
+}
+
+function adjustPopup() {
+	
+	if (_map) { 
+
+		var box = dojo.contentBox(_map.container);        
+		
+		var width = 270, height = 300, // defaults
+		newWidth = Math.round(box.w * 0.45),             
+		newHeight = Math.round(box.h * 0.40);        
+		
+		if (newWidth < width) {
+			width = newWidth;
+		}
+		
+		if (newHeight < height) {
+			height = newHeight;
+		}
+		
+		_map.infoWindow.resize(width, height);
+		
+	}
+	
+}
+
+function getSortedColorSchemes() {
+	
+	var schemes = [];
+	
+	$.each(COLOR_ORDER.split(","),function(index,value){
+		schemes.push($.grep(COLOR_SCHEMES,function(n,i){return value == n.iconDir})[0]);
+	});
+	schemes.reverse();
+	return schemes;
+		
+}
+
+function moveGraphicToFront(graphic)
+{
+	var dojoShape = graphic.getDojoShape();
+	if (dojoShape) dojoShape.moveToFront();
+}
+
+function createPictureMarkerSymbol(url, spec)
+{
+	return new esri.symbol.PictureMarkerSymbol(
+			url,
+			spec.getWidth(),
+			spec.getHeight()
+		).setOffset(
+			spec.getOffsetX(),
+			spec.getOffsetY()
+		);
+}
+
+function resizePictureMarkerSymbol(sym, spec)
+{
+	return sym.setHeight(spec.getHeight()).setWidth(spec.getWidth()).setOffset(spec.getOffsetX(),spec.getOffsetY());
+}
+
+
+</script>
+
+</head>
+
+<body class="claro">
+
+    <!-- Header Section-->
+    <div id="header">
+      <div id="headerText">
+  	    <h1 id="title"></h1>
+	      <h2 id="subtitle"></h2>
+      </div>
+  
+      <!-- JADMOD -->
+      <div id="logoArea">
+        <div id="logo">
+          <!--          <a id="logoLink" href="http://www.travelsalem.com/" target="_blank"><img id="logoImg" width="150" src="images_ts/travel_salem_text_only_color_200px.gif" alt="Travel Salem Home"></a> -->
+          <a id="logoLink" href="http://www.travelsalem.com/" target="_blank"><img id="logoImg" width="160" src="images_ts/st_logo_white_Small.png" alt="Travel Salem Home"></a>
+        </div>
+        <!--
+        <div id="social"><a id="msLink" href="http://www.travelsalem.com/" target="_blank"></a>
+          <span  class='st_facebook' >Facebook</span>
+          <span  class='st_twitter' ></span>
+        </div>
+        -->
+         <div class="scontainer">
+           <a href="https://www.facebook.com/TravelSalem" target="_blank" data-lang="en"><img src="images_ts/facebook_sm.png"></a>
+           <a href="https://twitter.com/TravelSalem" target="_blank" data-lang="en"><img src="images_ts/twitter_sm.png"></a>
+           <a href="http://www.youtube.com/user/travelsalem" target="_blank" data-lang="en"><img src="images_ts/youtube_sm.png"></a>
+           <a href="http://www.flickr.com/photos/travelsalem/sets/" target="_blank" data-lang="en"><img src="images_ts/flickr_sm.png"></a>
+           <a href="http://www.pinterest.com/travelsalem/" target="_blank" data-lang="en"><img src="images_ts/pinterest_sm.png"></a>
+         </div>
+      </div>
+
+    </div>
+
+
+  	<div id="mainWindow" dojotype="dijit.layout.BorderContainer" style="width:100%;height:100%" design="headline" gutters="false">
+
+
+      <div region="top" dojotype="dijit.layout.ContentPane" style="width:100%;height:35px;margin:auto;overflow:visible;background-color:#623049;margin:0px;padding:0px;z-index:101">
+        <div id="bookmarksCon">
+          <div id="bookmarksToggle">
+            <p id="bookmarksTogText" style="background-color:#623049;margin:0px;border:0px"></p>
+          </div>
+          <div id="bookmarksDiv" style="background-color:#623049;margin:0px;border:0px"></div>
+        </div>
+      </div>
+        
+        
+      <div id="paneLeft" dojotype="dijit.layout.ContentPane" region="left" style="overflow:auto;width:485px;background-color:#F5DEB3">
+        <table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td valign="top">  
+                <div id="tabs" style="display:block;width:132px;padding-left:0px"></div>
+              </td>
+              <td valign="top">  
+                <ul id="myList" class="tilelist" style="display:inline"></ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="map" dojotype="dijit.layout.ContentPane" region="center" style="overflow:hidden">
+        <div id="zoomToggle">
+          <img id="zoomIn" src="images/ZoomLight_01.png">
+          <img id="zoomExtent" src="images/ZoomHome.png">
+          <img id="zoomOut" src="images/ZoomLight_03.png">
+        </div><!--?zoomToggle-->    
+      <div id="hoverInfo"></div>
+    </div>
+ 	</div>
+    
+</body>
+</html>
