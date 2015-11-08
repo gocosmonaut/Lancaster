@@ -20,7 +20,7 @@ a { color:#632548;}
 h2, h3, h4, p {color:black;}
 p {font-size:1.2em;}
 div.main-container.container  { padding:0px; max-width:none; width:100%;}
-.not-front div.main-container.container {max-width:1490px; margin:0px auto;}
+.not-front div.main-container.container {max-width:1170px; margin:0px auto;}
 .navbar.container {width:100%; max-width:none; margin-top:0px;}
 .navbar-default {border:0px; background:none;}
 footer.footer.container  {width:100%; max-width:none;}
@@ -31,7 +31,7 @@ div.row section.col-sm-12 {padding:0px !important;}
 .navbar #block-search-form {max-width:200px;}
 
 /* Header */
-header#navbar { float: none; margin: 0 auto !important; max-width: 1490px; height:122px;}
+header#navbar { float: none; margin: 0 auto !important; max-width: 1170px; height:122px;}
 
 /* Front */
 .panel-3col-33-stacked .panel-separator {margin:0;}
@@ -49,8 +49,17 @@ div#SalemCarousel div#myCarousel.carousel.slide div#slide-2 {}
 div#SalemCarousel div#myCarousel.carousel.slide div#slide-3 {}
 div#SalemCarousel div#myCarousel.carousel.slide div#slide-4 {}
 
+div#SalemCarousel .carousel-caption { left: 10%; padding-bottom: 0px; right: 40%; text-align: left; top: 0; padding: 9px 24px 9px 30px; background:url(../../../../../sites/default/files/siteart/25_pct_black.png); height:100%;}
+div#SalemCarousel .carousel-caption a {text-decoration:none; color:white;}
+div#SalemCarousel .carousel-caption a:hover {text-decoration:none; color:#f9f8ce;}
+div#SalemCarousel .carousel-caption h3 {color:white; font-size:3em;letter-spacing:1px; line-height:125%;}
+div#SalemCarousel .carousel-caption p  {color:white; font-size:1.75em; line-height:125%; }
+
+
 div#SalemCarousel .carousel-indicators li.active {background:white;}
 div#SalemCarousel .carousel-indicators li {height:25px !important; width:25px !important; border-radius: 15px; margin:6px; border:2px solid white; background:url(../../../../../sites/default/files/siteart/indicator_fill.png)}
+
+
 
 /* Site Introduction - Home */
 
@@ -61,11 +70,16 @@ div#SalemCarousel .carousel-indicators li {height:25px !important; width:25px !i
 
 /* Utility Icons */
 
-section#block-block-2 {max-width:150px; float:right;}
+section#block-block-2 {max-width:150px; float:right; padding-top:16px;}
 section#block-block-2 img {margin-right:24px;}
+
+/* Search */
+
+section#block-search-form {padding-top: 6px;}
 
 /* Temperature */
 
 section#block-views-salem-temperature-block {float:right;}
-section#block-views-salem-temperature-block div.views-field-temperature {}
-section#block-views-salem-temperature-block div.views-field-temperature span.field-content {font-size:1.4em;}
+section#block-views-salem-temperature-block div.views-field-temperature {padding-top:17px;}
+section#block-views-salem-temperature-block div.views-field-temperature span.field-content {font-size:1.75em; margin-right:24px;}
+section#block-views-salem-temperature-block div.views-field-temperature span.degree-symbol {font-weight:200; font-family:"Museo Light"; padding-left:1px;}
