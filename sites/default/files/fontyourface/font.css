@@ -1,4 +1,4 @@
 span.degree-symbol { font-family: 'Museo Heavy'; font-style: normal; font-weight: 700; }
-div#SalemCarousel .carousel-caption p { font-family: 'Museo Light'; font-style: normal; font-weight: 300; }
+div#SalemCarousel .carousel-caption p, p, body { font-family: 'Museo Light'; font-style: normal; font-weight: 300; }
 h2, h3, h4, section#block-views-salem-temperature-block div.views-field-temperature span.field-content { font-family: 'Museo Regular'; font-style: normal; font-weight: 500; }
 h1, div#SalemCarousel .carousel-caption h3 { font-family: 'Trocchi Bold'; font-style: normal; font-weight: bold; }
