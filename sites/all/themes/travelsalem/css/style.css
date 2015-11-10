@@ -83,3 +83,11 @@ section#block-views-salem-temperature-block {float:right;}
 section#block-views-salem-temperature-block div.views-field-temperature {padding-top:17px;}
 section#block-views-salem-temperature-block div.views-field-temperature span.field-content {font-size:1.75em; margin-right:24px;}
 section#block-views-salem-temperature-block div.views-field-temperature span.degree-symbol {font-weight:200; font-family:"Museo Light"; padding-left:1px;}
+
+/* Front - Marketing Bands */
+
+div#band-places, div#band-eat-drink, div#band-recreation {max-height:310px;}
+div#band-places h3, div#band-eat-drink h3, div#band-recreation h3 {letter-spacing:0.5px; font-size: 1.5em;}
+div#band-places {background:#f9f8ce;}
+div#band-eat-drink {background:#FFF;}
+div#band-recreation {background:#ecf1fa;}
