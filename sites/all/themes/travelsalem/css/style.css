@@ -16,7 +16,9 @@
 }
 /* Universal */
 body {background: #fff; /* #f2e7ec; */ line-height:140%;}
-a { color:#632548;}
+transition:.5s;
+a  { color:#632548;}
+a, h1, h2, h3, h4, p, div, li {transition:0.3s;}
 h2, h3, h4, p {color:black;}
 p {font-size:1.2em;}
 div.main-container.container  { padding:0px; max-width:none; width:100%;}
@@ -85,9 +87,78 @@ section#block-views-salem-temperature-block div.views-field-temperature span.fie
 section#block-views-salem-temperature-block div.views-field-temperature span.degree-symbol {font-weight:200; font-family:"Museo Light"; padding-left:1px;}
 
 /* Front - Marketing Bands */
+div#band-places, div#band-eat-drink, div#band-recreation {height:310px; width:100%;}
+div#band-places h3, div#band-eat-drink h3, div#band-recreation h3 {letter-spacing:0.5px; font-size: 1.5em; padding-top:30px; min-width:310px; margin-top:0px;}
+div#band-places p, div#band-eat-drink p, div#band-recreation p{min-width:310px;}
+div#band-places {background:#f9f8ce url(../../../../default/files/siteart/band_places.jpg) top left no-repeat; float:left; }
+div#band-eat-drink {background:#FFF url(../../../../default/files/siteart/band_eat.jpg) top right no-repeat; float:right;}
+div#band-recreation {background:#ecf1fa url(../../../../default/files/siteart/band_recreation.jpg) top left no-repeat; float:left; }
 
-div#band-places, div#band-eat-drink, div#band-recreation {max-height:310px;}
-div#band-places h3, div#band-eat-drink h3, div#band-recreation h3 {letter-spacing:0.5px; font-size: 1.5em;}
-div#band-places {background:#f9f8ce;}
-div#band-eat-drink {background:#FFF;}
-div#band-recreation {background:#ecf1fa;}
+div#band-places div.pane-content {max-width:1170px;  margin:0px auto; padding-left:55%; height:310px;}
+div#band-eat-drink div.pane-content {max-width:1170px;  margin:0px auto; padding-right:58%; height:310px;}
+div#band-recreation div.pane-content {max-width:1170px; margin:0px auto; padding-left:41%; height:310px;}
+
+@media(min-width:1400px) and (max-width:1499px){
+div#band-places div.pane-content {padding-left:60%;}
+div#band-eat-drink div.pane-content {padding-right:63%;}
+div#band-recreation div.pane-content { padding-left:45%;}
+}
+
+@media(min-width:1500px) and (max-width:1599px){
+div#band-places div.pane-content {padding-left:52.5%;}
+div#band-eat-drink div.pane-content {padding-right:55%;}
+div#band-recreation div.pane-content { padding-left:38.5%;}
+}
+
+@media(min-width:1600px) and (max-width:1699px){
+div#band-places div.pane-content {padding-left:47%;}
+div#band-eat-drink div.pane-content {padding-right:50%;}
+div#band-recreation div.pane-content { padding-left:33%;}
+}
+@media(min-width:1700px) and (max-width:1799px){
+div#band-places div.pane-content {padding-left:41%;}
+div#band-eat-drink div.pane-content {padding-right:44%;}
+div#band-recreation div.pane-content { padding-left:28%;}
+}
+
+@media(min-width:1800px) and (max-width:1899px){
+div#band-places div.pane-content {padding-left:36%;}
+div#band-eat-drink div.pane-content {padding-right:38%;}
+div#band-recreation div.pane-content { padding-left:24%;}
+}
+
+@media(min-width:1900px) and (max-width:1999px){
+div#band-places div.pane-content {padding-left:32%;}
+div#band-eat-drink div.pane-content {padding-right:33%;}
+div#band-recreation div.pane-content { padding-left:20%;}
+}
+
+@media(min-width:2000px) and (max-width:2099px){
+div#band-places div.pane-content {padding-left:27%;}
+div#band-eat-drink div.pane-content {padding-right:29%;}
+div#band-recreation div.pane-content { padding-left:16%;}
+}
+
+@media(min-width:2100px) and (max-width:2199px){
+div#band-places div.pane-content {padding-left:24%;}
+div#band-eat-drink div.pane-content {padding-right:25%;}
+div#band-recreation div.pane-content { padding-left:13%;}
+}
+
+@media(min-width:2200px) and (max-width:2299px){
+div#band-places div.pane-content {padding-left:20%;}
+div#band-eat-drink div.pane-content {padding-right:21%;}
+div#band-recreation div.pane-content { padding-left:10%;}
+}
+
+@media(min-width:2300px) and (max-width:2399px){
+div#band-places div.pane-content {padding-left:17%;}
+div#band-eat-drink div.pane-content {padding-right:18%;}
+div#band-recreation div.pane-content { padding-left:8%;}
+}
+
+@media(min-width:2400px){
+div#band-places div.pane-content {padding-left:14%;}
+div#band-eat-drink div.pane-content {padding-right:15%;}
+div#band-recreation div.pane-content { padding-left:5%;}
+}
