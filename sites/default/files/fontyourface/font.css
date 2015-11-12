@@ -2,4 +2,4 @@ span.degree-symbol { font-family: 'Museo Heavy'; font-style: normal; font-weight
 div#SalemCarousel .carousel-caption p, p, body { font-family: 'Museo Light'; font-style: normal; font-weight: 300; }
 h2, h3, h4, section#block-views-salem-temperature-block div.views-field-temperature span.field-content { font-family: 'Museo Regular'; font-style: normal; font-weight: 500; }
 h1, div#SalemCarousel .carousel-caption h3 { font-family: 'Trocchi Bold'; font-style: normal; font-weight: bold; }
-div#band-places h3, div#band-eat-drink h3, div#band-recreation h3 { font-family: 'Trocchi'; font-style: normal; font-weight: normal; }
+div#band-places h3, div#band-eat-drink h3, div#band-recreation h3, div#band-places h4, div#band-eat-drink h4, div#band-recreation h4 { font-family: 'Trocchi'; font-style: normal; font-weight: normal; }
