@@ -16,9 +16,9 @@
 }
 /* Universal */
 body {background: #fff; /* #f2e7ec; */ line-height:140%;}
-a  { color:#632548;transition:0.2s;}
+a  { color:#632548;transition: all 0.3s ease 0s;}
 a:hover {text-decoration:none; color:#788e4a;}
-h2, h3, h4, p {color:black;}
+h2, h3, h4, p {color:black; }
 p {font-size:1.2em;}
 div.main-container.container  { padding:0px; max-width:none; width:100%;}
 .not-front div.main-container.container {max-width:1170px; margin:0px auto;}
