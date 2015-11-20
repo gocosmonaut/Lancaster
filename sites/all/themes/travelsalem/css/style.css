@@ -30,11 +30,12 @@ div.row section.col-sm-12 {padding:0px !important;}
 .row {margin:0px !important;}
 .container {padding:0px !important;}
 .col-sm-12 { margin: 0 auto;width: 100%;}
-.navbar #block-search-form {max-width:200px;}
-input {content:"I want you to know me";}
+.navbar #block-search-form {max-width:200px; margin-top:2px;}
 
 /* Header */
-header#navbar { float: none; margin: 0 auto !important; max-width: 1170px; height:122px;}
+.front header#navbar { float: none; margin: 0 auto !important; max-width: 1170px; /* height:122px; */ height:122px;}
+.not-front header#navbar {float: none; margin: 0 auto !important; max-width: 1170px; /* height:122px; */ height:150px;}
+a.logo.navbar-btn {margin-top:14px;}
 
 /* Front */
 .panel-3col-33-stacked .panel-separator {margin:0;}
@@ -78,13 +79,36 @@ section#block-block-2 img {margin-right:24px;}
 
 /* Search */
 
-section#block-search-form {padding-top: 6px;}
+section#block-search-form {padding-top: 6px; margin-bottom:0px;}
+section#block-search-form div.form-group {margin-bottom:8px;}
 
 /* Temperature */
 
 section#block-simple-weather-simple-weather-report {float:right;}
 div#simple-weather h2, div#simple-weather img, div#simple-weather a {display:none;}
 section#block-simple-weather-simple-weather-report div.report {font-size:1.75em; margin-right:24px;  font-family:"Museo Regular"; padding-top:18px;}
+
+
+/* Main Navigation */
+
+section#block-system-main-menu {float:right; margin-top:2px;}
+section#block-system-main-menu ul.menu {}
+section#block-system-main-menu ul.menu li {display:inline-block;}
+section#block-system-main-menu ul.menu li a {padding:0px 12px; font-size:1.4em; letter-spacing:0.5px;}
+section#block-system-main-menu ul.menu li.first a {padding-left:0px;}
+section#block-system-main-menu ul.menu li.last a {padding-right:0px;}
+
+
+/* Secondary Navigation */
+
+section#block-menu-menu-secondary-menu { float:right; margin-bottom:8px;}
+section#block-menu-menu-secondary-menu ul.menu {}
+section#block-menu-menu-secondary-menu ul.menu li {display:inline-block;}
+section#block-menu-menu-secondary-menu ul.menu li a {color:#373030; text-transform:uppercase; font-size:.95em; padding:0px 6px; text-align:right; letter-spacing:0.5px;}
+section#block-menu-menu-secondary-menu ul.menu li.first a {padding-left:0px;}
+section#block-menu-menu-secondary-menu ul.menu li.last a {padding-right:0px;}
+
+
 
 /* Front - Marketing Bands */
 div#band-places, div#band-eat-drink, div#band-recreation {width:100%;}
