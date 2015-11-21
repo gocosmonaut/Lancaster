@@ -43,6 +43,7 @@
   </div>    
   
   <div class="pond-container pond-secondary-column-content pond-column-content-row2 clearfix">
+  <div class="social-inner">
     <div class="pond-secondary-column-content-region pond-column pond-secondary-column1 panel-panel">
       <div class="pond-secondary-column-content-region-inner pond-column-inner pond-secondary-column1-inner panel-panel-inner">
         <?php print $content['secondarycolumn1']; ?>
@@ -56,6 +57,7 @@
     <div class="pond-secondary-column-content-region pond-column pond-secondary-column3 panel-panel">
       <div class="pond-secondary-column-content-region-inner pond-column-inner pond-secondary-column3-inner panel-panel-inner">
         <?php print $content['secondarycolumn3']; ?>
+        </div>
       </div>
     </div>
   </div>

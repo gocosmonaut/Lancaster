@@ -126,6 +126,8 @@ div#band-places div.pane-content {max-width:1170px;  margin:0px auto;  height:31
 div#band-eat-drink div.pane-content {max-width:1170px;  margin:0px auto;  height:310px;}
 div#band-recreation div.pane-content {max-width:1170px; margin:0px auto;  height:310px;}
 
+div.pond-container.pond-sandwich {margin-bottom:0px;}
+
 
 @media(max-width:480px){
 div#band-places h3, div#band-eat-drink h3, div#band-recreation h3  { padding-top:15px;}
@@ -946,3 +948,25 @@ ul.calendar-links, .region-content ul.calendar-links {
     background-color: #dfdfdf;
     min-height: 20px;
 }
+
+/* Front Page Social Container */
+div.pond-secondary-column-content {background:#f2e7ec; padding:60px 0px;}
+div.pond-secondary-column-content div.social-inner {max-width:1170px; margin:0px auto;  }
+div.pond-secondary-column-content div.pond-column {width:31.3333%; background:white;}
+div.pond-secondary-column-content div.pond-column .pond-column-inner {margin-right:0%;}
+div.pond-secondary-column-content div.pond-column.pond-secondary-column1 {margin-right:3%;}
+div.pond-secondary-column-content div.pond-column.pond-secondary-column2 {margin-right:3%;}
+div.pond-secondary-column-content div.pond-column.pond-secondary-column3 {margin-right:0%;}
+
+/* Instagram Pane */
+
+div#instagram-pane {border:1px solid black;}
+
+/* Facebook Pane */
+
+div#facebook-pane {border:1px solid black;     height: 400px;}
+
+/* Blog Pane */
+
+div#blog-pane {border:1px solid black;}
+
