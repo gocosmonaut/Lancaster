@@ -964,7 +964,16 @@ div#instagram-pane {border:1px solid black;}
 
 /* Facebook Pane */
 
-div#facebook-pane {border:1px solid black;     height: 400px;}
+#facebook {}
+div#facebook-pane iframe {background:  none repeat scroll 0 0;
+  
+    height: 400px;
+    margin: 0px;
+    width: 100%;}
+ div._2p3a {width:800px !important;}
+div._2zfr {width:100%;}
+div.uiScaledImageContainer {width:100%;}
+img.scaledImageFitHeight {width:100%; height:auto;}
 
 /* Blog Pane */
 

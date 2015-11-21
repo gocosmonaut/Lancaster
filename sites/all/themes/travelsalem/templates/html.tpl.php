@@ -60,11 +60,14 @@
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Roboto+Slab' rel='stylesheet' type='text/css'>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
+
+
   <div id="skip-link">
     <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
   </div>
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
+  
 </body>
 </html>
