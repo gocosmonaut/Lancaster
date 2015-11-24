@@ -37,13 +37,13 @@
 }
 
 .jcarousel-skin-default .jcarousel-item {
-  padding: 0;
+ /* padding: 0;
   width: 100px;
   height: 100px;
   overflow: hidden;
   border: 1px solid #CCC;
   list-style: none;
-  background: #fff none;
+  background: #fff none; */
 }
 
 .jcarousel-skin-default .jcarousel-item-horizontal {
