@@ -17,9 +17,9 @@
 /* Universal */
 body {background: #fff; /* #f2e7ec; */ line-height:140%;}
 a { color:#632548;transition: all 0.3s ease 0s;}
-focus { transition: all 0.3s ease 0s;}
-a:hover {text-decoration:none; color:#788e4a;}
-h2, h3, h4, p {color:black; }
+a:hover {text-decoration:none; color:#788e4a; transition: all 0.2s ease 0s;}
+focus { transition: all 0.2s ease 0s; text-decoration:none;}
+h1, h2, h3, h4, p {color:black; letter-spacing: 0.5px; }
 p {font-size:1.2em;}
 
 .front div.main-container.container  { padding:0px; max-width:none; width:100%; margin-top:65px;}
@@ -101,6 +101,7 @@ section#block-system-main-menu ul.menu li {display:inline-block;}
 section#block-system-main-menu ul.menu li a {padding:0px 12px; font-size:1.4em; letter-spacing:0.5px;}
 section#block-system-main-menu ul.menu li.first a {padding-left:0px;}
 section#block-system-main-menu ul.menu li.last a {padding-right:0px;}
+header#navbar ul.menu li a:hover {background:none; color:#7b914e;}
 
 
 /* Secondary Navigation */
@@ -969,11 +970,24 @@ div.pond-secondary-column-content div.pond-column.pond-secondary-column3 {margin
 
 /* Instagram Pane */
 
-div#instagram-pane {border:0px; background:#f2e7ec;}
+div#instagram-pane {border:0px; background:white;}
+div#instagram-pane div.pane-content {padding:4px 8px 0px;}
+div#instagram-pane h3  {background: #aaa none repeat scroll 0 0;
+    color: white;
+    font-family: "Museo Light";
+    font-size: 0.9em;
+    letter-spacing: 1px;
+   margin: 4px 0 6px;
+    
+    text-align: center;
+    text-transform: uppercase;}
+	
+	div#instagram-pane h3 a { color:white; display:block; padding: 4px;  }
+	div#instagram-pane h3 a:hover {background: #632548;}
 
 /* Facebook Pane */
 
-div#facebook-pane {}
+div#facebook-pane {border:1px solid black;}
 
 /* Blog Pane */
 
@@ -982,9 +996,39 @@ div#blog-pane {border:1px solid black; padding:30px; text-align:center; height:4
 /* Sponsor Slideshow */
 
 div#sponsorshow {width:100%; background:#f2e7ec;}
+div#sponsorshow h3 {font-family:"Trocchi"; color:#632548; text-align:center; margin:0px; font-size:1.4em;}
 div#sponsorshow div.view-sponsor-slideshow  {max-width:1170px; margin:0px auto; } 
 div#sponsorshow div.view-sponsor-slideshow li  { text-align:center; float:none;}
+div#sponsorshow div.view-sponsor-slideshow li div.views-field.views-field-field-sponsor-logo {}
+div#sponsorshow div.view-sponsor-slideshow li div.views-fieldviews-field-field-sponsor-logo div.field-content {}
 div#sponsorshow div.view-sponsor-slideshow li img {width:70%; height:auto; margin:0px auto; }
-div#sponsorshow div.jcarousel-clip.jcarousel-clip-horizontal {width:100%; overflow:hidden;  padding: 18px 0; border-radius:3px; border:1px solid #ddd; background:white;}
-ul.jcarousel-navigation {display:none;}
+.jcarousel-skin-default .jcarousel-container-horizontal {width:100%;}
+div#sponsorshow div.jcarousel-clip.jcarousel-clip-horizontal {width:98%; margin:0px auto; height:auto; overflow:hidden;  padding: 18px 0; border-radius:8px; border:1px solid #ddd; background:white;}
+ul.jcarousel-navigation { display:none;}
+.jcarousel-skin-default .jcarousel-container-horizontal {height:auto;}
+.jcarousel-prev.jcarousel-prev-horizontal, .jcarousel-next.jcarousel-next-horizontal {
+    position: absolute;
+    top: 40%;}
+	
+.jcarousel-prev.jcarousel-prev-horizontal {background:url(../../../../default/files/siteart/arrow-left-off.png)	top left no-repeat; height:33px; width:18px;}
+.jcarousel-prev.jcarousel-prev-horizontal:hover {background:url(../../../../default/files/siteart/arrow-left-on.png)	top left no-repeat; height:33px; width:18px;}
+
+.jcarousel-next.jcarousel-next-horizontal {background:url(../../../../default/files/siteart/arrow-right-off.png)	top left no-repeat; height:33px; width:18px;}
+.jcarousel-next.jcarousel-next-horizontal:hover {background:url(../../../../default/files/siteart/arrow-right-on.png)	top left no-repeat; height:33px; width:18px;}
+
+div.logo-City-of-Salem, div.logo-Amtrak, div.logo-Pioneer-Trust-Bank, div.logo-The-Grand-Hotel-in-Salem,
+div.logo-Salem-Electric, div.logo-Salem-Health, div.logo-Huggins-Insurance, div.logo-Woodburn-Premium-Outlets {padding-top:20%;}
+
+div.logo-Polk-County, div.logo-Hampton-Inn, div.logo-Lancaster-Mall  {padding-top:10%;}
+
+/* Subpages */
+
+
+
+/* Standard Panel */
+
+div#standard-panel {width:100%;  margin:0px auto;}
+/* LEFT */ div#standard-panel div.firstUnit {background:red;}
+/* MIDDLE */ div#standard-panel div.panel-col-seventy {background:yellow;}
+/* RIGHT */ div#standard-panel div.lastUnit {/* width:160px; padding-left:15px; */ background:green;}
 
