@@ -1,5 +1,5 @@
 span.degree-symbol { font-family: 'Museo Heavy'; font-style: normal; font-weight: 700; }
 div#SalemCarousel .carousel-caption p, p, body, div#fullcalendar h4 a,  section#block-system-main-menu ul.menu li a { font-family: 'Museo Light'; font-style: normal; font-weight: 300; }
-h2, h3, h4, section#block-views-salem-temperature-block div.views-field-temperature span.field-content,  div.views-field.views-field-title span.field-content a, section#block-menu-menu-secondary-menu ul.menu li a { font-family: 'Museo Regular'; font-style: normal; font-weight: 500; }
-h1, div#SalemCarousel .carousel-caption h3 { font-family: 'Trocchi Bold'; font-style: normal; font-weight: bold; }
+h1, h2, h3, h4, section#block-views-salem-temperature-block div.views-field-temperature span.field-content,  div.views-field.views-field-title span.field-content a, section#block-menu-menu-secondary-menu ul.menu li a { font-family: 'Museo Regular'; font-style: normal; font-weight: 500; }
+h1.page-header, div#SalemCarousel .carousel-caption h3 { font-family: 'Trocchi Bold'; font-style: normal; font-weight: bold; }
 div#band-places h3, div#band-eat-drink h3, div#band-recreation h3, div#band-places h4, div#band-eat-drink h4, div#band-recreation h4 { font-family: 'Trocchi'; font-style: normal; font-weight: normal; }

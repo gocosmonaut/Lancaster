@@ -19,9 +19,10 @@ body {background: #fff; /* #f2e7ec; */ line-height:140%;}
 a { color:#632548;transition: all 0.3s ease 0s;}
 a:hover {text-decoration:none; color:#788e4a; transition: all 0.2s ease 0s;}
 focus { transition: all 0.2s ease 0s; text-decoration:none;}
-h1, h2, h3, h4, p {color:black; letter-spacing: 0.5px; }
-p {font-size:1.2em;}
-
+h1, h2, h3, h4  {color:black; letter-spacing: 0.5px; }
+p {font-size:1.2em; line-height:135%; letter-spacing:0.25px;margin-bottom:15px;}
+h1 {font-size:1.4em; color:#798f4b;}
+h1.page-header { font-size:2.5em; color:black;}
 .front div.main-container.container  { padding:0px; max-width:none; width:100%; margin-top:65px;}
 .not-front div.main-container.container {max-width:1170px; margin:85px auto 0;}
 body.logged-in.front div.main-container.container  { margin-top:40px;}
@@ -36,10 +37,11 @@ div.row section.col-sm-12 {padding:0px !important;}
 .navbar #block-search-form {max-width:200px; margin-top:2px;}
 
 /* Header */
-header#navbar { float: none; margin: 0 auto !important; width:100%; background:white; /* height:122px; */ height:122px;}
-header#navbar.affix-top {background:white; transition: all 0.3s ease 0s; opacity:1.0;}
-header#navbar.affix {background:white; transition: all 0.3s ease 0s; opacity:0.9; border-bottom:1px solid #ddd; box-shadow: 0px 0px 10px white;}
+header#navbar { float: none; margin: 0 auto !important; width:100%; background:white; height:122px;}
+header#navbar.affix-top {transition: all 0.3s ease 0s; opacity:1.0; background:white;}
+header#navbar.affix {background:#f5f1f3;  transition: all 0.3s ease 0s; opacity:0.9; border-bottom:1px solid #ddd; box-shadow: 0px 0px 10px white;}
 a.logo.navbar-btn {margin-top:14px;}
+.page-header {border-bottom:1px solid #ccc;}
 
 /* Front */
 .panel-3col-33-stacked .panel-separator {margin:0;}
@@ -1027,8 +1029,45 @@ div.logo-Polk-County, div.logo-Hampton-Inn, div.logo-Lancaster-Mall  {padding-to
 
 /* Standard Panel */
 
+body.standard div.region-content {width:100%; margin:0px auto; }
+body.standard .unit .inside {margin-left:0px;}
+body.standard .line::after, body.standard .lastUnit::after {content:none;}
 div#standard-panel {width:100%;  margin:0px auto;}
-/* LEFT */ div#standard-panel div.firstUnit {background:red;}
-/* MIDDLE */ div#standard-panel div.panel-col-seventy {background:yellow;}
-/* RIGHT */ div#standard-panel div.lastUnit {/* width:160px; padding-left:15px; */ background:green;}
 
+/* LEFT */ div#standard-panel div.firstUnit { width:20%; padding-right:15px;} .firstUnit .inside {margin:0px; padding-bottom:20px;}
+div#standard-panel div.firstUnit div.inside {margin:0px;}
+div#standard-panel div.firstUnit div.inside h3 {padding:4px; margin:0px 0px 10px 0px; text-align:center; background:#bbb; color:white; text-transform:uppercase; font-size:1em; font-family:"Museo Light"; font-weight:200; letter-spacing:.5px;}
+
+
+/* MIDDLE */ div#standard-panel div.panel-col-seventy { padding:0px 20px 20px; width:65%; border-left:1px solid #ccc; border-right:1px solid #ccc;}
+div#standard-panel div.panel-col-seventy div.inside {margin:0px;}
+
+/* RIGHT */ div#standard-panel div.lastUnit {padding-left:15px; padding-bottom:20px;}
+div#standard-panel div.lastUnit div.inside {margin:0px;}
+div#standard-panel div.lastUnit div.inside h3 {padding:4px; margin:0px 0px 10px 0px; text-align:center; background:#bbb; color:white; text-transform:uppercase; font-size:1em; font-family:"Museo Light"; font-weight:200;}
+div#standard-panel div.lastUnit div.inside img {width:100%; height:auto; letter-spacing:.5px;}
+
+/* Event Panel */
+
+div#standard-panel div#upcoming-column {}
+div#standard-panel div#upcoming-column h3 {padding:0px;}
+div#standard-panel div#upcoming-column h3 a {color:white; display:block; padding:4px;}
+div#standard-panel div#upcoming-column h3 a:hover {background:#632548;}
+div#standard-panel div#upcoming-column ul {padding:0px;}
+div#standard-panel div#upcoming-column ul li {list-style:none;}
+div#standard-panel div#upcoming-column ul li a {font-size:1.15em;}
+div#standard-panel div#upcoming-column ul li div.views-field-title {padding-top:24px; }
+div#standard-panel div#upcoming-column ul li.views-row-first div.views-field-title {padding-top:0px; }
+div#standard-panel div#upcoming-column ul li div.views-field-field-event-date {padding:2px 0px 8px; border-bottom:1px solid #ccc;}
+div#standard-panel div#upcoming-column ul li.views-row-last div.views-field-field-event-date {border:none;}
+
+div#standard-panel p {margin:15px 0px 0px;}
+div#standard-panel div.pane-node-field-event-date {float:right;  background:#f9f8ce; text-align:center; padding:8px 12px; font-size:1.35em; font-family:"Museo Regular"; font-weight:400; margin:0px 0px 15px 15px;}
+
+
+/* Footer */
+
+.footer {border:none;  margin-top:0px; }
+.front .footer {background: white;}
+.not-front .footer {background:#f2e7ed;}
+.footer div.region-footer {padding:20px 0px; max-width:1170px; margin:0px auto; text-align:center;}
