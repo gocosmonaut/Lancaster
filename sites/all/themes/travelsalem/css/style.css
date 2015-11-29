@@ -1034,6 +1034,8 @@ div.logo-Polk-County, div.logo-Hampton-Inn, div.logo-Lancaster-Mall  {padding-to
 div#homerotator div.view-id-home_page_ad_rotator div.jcarousel-clip.jcarousel-clip-horizontal {margin: 20px auto;
     overflow: hidden;
     width: 250px !important;}
+	
+div#homerotator div.jcarousel-container.jcarousel-container-horizontal {margin:0px auto;}
 
 /* Subpages */
 
