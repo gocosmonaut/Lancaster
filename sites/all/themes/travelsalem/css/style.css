@@ -296,6 +296,16 @@ div#featured-events .views-exposed-form .views-exposed-widget {padding:0px; widt
 div#featured-events form#views-exposed-form-featured-events-block {text-align:center;margin:0px 31%; width:38%;}
 div#featured-events button#edit-submit-featured-events {  text-indent:-9999px; border:0px; background:url(../../../../default/files/siteart/spyglass.gif) top center no-repeat; width:27px; float:right; margin-top:-35px; padding-right:30px; padding-left:15px;}
 
+/* Subpages */
+
+.panel-3col-stacked .panel-col-first {width:20%; padding-right: 15px;}
+.panel-3col-stacked .panel-col-last {width:15%;  padding-left: 15px;}
+.panel-3col-stacked .panel-col {width:65%;  padding:0px 15px 20px 15px; border-right:1px solid #ddd; border-left:1px solid #ddd;}
+.panel-3col-stacked .panel-col-first .inside, .panel-3col-stacked .panel-col-last .inside, .panel-3col-stacked .panel-col .inside {margin:0px;}
+
+
+
+
 /* Calendar */
 
 div.view.view-calendar div.date-heading h3 { font-family:"Museo Light"; text-transform:uppercase; color: #788e4a; letter-spacing:0.5px; font-size:2em} .calendar-calendar .month-view .full td.single-day div.monthview, .calendar-calendar .week-view .full td.single-day div.weekview, .calendar-calendar .day-view .full td.single-day div.dayview {background:none;}
@@ -980,7 +990,7 @@ div.pond-secondary-column-content div.pond-column.pond-secondary-column3 {margin
 
 /* Instagram Pane */
 
-div#instagram-pane {border:0px; background:white;}
+div#instagram-pane {border:1px solid #ccc;  background:white;}
 div#instagram-pane div.pane-content {padding:4px 8px 0px;}
 div#instagram-pane h3  {background: #aaa none repeat scroll 0 0;
     color: white;
@@ -997,12 +1007,30 @@ div#instagram-pane h3  {background: #aaa none repeat scroll 0 0;
 
 /* Facebook Pane */
 
-div#facebook-pane {border:1px solid black;}
+div#facebook-pane {border:1px solid #ccc; }
 
-/* Blog Pane Placeholder */
+/* Blog Pane */
 
-div#blog-pane {border:1px solid black; padding:30px; text-align:center; height:255px; background:white;}
-
+div#blog-pane {border:1px solid #ccc; padding:4px 8px 0px 8px;  background:white; min-height:255px;}
+div#blog-pane div.pane-content {padding:0px 0px 0px 4px;}
+div#blog-pane h4  {background: #aaa none repeat scroll 0 0;
+    color: white;
+    font-family: "Museo Light";
+    font-size: 0.9em;
+    letter-spacing: 1px;
+   margin: 4px 0 6px;
+    
+    text-align: center;
+    text-transform: uppercase;}
+	
+	div#blog-pane h4 a { color:white; display:block; padding: 4px; line-height:130%;  }
+	div#blog-pane h4 a:hover {background: #632548;}
+	div#blog-pane h5 {margin:3px 0px 9px; font-family: "Museo Regular"; font-size:1.25em;}
+	div#blog-pane div.views-field.views-field-title {margin-top:12px;}
+	div#blog-pane div.views-field.views-field-title span.field-content a {font-size:1.4em;}
+div#blog-pane div.views-field-field-supporting-images {float:right; margin: 0px 0 15px 15px;}
+div#blog-pane p {font-size:1.1em;}
+div#blog-pane div.views-field-view-node {margin:6px 0px; text-align:right;}
 /* Sponsor Slideshow */
 
 div#sponsorshow {width:100%; background:#f2e7ec;}
@@ -1045,21 +1073,21 @@ div#homerotator div.jcarousel-container.jcarousel-container-horizontal {margin:0
 
 body.standard div.region-content {width:100%; margin:0px auto; }
 body.standard .unit .inside {margin-left:0px;}
-body.standard .line::after, body.standard .lastUnit::after {content:none;}
+body.standard .line::after, body.standard .panel-col-last::after {content:none;}
 div#standard-panel {width:100%;  margin:0px auto;}
 
-/* LEFT */ div#standard-panel div.firstUnit { width:20%; padding-right:15px;} .firstUnit .inside {margin:0px; padding-bottom:20px;}
-div#standard-panel div.firstUnit div.inside {margin:0px;}
-div#standard-panel div.firstUnit div.inside h3 {padding:4px; margin:0px 0px 10px 0px; text-align:center; background:#bbb; color:white; text-transform:uppercase; font-size:1em; font-family:"Museo Light"; font-weight:200; letter-spacing:.5px;}
+/* LEFT */ div#standard-panel div.panel-col-first { width:20%; padding-right:15px;} .panel-col-first .inside {margin:0px; padding-bottom:20px;}
+div#standard-panel div.panel-col-first div.inside {margin:0px;}
+div#standard-panel div.panel-col-first div.inside h3 {padding:4px; margin:0px 0px 10px 0px; text-align:center; background:#bbb; color:white; text-transform:uppercase; font-size:1em; font-family:"Museo Light"; font-weight:200; letter-spacing:.5px;}
 
 
 /* MIDDLE */ div#standard-panel div.panel-col-seventy { padding:0px 20px 20px; width:65%; border-left:1px solid #ccc; border-right:1px solid #ccc;}
 div#standard-panel div.panel-col-seventy div.inside {margin:0px;}
 
-/* RIGHT */ div#standard-panel div.lastUnit {padding-left:15px; padding-bottom:20px;}
-div#standard-panel div.lastUnit div.inside {margin:0px;}
-div#standard-panel div.lastUnit div.inside h3 {padding:4px; margin:0px 0px 10px 0px; text-align:center; background:#bbb; color:white; text-transform:uppercase; font-size:1em; font-family:"Museo Light"; font-weight:200;}
-div#standard-panel div.lastUnit div.inside img {width:100%; height:auto; letter-spacing:.5px;}
+/* RIGHT */ div#standard-panel div.panel-col-last {padding-left:15px; padding-bottom:20px;}
+div#standard-panel div.panel-col-last div.inside {margin:0px;}
+div#standard-panel div.panel-col-last div.inside h3 {padding:4px; margin:0px 0px 10px 0px; text-align:center; background:#bbb; color:white; text-transform:uppercase; font-size:1em; font-family:"Museo Light"; font-weight:200;}
+div#standard-panel div.panel-col-last div.inside img {width:100%; height:auto; letter-spacing:.5px;}
 
 /* Event Panel */
 
@@ -1076,7 +1104,7 @@ div#standard-panel div#upcoming-column ul li div.views-field-field-event-date {p
 div#standard-panel div#upcoming-column ul li.views-row-last div.views-field-field-event-date {border:none;}
 
 div#standard-panel p {margin:15px 0px 0px;}
-div#standard-panel div.pane-node-field-event-date {border-right:2px solid white; border-bottom:2px solid white; background:#f9f8ce; text-align:center; padding:4px 10px; font-size:1.15em; font-family:"Museo Regular"; font-weight:300;  position:absolute;  line-height:140%; text-transform:uppercase; letter-spacing:0.25px; max-width: 33.3333%;}
+div#standard-panel div.pane-node-field-event-date {border-right:2px solid white; border-bottom:2px solid white; background:#ecf1fa; text-align:center; padding:4px 10px; font-size:1.15em; font-family:"Museo Regular"; font-weight:400;   line-height:140%; text-transform:uppercase; letter-spacing:0.5px; width:100%; color:black;}
 
 div#standard-panel div.field-name-field-event-image .img-responsive {max-width:none; width:100%;}
 div#standard-panel div.pane-node-field-supporting-images { }
