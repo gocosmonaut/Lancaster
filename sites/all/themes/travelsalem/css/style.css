@@ -18,6 +18,9 @@
 body {background: #fff; /* #f2e7ec; */ line-height:140%;}
 a { color:#632548;transition: all 0.3s ease 0s;}
 a:hover {text-decoration:none; color:#788e4a; transition: all 0.2s ease 0s;}
+a img:hover, img a:hover {opacity:.8; transition: all 0.2s ease 0s;}
+div.views-field-field-event-image:hover {background:#ffc600;}
+
 focus { transition: all 0.2s ease 0s; text-decoration:none;}
 h1, h2, h3, h4  {color:black; letter-spacing: 0.5px; }
 p {font-size:1.2em; line-height:135%; letter-spacing:0.25px;margin-bottom:15px;}
@@ -258,7 +261,7 @@ div#band-recreation div.pane-content { padding-left:5%;}
 
 /* Featured Items on Front Page */
 
-div#featured-items {max-width:1170px; width:100%; margin:30px auto; min-height:300px; border-bottom:1px solid #ddd;}
+div#featured-items {max-width:1170px; width:100%; margin:30px auto; min-height:340px; border-bottom:1px solid #ddd;}
 div#featured-items div.views-row { vertical-align:top;  width:32%; float:left;}
 div#featured-items div.views-row-first, div#featured-items div.views-row-last {margin:0px;}
 div#featured-items div.views-row-2 {margin:0px 2%;}
@@ -270,6 +273,7 @@ div#featured-items div.views-row div.views-field-title a { color: black;
     letter-spacing: 0.5px;
     line-height: 125%;
     text-transform: uppercase;}
+div#featured-items div.views-row div.views-field-title a:hover {	color:#788e4a !important;}
 
 
 /* Featured Events on Front Page */
@@ -303,7 +307,15 @@ div#featured-events button#edit-submit-featured-events {  text-indent:-9999px; b
 .panel-3col-stacked .panel-col {width:65%;  padding:0px 15px 20px 15px; border-right:1px solid #ddd; border-left:1px solid #ddd;}
 .panel-3col-stacked .panel-col-first .inside, .panel-3col-stacked .panel-col-last .inside, .panel-3col-stacked .panel-col .inside {margin:0px;}
 
+/* Interactive Map Overrides */
 
+
+
+body.page-node-4889 .panel-3col-stacked .panel-col-first {display:none;}
+body.page-node-4889 .panel-3col-stacked .panel-col-last {display:none;}
+body.page-node-4889 .panel-3col-stacked .panel-col {width:100%; padding:0px; border:0px;}
+body.page-node-4889 div.pane-node-field-event-image {display:none;}
+body.page-node-4889 .panel-3col-stacked .panel-col .inside {margin:0px;}
 
 
 /* Calendar */
