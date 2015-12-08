@@ -1037,11 +1037,11 @@ div#blog-pane h4  {background: #aaa none repeat scroll 0 0;
 	
 	div#blog-pane h4 a { color:white; display:block; padding: 4px; line-height:130%;  }
 	div#blog-pane h4 a:hover {background: #632548;}
-	div#blog-pane h5 {margin:3px 0px 9px; font-family: "Museo Regular"; font-size:1.25em;}
+	div#blog-pane h5 {margin:3px 0px 9px; font-family: "Museo Regular"; font-size:1.2em;}
 	div#blog-pane div.views-field.views-field-title {margin-top:12px;}
 	div#blog-pane div.views-field.views-field-title span.field-content a {font-size:1.4em;}
 div#blog-pane div.views-field-field-supporting-images {float:right; margin: 0px 0 15px 15px;}
-div#blog-pane p {font-size:1.1em;}
+div#blog-pane p {font-size:1em;}
 div#blog-pane div.views-field-view-node {margin:6px 0px; text-align:right;}
 /* Sponsor Slideshow */
 
@@ -1121,6 +1121,13 @@ div#standard-panel div.pane-node-field-event-date {border-right:2px solid white;
 div#standard-panel div.field-name-field-event-image .img-responsive {max-width:none; width:100%;}
 div#standard-panel div.pane-node-field-supporting-images { }
 div#standard-panel div.pane-node-field-supporting-images img {width:25%; height:auto; float:right; margin:15px 0px 0px 15px;}
+div#standard-panel div.field-name-field-event-image blockquote.image-field-caption {margin:0px; padding:0px; border:0px;}
+div#standard-panel div.field-name-field-event-image blockquote.image-field-caption p {text-align:right; font-size:.9em; margin:6px 0px;}
+/*
+div#standard-panel div.field-name-field-supporting-images blockquote.image-field-caption {margin:0px; padding:0px; border:0px;}
+div#standard-panel div.field-name-field-supporting-imagesw blockquote.image-field-caption p {text-align:right; font-size:.9em; margin:6px 0px;}
+*/
+
 div#standard-panel div.pane-node-field-related-files h4 {background:#ccc; width:25%; padding:4px 8px 2px; text-transform:uppercase; font-size:1em; color:white; letter-spacing:1px; margin-top:12px;}
 div#standard-panel div.pane-node-field-related-files {width:100%;}
 
