@@ -1123,6 +1123,7 @@ div#standard-panel div.pane-node-field-supporting-images { }
 div#standard-panel div.pane-node-field-supporting-images img {width:25%; height:auto; float:right; margin:15px 0px 0px 15px;}
 div#standard-panel div.field-name-field-event-image blockquote.image-field-caption {margin:0px; padding:0px; border:0px;}
 div#standard-panel div.field-name-field-event-image blockquote.image-field-caption p {text-align:right; font-size:.9em; margin:6px 0px;}
+.front blockquote.image-field-caption  {display:none;}
 /*
 div#standard-panel div.field-name-field-supporting-images blockquote.image-field-caption {margin:0px; padding:0px; border:0px;}
 div#standard-panel div.field-name-field-supporting-imagesw blockquote.image-field-caption p {text-align:right; font-size:.9em; margin:6px 0px;}
