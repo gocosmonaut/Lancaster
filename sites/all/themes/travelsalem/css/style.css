@@ -118,7 +118,7 @@ header#navbar ul.menu li a:hover {background:none; color:#7b914e;}
 
 /* TB Mega Menu */
 section.block-tb-megamenu {float:right;}
-section.block-tb-megamenu div.tb-megamenu {background:none;}
+section.block-tb-megamenu div.tb-megamenu {background-color:white;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav {float:right; margin-top:2px;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 {}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 {}
@@ -133,6 +133,8 @@ section.block-tb-megamenu div.tb-megamenu a.dropdown-toggle span.caret  {display
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a {font-size:1em;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2.open a {background:none;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a:hover {background:#eee;}
+
+div.tb-megamenu-submenu.dropdown-menu {border-color:#632548 !important; margin-top:6px;}
 
 
 
