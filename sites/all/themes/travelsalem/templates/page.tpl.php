@@ -73,7 +73,7 @@
  * @ingroup themeable
  */
 ?>
-<header id="navbar" data-spy="affix" data-offset-top="80" role="banner" class="<?php print $navbar_classes; ?>">
+<header id="navbar" data-spy="affix" data-offset-top="80" role="banner"  class="<?php print $navbar_classes; ?>" >
   <div class="container">
     <div class="navbar-header">
       <?php if ($logo): ?>

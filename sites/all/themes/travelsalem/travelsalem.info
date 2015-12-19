@@ -38,13 +38,10 @@ stylesheets[all][] = css/style.css
 ; ;;;;;;;;;;;;;;;;;;;;;
 ; ;; Scripts
 ; ;;;;;;;;;;;;;;;;;;;;;
-; 
-; scripts[] = 'bootstrap/js/affix.js'
+scripts[] = 'js/affix.js'
 ; scripts[] = 'bootstrap/js/alert.js'
 ; scripts[] = 'bootstrap/js/button.js'
 ; scripts[] = 'bootstrap/js/carousel.js'
-; scripts[] = 'js/carousel.js'
-; scripts[] = 'js/directional.js'
 ; scripts[] = 'bootstrap/js/collapse.js'
 ; scripts[] = 'bootstrap/js/dropdown.js'
 ; scripts[] = 'bootstrap/js/modal.js'
