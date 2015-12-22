@@ -988,6 +988,24 @@ div#standard-panel div.field-name-field-supporting-imagesw blockquote.image-fiel
 div#standard-panel div.pane-node-field-related-files h4 {background:#ccc; width:25%; padding:4px 8px 2px; text-transform:uppercase; font-size:1em; color:white; letter-spacing:1px; margin-top:12px;}
 div#standard-panel div.pane-node-field-related-files {width:100%;}
 
+/* Listings Views */
+
+div.view-id-listings_master div.views-row {padding:15px 0%; min-height:180px; border-bottom:1px solid #ccc;}
+div.view-id-listings_master div.views-row-odd {}
+div.view-id-listings_master div.views-row-even {}
+div.view-id-listings_master div.views-row-last {border-bottom:0px;}
+
+div.view-id-listings_master div.views-field-title,
+div.view-id-listings_master div.views-field-body,
+div.view-id-listings_master div.views-field-field-listing-web-site 
+{padding-left:24%;}
+div.view-id-listings_master div.views-field-field-listing-web-site {padding-top:10px; padding-bottom:10px;}
+
+div.view-id-listings_master div.views-field-title {font-size:1.3em; line-height:150%; padding-bottom:10px;}
+div.view-id-listings_master div.views-field-field-supporting-images {width:20%; margin:0px 4% 60px 0px; float:left;}
+div.view-id-listings_master div.views-field-field-supporting-images img {width:100%; height:auto;}
+
+
 /* Calendar */
 
 div.view.view-calendar div.date-heading h3 { font-family:"Museo Light"; text-transform:uppercase; color: #788e4a; letter-spacing:0.5px; font-size:2em} .calendar-calendar .month-view .full td.single-day div.monthview, .calendar-calendar .week-view .full td.single-day div.weekview, .calendar-calendar .day-view .full td.single-day div.dayview {background:none;}
