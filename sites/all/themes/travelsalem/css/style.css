@@ -257,12 +257,12 @@ section.block-tb-megamenu div.dropdown-menu.mega-dropdown-menu.nav-child div#tb-
 div.tb-megamenu-submenu.dropdown-menu {border-color:#632548 !important; margin-top:6px;}
 
 @media(min-width:1200px){
-section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a { padding:3px 12px; font-size:1.4em; letter-spacing:0.5px;}
+section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a { padding:3px 10px; font-size:1.35em; letter-spacing:0.5px;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a {font-size:1.1em; letter-spacing:0.5px; border-bottom:1px solid #bbb;}
 }
 
 @media(min-width:980px) and (max-width:1199px){
-section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a { padding:2px 8px; font-size:1.3em; letter-spacing:0.35px;}
+section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a { padding:2px 8px; font-size:1.25em; letter-spacing:0.35px;}
 }
 @media(min-width:768px) and (max-width:979px){
 section.block-tb-megamenu {position:absolute; right:3%; top:12px;}
@@ -325,7 +325,7 @@ div#SalemCarousel div#myCarousel.carousel.slide div#slide-2 {}
 div#SalemCarousel div#myCarousel.carousel.slide div#slide-3 {}
 div#SalemCarousel div#myCarousel.carousel.slide div#slide-4 {}
 
-div#SalemCarousel .carousel-caption { background:url(../../../../../sites/default/files/siteart/25_pct_black.png); height:100%;}
+div#SalemCarousel .carousel-caption { /*background:url(../../../../../sites/default/files/siteart/25_pct_black.png);*/ height:100%;}
 div#SalemCarousel .carousel-caption a {text-decoration:none; color:white;}
 div#SalemCarousel .carousel-caption a:hover {text-decoration:none; color:#f9f8ce;}
 div#SalemCarousel .carousel-caption h3 {color:white;}
