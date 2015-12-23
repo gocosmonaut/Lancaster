@@ -61,7 +61,7 @@ header#navbar .navbar-btn {margin-top:0px; margin-bottom:0px; padding-right:0px;
 header#navbar a.logo {margin:0px; padding:0px;}
 header#navbar .navbar-btn a.logo {padding:0px;}
 header#navbar.affix-top {transition: all 0.3s ease 0s; opacity:1.0; background:white;}
-header#navbar.affix {background:#f5f1f3;  transition: all 0.3s ease 0s; opacity:0.9; border-bottom:1px solid #ddd; box-shadow: 0px 0px 10px white;}
+header#navbar.affix {background:white;  transition: all 0.3s ease 0s; border-bottom:1px solid #ddd; box-shadow: 0px 0px 10px #aaa;}
 .page-header {border-bottom:1px solid #ccc;}
 
 
@@ -314,6 +314,11 @@ section#block-menu-menu-secondary-menu ul.menu li a {font-size:1em; padding:0px 
 section#block-menu-menu-secondary-menu ul.menu li a {font-size:.9em; padding:0px 4px; letter-spacing:0px; line-height:130%;}
 }
 
+/* Front */
+
+.pond-container {margin:0px;}
+div.pond-container.pond-sandwich {margin-bottom:0px;}
+
 /* Carousel */
 div#SalemCarousel {background: /* #f9f8ce */ #f7f7f7;}
 div#SalemCarousel .carousel-control.left, div#SalemCarousel .carousel-control.right {background-image:none;}
@@ -339,7 +344,7 @@ div#SalemCarousel .carousel-indicators li {background:url(../../../../../sites/d
 div#SalemCarousel .carousel-caption { left: 10%; padding-bottom: 0px; right: 40%; text-align: left; top: 0; padding: 9px 24px 9px 30px; height:100%;}
 div#SalemCarousel .carousel-caption a {}
 div#SalemCarousel .carousel-caption a:hover {}
-div#SalemCarousel .carousel-caption h3 {font-size:3em;letter-spacing:1px; line-height:125%;}
+div#SalemCarousel .carousel-caption h3 {font-size:3em;letter-spacing:1px; line-height:120%;}
 div#SalemCarousel .carousel-caption p  {font-size:1.75em; line-height:125%; }
 
 div#SalemCarousel .carousel-indicators {bottom:20px;}
@@ -393,7 +398,7 @@ div#SalemCarousel .carousel-indicators {display:none;}
 
 /* Front - Marketing Bands */
 div#band-places, div#band-eat-drink, div#band-recreation {width:100%;}
-div#band-places h3, div#band-eat-drink h3, div#band-recreation h3 {letter-spacing:0.5px; font-size: 1.5em;   margin-top:0px;}
+div#band-places h3, div#band-eat-drink h3, div#band-recreation h3 {letter-spacing:0.5px; font-size: 1.7em;   margin-top:0px;}
 div#band-places h4, div#band-eat-drink h4, div#band-recreation h4 {margin-top:20px; text-align:left;}
 div#band-places h4 a, div#band-eat-drink h4 a, div#band-recreation h4 a {color:white; text-decoration:none; background:#788e4a; padding:10px 20px; letter-spacing:0.5px; margin-top:20px;}
 div#band-places h4 a:hover, div#band-eat-drink h4 a:hover, div#band-recreation h4 a:hover {background:#632548;}
@@ -407,15 +412,8 @@ div#band-places div.pane-content {max-width:1170px;  margin:0px auto;  height:31
 div#band-eat-drink div.pane-content {max-width:1170px;  margin:0px auto;  height:310px;}
 div#band-recreation div.pane-content {max-width:1170px; margin:0px auto;  height:310px;}
 
-div.pond-container.pond-sandwich {margin-bottom:0px;}
-
-/* Front */
-
-.pond-container {margin:0px;}
-
-
 @media(max-width:480px){
-div#band-places h3, div#band-eat-drink h3, div#band-recreation h3  { padding-top:15px;font-size:1.3em;}
+div#band-places h3, div#band-eat-drink h3, div#band-recreation h3  { padding-top:15px;font-size:1.5em;}
 div#band-places div.pane-content div.photo-container {background:url(../../../../default/files/siteart/band_places.jpg) top center no-repeat; height:150px; width:100%;}
 
 div#band-places div.pane-content {min-height:360px;}
@@ -435,7 +433,7 @@ div#band-places p, div#band-eat-drink p, div#band-recreation p {font-size:1.15em
 
 @media(min-width:481px) and (max-width:1299px){
 	
-div#band-places h3, div#band-eat-drink h3, div#band-recreation h3  { padding-top:20px; font-size:1.25em; text-align:left;}
+div#band-places h3, div#band-eat-drink h3, div#band-recreation h3  { padding-top:20px; font-size:1.5em; text-align:left;}
 div#band-places p, div#band-recreation p {padding-left:52%; padding-left:3%; text-align:left; font-size:1.1em;}
 div#band-places h4, div#band-recreation h4 {padding-left:52%;}
 div#band-eat-drink h4 {padding-left:2%;} 
@@ -610,7 +608,7 @@ div#featured-events div.views-row-2 {}
 div#featured-events div.views-row-3 {}
 div#featured-events div.views-row img { }
 div#featured-events div.views-row div.views-field-title {}
-div#featured-events div.views-row div.views-field-title a { font-family:"Trocchi"; font-weight:300; }
+div#featured-events div.views-row div.views-field-title a { font-family:"Rotis"; font-weight:300; }
 
 div#fullcalendar {margin:0px auto 40px; text-align:center; width:100%;}
 div#fullcalendar h4 a {color:white; background:#632548; text-transform:uppercase;  letter-spacing:1.5px; padding:6px 14px; font-size:.9em; font-weight:200;}
@@ -624,7 +622,7 @@ div#featured-events div.views-row-2 {margin:0px 1.3333% 0px 2.66666%;}
 div#featured-events div.views-row-3 {margin:0px 2.6666% 0px 1.33333%;}
 div#featured-events div.views-row img {width:100%; height:auto; margin-bottom:20px; }
 div#featured-events div.views-row div.views-field-title {margin-bottom:6px; }
-div#featured-events div.views-row div.views-field-title a { letter-spacing:0.5px; line-height:125%; font-size:1.2em;}
+div#featured-events div.views-row div.views-field-title a { letter-spacing:0.25px; line-height:125%; font-size:1.45em;}
 
 div#fullcalendar {margin:0px auto 40px; text-align:center; width:100%;}
 div#fullcalendar h4 a {color:white; background:#632548; text-transform:uppercase;  letter-spacing:1.5px; padding:6px 14px; font-size:.9em; font-weight:200;}
@@ -639,7 +637,7 @@ div#featured-events div.views-row-2 {margin:0px 1.3333% 0px 2.66666%;}
 div#featured-events div.views-row-3 {margin:0px 2.6666% 0px 1.33333%;}
 div#featured-events div.views-row img {width:100%; height:auto; margin-bottom:20px; }
 div#featured-events div.views-row div.views-field-title {margin-bottom:6px; }
-div#featured-events div.views-row div.views-field-title a { letter-spacing:0.5px; line-height:125%; font-size:1.2em;}
+div#featured-events div.views-row div.views-field-title a { letter-spacing:0.25px; line-height:125%; font-size:1.45em;}
 
 div#fullcalendar {margin:0px auto 40px; text-align:center; width:100%;}
 div#fullcalendar h4 a {color:white; background:#632548; text-transform:uppercase;  letter-spacing:1.5px; padding:6px 14px; font-size:.9em; font-weight:200;}
@@ -654,7 +652,7 @@ div#featured-events div.views-row-2 {margin:0px 1.3333% 0px 2.66666%;}
 div#featured-events div.views-row-3 {margin:0px 2.6666% 0px 1.33333%;}
 div#featured-events div.views-row img {width:100%; height:auto; margin-bottom:20px; }
 div#featured-events div.views-row div.views-field-title {margin-bottom:6px; }
-div#featured-events div.views-row div.views-field-title a { letter-spacing:0.5px; line-height:125%; font-size:1.2em;}
+div#featured-events div.views-row div.views-field-title a { letter-spacing:0.25px; line-height:125%; font-size:1.4em;}
 
 div#fullcalendar {margin:0px auto 40px; text-align:center; width:100%;}
 div#fullcalendar h4 a {color:white; background:#632548; text-transform:uppercase;  letter-spacing:1.5px; padding:6px 14px; font-size:.9em; font-weight:200;}
@@ -669,7 +667,7 @@ div#featured-events div.views-row-2 {margin:0px 1.3333% 0px 2.66666%;}
 div#featured-events div.views-row-3 {margin:0px 2.6666% 0px 1.33333%;}
 div#featured-events div.views-row img {width:100%; height:auto; margin-bottom:12px; }
 div#featured-events div.views-row div.views-field-title {margin-bottom:6px; }
-div#featured-events div.views-row div.views-field-title a { letter-spacing:0.5px; line-height:115%; font-size:1em;}
+div#featured-events div.views-row div.views-field-title a { letter-spacing:0.25px; line-height:115%; font-size:1.3em;}
 
 div#fullcalendar {margin:0px auto 40px; text-align:center; width:100%;}
 div#fullcalendar h4 a {color:white; background:#632548; text-transform:uppercase;  letter-spacing:1.5px; padding:6px 14px; font-size:.9em; font-weight:200;}
@@ -685,7 +683,7 @@ div#featured-events div.views-row-3 {margin:0px;}
 div#featured-events div.views-row-4 {margin-bottom:25px;}
 div#featured-events div.views-row img {width:100%; height:auto; margin-bottom:12px; }
 div#featured-events div.views-row div.views-field-title {margin:0px auto 6px; width:96%;text-align:center; }
-div#featured-events div.views-row div.views-field-title a { letter-spacing:0.5px; line-height:115%; font-size:1.25em; }
+div#featured-events div.views-row div.views-field-title a { letter-spacing:0.5px; line-height:115%; font-size:1.4em; }
 div#featured-events div.views-row div.views-field-field-event-date {text-align:center;}
 
 div#fullcalendar {margin:40px auto 40px; text-align:center; width:100%;}
@@ -879,7 +877,7 @@ div#blog-pane div.views-field-view-node {margin:6px 0px;}
 /* Sponsor Slideshow */
 
 div#sponsorshow {width:100%; background:#f2e7ec;}
-div#sponsorshow h3 {font-family:"Trocchi"; color:#632548; text-align:center; margin:0px; font-size:1.4em;}
+div#sponsorshow h3 {font-family:"Rotis"; color:#632548; text-align:center; margin:0px; font-size:1.7em;}
 div#sponsorshow div.view-sponsor-slideshow  {max-width:1170px; margin:0px auto; } 
 div#sponsorshow div.view-sponsor-slideshow li  { text-align:center; float:none;}
 div#sponsorshow div.view-sponsor-slideshow li div.views-field.views-field-field-sponsor-logo {}
@@ -1402,7 +1400,7 @@ table.calendar-legend tr.odd .stripe, table.calendar-legend tr.even .stripe {
     border: medium none;
     margin-bottom: 0;
 	color:white;
-	font-family:"Trocchi";
+	font-family:"Rotis";
 
 	font-weight:200;
 }
