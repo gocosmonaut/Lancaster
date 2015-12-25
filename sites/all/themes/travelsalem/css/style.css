@@ -999,7 +999,7 @@ div#standard-panel div.field-name-field-supporting-images blockquote.image-field
 div#standard-panel div.field-name-field-supporting-imagesw blockquote.image-field-caption p {text-align:right; font-size:.9em; margin:6px 0px;}
 */
 
-div#standard-panel div.pane-node-field-related-files h4 {background:#ccc; width:25%; padding:4px 8px 2px; text-transform:uppercase; font-size:1em; color:white; letter-spacing:1px; margin-top:12px;}
+div#standard-panel div.pane-node-field-related-files h4, div.views-label-field-related-files {background:#ccc; width:25%; padding:4px 8px 2px; text-transform:uppercase; font-size:1em; color:white; letter-spacing:1px; margin:12px 0px 3px;}
 div#standard-panel div.pane-node-field-related-files {width:100%;}
 
 /* Listings Views */
@@ -1011,7 +1011,8 @@ div.view-id-listings_master div.views-row-last {border-bottom:0px;}
 
 div.view-id-listings_master div.views-field-title,
 div.view-id-listings_master div.views-field-body,
-div.view-id-listings_master div.views-field-field-listing-web-site 
+div.view-id-listings_master div.views-field-field-listing-web-site,
+div.view-id-listings_master div.views-field-field-related-files    
 {padding-left:24%;}
 div.view-id-listings_master div.views-field-field-listing-web-site {padding-top:10px; padding-bottom:10px;}
 
