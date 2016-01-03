@@ -1004,21 +1004,21 @@ div#standard-panel div.pane-node-field-related-files {width:100%;}
 
 /* Listings Views */
 
-div.view-id-listings_master div.views-row {padding:15px 0%; min-height:180px; border-bottom:1px solid #ccc;}
-div.view-id-listings_master div.views-row-odd {}
-div.view-id-listings_master div.views-row-even {}
-div.view-id-listings_master div.views-row-last {border-bottom:0px;}
+div.listings-views div.views-row {padding:15px 0%; min-height:180px; border-bottom:1px solid #ccc;}
+div.listings-views div.views-row-odd {}
+div.listings-views div.views-row-even {}
+div.listings-views div.views-row-last {border-bottom:0px;}
 
-div.view-id-listings_master div.views-field-title,
-div.view-id-listings_master div.views-field-body,
-div.view-id-listings_master div.views-field-field-listing-web-site,
-div.view-id-listings_master div.views-field-field-related-files    
+div.listings-views div.views-field-title,
+div.listings-views div.views-field-body,
+div.listings-views div.views-field-field-listing-web-site,
+div.listings-views div.views-field-field-related-files    
 {padding-left:24%;}
-div.view-id-listings_master div.views-field-field-listing-web-site {padding-top:10px; padding-bottom:10px;}
+div.listings-views div.views-field-field-listing-web-site {padding-top:10px; padding-bottom:10px;}
 
-div.view-id-listings_master div.views-field-title {font-size:1.3em; line-height:150%; padding-bottom:10px;}
-div.view-id-listings_master div.views-field-field-supporting-images {width:20%; margin:0px 4% 60px 0px; float:left;}
-div.view-id-listings_master div.views-field-field-supporting-images img {width:100%; height:auto;}
+div.listings-views div.views-field-title {font-size:1.3em; line-height:150%; padding-bottom:10px;}
+div.listings-views div.views-field-field-supporting-images {width:20%; margin:0px 4% 0px 0px; float:left;}
+div.listings-views div.views-field-field-supporting-images img {width:100%; height:auto;}
 
 
 /* Calendar */
