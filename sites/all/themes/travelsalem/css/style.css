@@ -1004,6 +1004,39 @@ div#standard-panel div.pane-node-field-related-files {width:100%;}
 
 /* Listings Views */
 
+/* LEFT */ body.page-listings aside.col-sm-3.left { width:20%; padding:0px 15px 20px 0px;} body.page-listings aside.col-sm-3.left .region-sidebar-first {background:none; border:none; padding:0px;}
+body.page-listings aside.col-sm-3.left h3 {padding:4px; margin:0px 0px 10px 0px; text-align:center; background:#bbb; color:white; text-transform:uppercase; font-size:1em; font-family:"Museo Light"; font-weight:200; letter-spacing:.5px;}
+
+body.page-listings aside.col-sm-3.left section#block-tb-megamenu-menu-clone-main-menu {float:left;}
+body.page-listings aside.col-sm-3.left section#block-tb-megamenu-menu-clone-main-menu div.tb-megamenu ul.tb-megamenu-nav li.level-1 {}
+
+body.page-listings div.tb-megamenu-menu-clone-main-menu {}
+body.page-listings div.tb-megamenu-menu-clone-main-menu li {display:none;}
+
+body.page-listings div.tb-megamenu-menu-clone-main-menu li.active,
+body.page-listings div.tb-megamenu-menu-clone-main-menu li.active div.things-to-do-menu,
+body.page-listings div.tb-megamenu-menu-clone-main-menu li.active div.places-to-stay-menu,
+body.page-listings div.tb-megamenu-menu-clone-main-menu li.active div.eat-and-drink-menu,
+body.page-listings div.tb-megamenu-menu-clone-main-menu li.active div.recreation-menu,
+body.page-listings div.tb-megamenu-menu-clone-main-menu li.active div.relocation-menu,
+body.page-listings div.tb-megamenu-menu-clone-main-menu li.active div.meetings-menu {display:block; position:relative; background:none; box-shadow:none; border:none; padding:0px;}
+
+body.page-listings div.tb-megamenu-menu-clone-main-menu li.active div.mega-inner {padding:0px;}
+
+body.page-listings div.tb-megamenu-menu-clone-main-menu ul.tb-megamenu-nav li.level-1 a.dropdown-toggle {padding:4px 10px; background:#f0f0f0;}
+body.page-listings div.tb-megamenu-menu-clone-main-menu ul.tb-megamenu-nav li.level-2 a.dropdown-toggle {padding:4px 10px;}
+body.page-listings div.tb-megamenu-menu-clone-main-menu ul.tb-megamenu-nav li.level-2 a {font-size:.9em;}
+
+
+
+/* MIDDLE */ body.page-listings section.col-sm-6 { padding:0px 20px 20px; width:65%; border-left:1px solid #ccc; border-right:1px solid #ccc;}
+div#standard-panel div.panel-col-seventy div.inside {margin:0px;}
+
+/* RIGHT */ body.page-listings aside.col-sm-3.right { padding:0px 0px 20px 15px ; width:15%;}
+div#standard-panel div.panel-col-last div.inside {margin:0px;}
+body.page-listings aside.col-sm-3.right h2.block-title {padding:4px; margin:0px 0px 10px 0px; text-align:center; background:#bbb; color:white; text-transform:uppercase; font-size:1em; font-family:"Museo Light"; font-weight:200;}
+body.page-listings aside.col-sm-3.right img {width:100%; height:auto; letter-spacing:.5px; margin-bottom:15px;}
+
 div.listings-views div.views-row {padding:15px 0%; min-height:180px; border-bottom:1px solid #ccc;}
 div.listings-views div.views-row-odd {}
 div.listings-views div.views-row-even {}
@@ -1015,8 +1048,9 @@ div.listings-views div.views-field-field-listing-web-site,
 div.listings-views div.views-field-field-related-files    
 {padding-left:24%;}
 div.listings-views div.views-field-field-listing-web-site {padding-top:10px; padding-bottom:10px;}
+div.listings-views div.views-field-field-listing-web-site a {padding-left:45px; background:url(../../../../default/files/siteart/web.gif) top left no-repeat;}
 
-div.listings-views div.views-field-title {font-size:1.3em; line-height:150%; padding-bottom:10px;}
+div.listings-views div.views-field-title a {font-size:1.3em; line-height:150%; padding-bottom:10px;}
 div.listings-views div.views-field-field-supporting-images {width:20%; margin:0px 4% 0px 0px; float:left;}
 div.listings-views div.views-field-field-supporting-images img {width:100%; height:auto;}
 
@@ -1699,5 +1733,19 @@ ul.calendar-links, .region-content ul.calendar-links {
 
 .footer {border:none;  margin-top:0px; }
 .front .footer {background: white;}
-.not-front .footer {background:#f2e7ed;}
+.not-front .footer {}
 .footer div.region-footer {padding:20px 0px; max-width:1170px; margin:0px auto; text-align:center;}
+
+
+/* Copyright and Disclaimer */
+section#block-block-7 p {font-size:1em;}
+
+/* Footer Links */
+section#block-block-8 p.footer-primary {font-size:1.15em;}
+section#block-block-8 p.footer-secondary {font-size:1.1em; margin-bottom:12px;}
+
+/* Social Media Footer */
+.not-front section#block-block-9 {padding-top:12px; border-top:1px solid #ddd;}
+section#block-block-9 p img {margin:0px 15px 10px 15px;}
+
+
