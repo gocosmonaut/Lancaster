@@ -1054,6 +1054,15 @@ div.listings-views div.views-field-title a {font-size:1.3em; line-height:150%; p
 div.listings-views div.views-field-field-supporting-images {width:20%; margin:0px 4% 0px 0px; float:left;}
 div.listings-views div.views-field-field-supporting-images img {width:100%; height:auto;}
 
+/* Listings Form Exposed to Users */
+body.page-add-a-listing div.pane-node-field-listing-categories {border:1px solid #ccc; background:#f0f0f0; padding:12px;}
+body.page-add-a-listing div.hierarchical-select-wrapper div.selects { width:100%;}
+body.page-add-a-listing div.hierarchical-select-wrapper div.selects select option {font-size:1.2em;}
+body.page-add-a-listing div.hierarchical-select-wrapper div.dropbox {margin:0px auto; display:table;}
+body.page-add-a-listing div.hierarchical-select-wrapper div.dropbox tbody {font-size:1em; padding:4px;}
+body.page-add-a-listing div.hierarchical-select-wrapper div.dropbox tbody tr.dropbox-entry {line-height:2em;}
+body.page-add-a-listing div.hierarchical-select-wrapper div.dropbox tbody tr.dropbox-entry
+
 
 /* Calendar */
 
@@ -1738,11 +1747,14 @@ ul.calendar-links, .region-content ul.calendar-links {
 
 
 /* Copyright and Disclaimer */
-section#block-block-7 p {font-size:1em;}
+section#block-block-7 {width:80%; margin:0px auto;}
+section#block-block-7 p {font-size:1em; margin-bottom:10px;}
 
 /* Footer Links */
-section#block-block-8 p.footer-primary {font-size:1.15em;}
-section#block-block-8 p.footer-secondary {font-size:1.1em; margin-bottom:12px;}
+section#block-block-8 p.footer-primary {font-size:1.15em; padding-top:6px; margin-bottom:10px;}
+section#block-block-8 p.footer-primary a {padding:0px 6px;}
+section#block-block-8 p.footer-secondary  {font-size:1.05em;  margin-bottom:15px;  }
+section#block-block-8 p.footer-secondary a {font-size:1.05em;padding:0px 6px;}
 
 /* Social Media Footer */
 .not-front section#block-block-9 {padding-top:12px; border-top:1px solid #ddd;}
