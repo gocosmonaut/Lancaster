@@ -1070,8 +1070,33 @@ div.view.view-calendar div.date-heading h3 { font-family:"Museo Light"; text-tra
 th.days { font-family:"Museo Light"; text-transform:uppercase; letter-spacing:0.5px; }
  div.views-field.views-field-title span.field-content a {font-size:1.5em;}
  
-td.date-box.today {background:#f9f8ce; border-color:#632548;}
+.calendar-calendar .month-view .full td, .calendar-calendar .week-view .full td, .calendar-calendar .day-view td {padding:5px;} 
+td.past {background:#f4f4f4;}
+td.today {background:#f9f8ce !important;}
+td.single-day {padding:10px;}
+td.single-day div.item {padding:6px 0px;}
+div.month.day  {font-size:1.5em; padding:8px; width:100%;}
+div.month.day a { color:#632548 !important; font-weight:600; }
+div.month.day a:hover {}
+div.views-field.views-field-field-event-date span {font-size:1.1em;}
+.view .date-nav-wrapper .date-prev {background:none; left:0; right:auto;}
+.view .date-nav-wrapper .date-prev a, .view .date-nav-wrapper .date-next a {margin:0px; border-radius:0px; text-transform:uppercase; letter-spacing:1px; font-weight:200; font-size:1.25em;}
+.view .date-nav-wrapper .date-next {background:none; right:0;}
+.view .date-nav-wrapper .date-heading h3 {font-size:2em;}
+.calendar-calendar th.days {
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    color: #777;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 3px;}
 
+tr.multi-day {background:#f4f4f4;}	
+td.multi-day div.view-item.view-item-calendar div.calendar.monthview {background:orange;}	
+td.multi-day div.view-item.view-item-calendar div.calendar.monthview a {color:white; font-size:1.35em; font-weight:300px;}
+td.multi-day div.view-item.view-item-calendar div.calendar.monthview div.continuation,
+.calendar-calendar .month-view .full td.multi-day .inner .monthview .continues, .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff, .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues, .calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff {background:none; font-size:1.5em; padding-left:0px;}
+/*
 
 .calendar-calendar tr.odd, .calendar-calendar tr.even {
     background-color: #fff;
@@ -1396,7 +1421,7 @@ table.calendar-legend tr.odd .stripe, table.calendar-legend tr.even .stripe {
 }
 .calendar-calendar td .inner div.calendar div div.view-data-node-data-field-date-field-date-value {
 }
-.calendar-calendar td.past {
+.calendar-calendar td.past { background:#f0f0f0;}
 }
 .calendar-calendar td.future {
 }
@@ -1435,6 +1460,7 @@ table.calendar-legend tr.odd .stripe, table.calendar-legend tr.even .stripe {
 .calendar-calendar .month-view .full tr.single-day .no-entry, .calendar-calendar .month-view .full tr.single-day .no-entry .inner {
     height: 44px !important;
     line-height: 44px;
+	background:#f0f0f0;
 }
 .calendar-calendar .month-view .full tr.single-day .noentry-multi-day, .calendar-calendar .month-view .full tr.single-day .noentry-multi-day .inner {
     height: 22px !important;
@@ -1509,6 +1535,7 @@ table.calendar-legend tr.odd .stripe, table.calendar-legend tr.even .stripe {
 }
 .calendar-calendar .month-view .full tr td.single-day.today {
     border-bottom: none;
+	background:#f9f8ce;
 }
 .calendar-calendar .month-view .full tr td.multi-day.starts-today {
     border-left: 2px solid #7c7f12;
@@ -1535,7 +1562,6 @@ table.calendar-legend tr.odd .stripe, table.calendar-legend tr.even .stripe {
     overflow: hidden;
     padding: 4px 6px;
     width: auto;
-	border-top:1px solid #ddd;
 }
 .calendar-calendar .month-view .full td.single-day .calendar-more div.monthview {
     background: none;
@@ -1657,7 +1683,7 @@ table.calendar-legend tr.odd .stripe, table.calendar-legend tr.even .stripe {
 }
 .view .date-nav-wrapper .date-prev {
     background: #dfdfdf none repeat scroll 0 0;
-    border-radius: 5px 0 0 5px;
+    border-radius: 0px;
     float: none;
     font-size: 12px;
     left: auto;
@@ -1736,7 +1762,7 @@ ul.calendar-links, .region-content ul.calendar-links {
     min-height: 20px;
 }
 
-
+*/
 
 /* Footer */
 
