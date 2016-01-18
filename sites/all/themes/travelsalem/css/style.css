@@ -249,20 +249,23 @@ section.block-tb-megamenu div.tb-megamenu a.dropdown-toggle span.caret  {display
 section.block-tb-megamenu div.dropdown-menu.mega-dropdown-menu.nav-child  {background:#eee;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 {}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a {font-family: "Museo Regular";}
-section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2.open a {background:none;}
-section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a:hover {background:#d9d9d9;}
+section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2.open a {background:none; border-bottom:1px solid #bbb;}
+section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a:hover {background:#d9d9d9; }
 
 section.block-tb-megamenu div.dropdown-menu.mega-dropdown-menu.nav-child div#tb-megamenu-column-2 {background:white;}
 
 div.tb-megamenu-submenu.dropdown-menu {border-color:#632548 !important; margin-top:6px;}
 
 @media(min-width:1200px){
+section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1.first a { padding:3px 10px;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a { padding:3px 10px; font-size:1.35em; letter-spacing:0.5px;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a {font-size:1.1em; letter-spacing:0.5px; border-bottom:1px solid #bbb;}
 }
 
 @media(min-width:980px) and (max-width:1199px){
+section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1.first a { padding:2px 8px;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a { padding:2px 8px; font-size:1.25em; letter-spacing:0.35px;}
+section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a {font-size:1.1em; letter-spacing:0.5px; border-bottom:1px solid #bbb;}    
 }
 @media(min-width:768px) and (max-width:979px){
 section.block-tb-megamenu {position:absolute; right:3%; top:12px;}
@@ -285,14 +288,21 @@ section#block-menu-menu-secondary-menu ul.menu li a {color:#373030; text-transfo
 section#block-menu-menu-secondary-menu ul.menu li.first a {padding-left:0px;}
 section#block-menu-menu-secondary-menu ul.menu li.last a {padding-right:0px;}
 
+section#block-menu-menu-secondary-menu ul.menu li.expanded.dropdown.open ul.dropdown-menu  {}
+section#block-menu-menu-secondary-menu ul.menu li.expanded.dropdown.open ul.dropdown-menu li {display:inline; ;}
+section#block-menu-menu-secondary-menu ul.menu li.expanded.dropdown.open ul.dropdown-menu li.leaf a {color:#632548; text-transform: none;text-align:left; border-bottom:1px solid #bbb;}
+section#block-menu-menu-secondary-menu ul.menu li.expanded.dropdown.open ul.dropdown-menu li.leaf a:hover {background:#d9d9d9;}
+
 @media(min-width:1200px){
 section#block-menu-menu-secondary-menu {  margin-bottom:8px;}
 section#block-menu-menu-secondary-menu ul.menu li a {font-size:.95em; padding:0px 6px; letter-spacing:0.5px;}
+section#block-menu-menu-secondary-menu ul.menu li.expanded.dropdown.open ul.dropdown-menu li.leaf a { font-size:1em; letter-spacing:0.5px; padding:3px 14px;}    
 
 }
 @media(min-width:980px) and (max-width:1199px){
 section#block-menu-menu-secondary-menu {  margin-bottom:6px;}
 section#block-menu-menu-secondary-menu ul.menu li a {font-size:.85em; padding:0px 4px; letter-spacing:0.25px;}
+section#block-menu-menu-secondary-menu ul.menu li.expanded.dropdown.open ul.dropdown-menu li.leaf a { font-size:1em; letter-spacing:0.5px; padding:3px 14px;}        
 
 }
 @media(min-width:768px) and (max-width:979px){
