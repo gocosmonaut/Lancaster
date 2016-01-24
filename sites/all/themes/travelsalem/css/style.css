@@ -341,7 +341,7 @@ div#SalemCarousel div#myCarousel.carousel.slide div#slide-3 {}
 div#SalemCarousel div#myCarousel.carousel.slide div#slide-4 {}
 
 div#SalemCarousel .carousel-caption { /*background:url(../../../../../sites/default/files/siteart/25_pct_black.png);*/ height:100%;}
-div#SalemCarousel .carousel-caption a {text-decoration:none; color:white;}
+div#SalemCarousel .carousel-caption a {text-decoration:none; color:white; text-shadow:2px 2px 2px rgba(0, 0, 0, 0.9);}
 div#SalemCarousel .carousel-caption a:hover {text-decoration:none; color:#f9f8ce;}
 div#SalemCarousel .carousel-caption h3 {color:white;}
 div#SalemCarousel .carousel-caption p  {color:white;}
@@ -351,10 +351,10 @@ div#SalemCarousel .carousel-indicators li.active {background:white;}
 div#SalemCarousel .carousel-indicators li {background:url(../../../../../sites/default/files/siteart/indicator_fill.png)}
 
 @media(min-width:1200px){
-div#SalemCarousel .carousel-caption { left: 10%; padding-bottom: 0px; right: 40%; text-align: left; top: 0; padding: 9px 24px 9px 30px; height:100%;}
+div#SalemCarousel .carousel-caption { left: 10%; padding-bottom: 0px; right: 10%; text-align: left; top: 65%; padding: 9px 24px 9px 30px; height:100%;}
 div#SalemCarousel .carousel-caption a {}
 div#SalemCarousel .carousel-caption a:hover {}
-div#SalemCarousel .carousel-caption h3 {font-size:3em;letter-spacing:1px; line-height:120%;}
+div#SalemCarousel .carousel-caption h3 {font-size:2em;letter-spacing:1px; line-height:120%;}
 div#SalemCarousel .carousel-caption p  {font-size:1.75em; line-height:125%; }
 
 div#SalemCarousel .carousel-indicators {bottom:20px;}
@@ -363,10 +363,10 @@ div#SalemCarousel .carousel-indicators li {height:25px !important; width:25px !i
 }
 
 @media(min-width:980px) and (max-width:1199px){
-div#SalemCarousel .carousel-caption { left: 10%; padding-bottom: 0px; right: 30%; text-align: left; top: 0; padding: 9px 24px 9px 30px; height:100%;}
+div#SalemCarousel .carousel-caption { left: 10%; padding-bottom: 0px; right: 20%; text-align: left; top: 60%; padding: 9px 24px 9px 30px; height:100%;}
 div#SalemCarousel .carousel-caption a {}
 div#SalemCarousel .carousel-caption a:hover {}
-div#SalemCarousel .carousel-caption h3 {font-size:2.75em;letter-spacing:1px; line-height:125%;}
+div#SalemCarousel .carousel-caption h3 {font-size:1.9em;letter-spacing:1px; line-height:125%;}
 div#SalemCarousel .carousel-caption p  {font-size:1.5em; line-height:125%; }
 
 div#SalemCarousel .carousel-indicators {bottom:10px}
@@ -375,10 +375,10 @@ div#SalemCarousel .carousel-indicators li {height:20px !important; width:20px !i
 }
 
 @media(min-width:768px) and (max-width:979px){
-div#SalemCarousel .carousel-caption { left: 5%; padding-bottom: 0px; right: 30%; text-align: left; top: 0; padding: 9px 24px 9px 30px; height:100%;}
+div#SalemCarousel .carousel-caption { left: 5%; padding-bottom: 0px; right: 15%; text-align: left; top: 60%; padding: 9px 24px 9px 30px; height:100%;}
 div#SalemCarousel .carousel-caption a {}
 div#SalemCarousel .carousel-caption a:hover {}
-div#SalemCarousel .carousel-caption h3 {font-size:2.35em;letter-spacing:1px; line-height:125%;}
+div#SalemCarousel .carousel-caption h3 {font-size:1.8em;letter-spacing:1px; line-height:125%;}
 div#SalemCarousel .carousel-caption p  {font-size:1.25em; line-height:125%; }
 
 div#SalemCarousel .carousel-indicators {bottom:0px}
@@ -390,7 +390,7 @@ div#SalemCarousel .carousel-indicators li {height:20px !important; width:20px !i
 div#SalemCarousel .carousel-caption { left: 5%; padding-bottom: 0px; right: 5%; text-align: center; top: 0; padding: 9px 24px 9px 30px; height:100%;}
 div#SalemCarousel .carousel-caption a {}
 div#SalemCarousel .carousel-caption a:hover {}
-div#SalemCarousel .carousel-caption h3 {font-size:2.1em;letter-spacing:1px; line-height:120%; margin-top:12px; margin-bottom:4px;}
+div#SalemCarousel .carousel-caption h3 {font-size:1.7em;letter-spacing:1px; line-height:120%; margin-top:12px; margin-bottom:4px;}
 div#SalemCarousel .carousel-caption p  {font-size:1.15em; line-height:120%; }
 
 div#SalemCarousel .carousel-indicators {bottom:0px}
