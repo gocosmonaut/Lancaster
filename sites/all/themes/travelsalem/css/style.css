@@ -108,7 +108,7 @@ header#navbar a.logo.navbar-btn img { width:100%;}
 }
 
 /* Front */
-.panel-3col-33-stacked .panel-separator {margin:0;}
+.panel-separator {display:none;}
 
 
 
@@ -630,11 +630,11 @@ div#featured-events div.views-row { vertical-align:top;  width:23%; float:left; 
 div#featured-events div.views-row-first, div#featured-events div.views-row-last {margin:0px;}
 div#featured-events div.views-row-2 {margin:0px 1.3333% 0px 2.66666%;}
 div#featured-events div.views-row-3 {margin:0px 2.6666% 0px 1.33333%;}
-div#featured-events div.views-row img {width:100%; height:auto; margin-bottom:20px; }
+div#featured-events div.views-row img {width:100%; height:auto; margin-bottom:20px; min-height:200px; }
 div#featured-events div.views-row div.views-field-title {margin-bottom:6px; }
 div#featured-events div.views-row div.views-field-title a { letter-spacing:0.25px; line-height:125%; font-size:1.45em;}
 
-div#fullcalendar {margin:0px auto 40px; text-align:center; width:100%;}
+div#fullcalendar {margin:35px auto 40px; text-align:center; width:100%;}
 div#fullcalendar h4 a {color:white; background:#632548; text-transform:uppercase;  letter-spacing:1.5px; padding:6px 14px; font-size:.9em; font-weight:200;}
 div#fullcalendar h4 a:hover {background:#788e4a;}	
 }
@@ -999,8 +999,10 @@ div#standard-panel p {margin:0px 0px 18px;}
 div#standard-panel div.pane-node-field-event-date {border-right:2px solid white; border-bottom:2px solid white; background:#ecf1fa; text-align:center; padding:4px 10px; font-size:1.15em; font-family:"Museo Regular"; font-weight:400;   line-height:140%; text-transform:uppercase; letter-spacing:0.5px; width:100%; color:black;}
 
 div#standard-panel div.field-name-field-event-image .img-responsive {max-width:none; width:100%;}
-div#standard-panel div.pane-node-field-supporting-images { }
-div#standard-panel div.pane-node-field-supporting-images img {width:25%; height:auto; float:right; margin:15px 0px 0px 15px;}
+div.field-name-field-supporting-images  div.table-responsive {width:100%;}
+div.field-name-field-supporting-images  div.table-responsive td {border-top:0px !important; padding:0px !important; background:none;}    
+div#standard-panel div.pane-node-field-supporting-images {margin:0 0 15px 15px; width:25%; float:right;}
+div#standard-panel div.pane-node-field-supporting-images img {height: auto; margin: 0 0 15px;width: 100%; }
 div#standard-panel div.field-name-field-event-image blockquote.image-field-caption {margin:0px; padding:0px; border:0px;}
 div#standard-panel div.field-name-field-event-image blockquote.image-field-caption p {text-align:right; font-size:.9em; margin:6px 0px;}
 .front blockquote.image-field-caption  {display:none;}
@@ -1072,7 +1074,30 @@ body.page-add-a-listing div.hierarchical-select-wrapper div.selects select optio
 body.page-add-a-listing div.hierarchical-select-wrapper div.dropbox {margin:0px auto; display:table;}
 body.page-add-a-listing div.hierarchical-select-wrapper div.dropbox tbody {font-size:1em; padding:4px;}
 body.page-add-a-listing div.hierarchical-select-wrapper div.dropbox tbody tr.dropbox-entry {line-height:2em;}
-body.page-add-a-listing div.hierarchical-select-wrapper div.dropbox tbody tr.dropbox-entry
+body.page-add-a-listing div.hierarchical-select-wrapper div.dropbox tbody tr.dropbox-entry {}
+    
+/* Blog */
+
+div.view-blog div.views-row {padding:4% 0px 6% 0%; border-bottom:1px solid #ccc; letter-spacing:0.25px;}
+div.view-blog div.views-row-first {padding-top:0px;}
+div.view-blog div.views-row-last {border-bottom:0px;}
+div.view-blog div.views-field-field-supporting-images {float:left;} 
+
+div.view-blog div.views-field-title {font-size:1.2em;}
+div.view-blog div.views-field-field-subtitle {padding:6px 0px; font-size:1.2em; font-weight:600;}
+div.view-blog div.views-field-field-publication-date {padding:0 0 10px 0;} 
+div.view-blog div.views-field-field-publication-date   span.date-display-single {color: #666;letter-spacing: 0.5px; text-transform: uppercase;}
+div.view-blog div.views-field-view-node a {color:white; float:right; padding: 4px 6px; background:#632548; text-transform: uppercase; margin:9px 0px; font-size:.9em; letter-spacing:0.5px;} 
+div.view-blog div.views-field-view-node a:hover {background:#798f4b;}    
+    
+div.view-blog div.views-field-title,
+div.view-blog div.views-field-field-subtitle,
+div.view-blog div.views-field-field-publication-date,
+div.view-blog div.views-field-body,
+div.view-blog div.views-field-view-node {padding-left:30%;}
+    
+div.pane-node-field-subtitle  {font-size:1.5em; font-weight:600; padding-bottom:12px;}
+    
 
 
 /* Calendar */
