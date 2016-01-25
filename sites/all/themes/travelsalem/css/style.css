@@ -845,7 +845,7 @@ div#blog-pane div.pane-content {padding:0px 4px;}
 div#blog-pane h4  {letter-spacing: 1px;margin: 4px 4px 6px; font-size: 0.9em; letter-spacing: 1px; }
 div#blog-pane h4 a {  line-height:130%;padding:4px;  }
 div#blog-pane h5 {margin:3px 0px 9px; font-size:1.2em;}
-div#blog-pane div.views-field.views-field-title {margin-top:12px;}
+div#blog-pane div.views-field.views-field-title {margin-top:12px; padding:0px;}
 div#blog-pane div.views-field.views-field-title span.field-content a {font-size:1.4em;}
 div#blog-pane div.views-field-field-supporting-images {float:right; margin: 0px 0 15px 15px;}
 div#blog-pane p {font-size:1em;}
@@ -1078,23 +1078,23 @@ body.page-add-a-listing div.hierarchical-select-wrapper div.dropbox tbody tr.dro
     
 /* Blog */
 
-div.view-blog div.views-row {padding:4% 0px 6% 0%; border-bottom:1px solid #ccc; letter-spacing:0.25px;}
-div.view-blog div.views-row-first {padding-top:0px;}
-div.view-blog div.views-row-last {border-bottom:0px;}
-div.view-blog div.views-field-field-supporting-images {float:left;} 
+.not-front div.view-blog div.views-row {padding:4% 0px 6% 0%; border-bottom:1px solid #ccc; letter-spacing:0.25px;}
+.not-front div.view-blog div.views-row-first {padding-top:0px;}
+.not-front div.view-blog div.views-row-last {border-bottom:0px;}
+.not-front div.view-blog div.views-field-field-supporting-images {float:left;} 
 
-div.view-blog div.views-field-title {font-size:1.2em;}
-div.view-blog div.views-field-field-subtitle {padding:6px 0px; font-size:1.2em; font-weight:600;}
-div.view-blog div.views-field-field-publication-date {padding:0 0 10px 0;} 
-div.view-blog div.views-field-field-publication-date   span.date-display-single {color: #666;letter-spacing: 0.5px; text-transform: uppercase;}
-div.view-blog div.views-field-view-node a {color:white; float:right; padding: 4px 6px; background:#632548; text-transform: uppercase; margin:9px 0px; font-size:.9em; letter-spacing:0.5px;} 
-div.view-blog div.views-field-view-node a:hover {background:#798f4b;}    
+.not-front div.view-blog div.views-field-title {font-size:1.2em;}
+.not-front div.view-blog div.views-field-field-subtitle {padding:6px 0px; font-size:1.2em; font-weight:600;}
+.not-front div.view-blog div.views-field-field-publication-date {padding:0 0 10px 0;} 
+.not-front div.view-blog div.views-field-field-publication-date   span.date-display-single {color: #666;letter-spacing: 0.5px; text-transform: uppercase;}
+.not-front div.view-blog div.views-field-view-node a {color:white; float:right; padding: 4px 6px; background:#632548; text-transform: uppercase; margin:9px 0px; font-size:.9em; letter-spacing:0.5px;} 
+.not-front div.view-blog div.views-field-view-node a:hover {background:#798f4b;}    
     
-div.view-blog div.views-field-title,
-div.view-blog div.views-field-field-subtitle,
-div.view-blog div.views-field-field-publication-date,
-div.view-blog div.views-field-body,
-div.view-blog div.views-field-view-node {padding-left:30%;}
+.not-front div.view-blog div.views-field-title,
+.not-front div.view-blog div.views-field-field-subtitle,
+.not-front div.view-blog div.views-field-field-publication-date,
+.not-front div.view-blog div.views-field-body,
+.not-front div.view-blog div.views-field-view-node {padding-left:30%;}
     
 div.pane-node-field-subtitle  {font-size:1.5em; font-weight:600; padding-bottom:12px;}
     
