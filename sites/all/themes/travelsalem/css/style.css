@@ -16,7 +16,7 @@ body {background: #fff; /* #f2e7ec; */ line-height:140%;}
 a { color:#632548;transition: all 0.3s ease 0s;}
 a:hover {text-decoration:none; color:#788e4a; transition: all 0.2s ease 0s;}
 a img:hover, img a:hover {opacity:.8; transition: all 0.2s ease 0s;}
-div.views-field-field-event-image:hover {background:#ffc600;}
+.front div.views-field-field-event-image:hover {background:#ffc600;}
 
 focus { transition: all 0.2s ease 0s; text-decoration:none;}
 h1, h2, h3, h4  {color:black; letter-spacing: 0.25px; }
@@ -728,28 +728,42 @@ div#date-search button#edit-submit-featured-events {  text-indent:-9999px; borde
     
 /* Event Search Blocks */    
     
-form#views-exposed-form-upcoming-events-search-form-block-1 div#edit-date-filter-wrapper {padding:1.5% 2%; width:48%; float:left; border:1px solid #ddd;}   
-section.block-views h2.block-title {font-family:"Museo Light"; letter-spacing:1.5px; font-weight:200 !important; font-size:1.4em; padding-bottom:12px; text-align:center; text-transform:uppercase;}
-form#views-exposed-form-upcoming-events-search-form-block-1 {width:80%; margin:0px auto; text-align:center;}
-form#views-exposed-form-upcoming-events-search-form-block-1 div.views-exposed-widget {padding:0px; float:none;}  
-form#views-exposed-form-upcoming-events-search-form-block-1 div.views-exposed-form div#edit-date-filter-wrapper {padding:1% 2% 0; width:48%; float:left; border:1px solid #ddd;}
-form#views-exposed-form-upcoming-events-search-form-block-1 div.views-exposed-form div#edit-field-event-category-tid-wrapper {padding:1% 2% 2%; width:48%; float:right; border:1px solid #ddd;}
-form#views-exposed-form-upcoming-events-search-form-block-1 div.views-exposed-form div#edit-date-filter-wrapper label,     
-form#views-exposed-form-upcoming-events-search-form-block-1 div.views-exposed-form div#edit-field-event-category-tid-wrapper label {text-transform:uppercase; letter-spacing:1px; font-weight:normal;}    
-form#views-exposed-form-upcoming-events-search-form-block-1 div.views-exposed-form div.views-submit-button {width:48%; float:right;}
-form#views-exposed-form-upcoming-events-search-form-block-1 div.views-exposed-form div.views-reset-button {width:25%; float:right;}    
+div.upcoming-block div#edit-date-filter-wrapper {padding:1.5% 2%; width:48%; float:left; border:1px solid #ddd;}   
+section.block-views h2.block-title, div.pane-upcoming-events-search-form h2.pane-title {font-family:"Museo Light"; letter-spacing:1.5px; font-weight:200 !important; font-size:1.4em; padding-bottom:12px; text-align:center; text-transform:uppercase;}
+div.upcoming-block {width:90%; margin:0px auto; text-align:center;}
+div.panel-col div.upcoming-block {width:100%;}   
+div.upcoming-block div.views-exposed-widget {padding:0px; float:none;}  
+div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper {padding:1% 2% 0; width:48%; float:left; border:1px solid #ddd;}
+div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper {padding:1% 2% 2%; width:48%; float:right; border:1px solid #ddd;}
+div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper label,     
+div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper label {text-transform:uppercase; letter-spacing:1px; font-weight:normal;}    
+div.upcoming-block div.views-exposed-form div.views-submit-button {width:48%; float:right;}
+div.upcoming-block div.views-exposed-form div.views-reset-button {width:25%; float:right;}    
     
-form#views-exposed-form-upcoming-events-search-form-block-1 div.views-exposed-form div.views-submit-button button, form#views-exposed-form-upcoming-events-search-form-block-1 div.views-exposed-form div.views-reset-button button   {color:white; background:#632548; text-transform:uppercase;  letter-spacing:1.5px; padding:6px 14px; font-size:1.1em; font-weight:200; border:0px; border-radius:0px; margin-top: 18px;}
-form#views-exposed-form-upcoming-events-search-form-block-1 div.views-exposed-form div.views-submit-button button:hover, form#views-exposed-form-upcoming-events-search-form-block-1 div.views-exposed-form div.views-reset-button button:hover {background:#788e4a;}
+div.upcoming-block div.views-exposed-form div.views-submit-button button, div.upcoming-block div.views-exposed-form div.views-reset-button button   {color:white; background:#632548; text-transform:uppercase;  letter-spacing:1.5px; padding:6px 14px; font-size:1.1em; font-weight:200; border:0px; border-radius:0px; margin-top: 18px;}
+div.upcoming-block div.views-exposed-form div.views-submit-button button:hover, div.upcoming-block div.views-exposed-form div.views-reset-button button:hover {background:#788e4a;}
     
-form#views-exposed-form-upcoming-events-search-form-block-1 div.views-exposed-form input {color:#632548; background:#eee; text-align:center; margin-right:0px;}
-form#views-exposed-form-upcoming-events-search-form-block-1 div.views-exposed-form select {color:#632548; background:#eee; text-align:left; font-size:1.35em; line-height:140%;}   
+div.upcoming-block div.views-exposed-form input {color:#632548; background:#eee; text-align:center; margin-right:0px;}
+div.upcoming-block div.views-exposed-form select {color:#632548; background:#eee; text-align:left; font-size:1.35em; line-height:140%;}   
 
-form#views-exposed-form-upcoming-events-search-form-block-1 div#edit-date-filter-min-wrapper {float:left; width:44%; padding:2%;}
-form#views-exposed-form-upcoming-events-search-form-block-1 div#edit-date-filter-max-wrapper {float:right; width:44%; padding:2%}
- 
+div.upcoming-block div#edit-date-filter-min-wrapper {float:left; width:44%; padding:2%;}
+div.upcoming-block div#edit-date-filter-max-wrapper {float:right; width:44%; padding:2%}
+div.panel-col div.upcoming-block .container-inline-date .form-item, div.panel-col div.upcoming-block  .container-inline-date .form-item input  {width:100%;}
 
-form#views-exposed-form-upcoming-events-search-form-block-1 div.form-item {margin-right: 0px;}
+div.upcoming-block div.form-item {margin-right: 0px;}
+
+/* Calendar Block Search Results */
+
+div.upcoming-block div.item-list ul {list-style:none; padding:0px; width:90%; margin:0px auto; padding: 16px 0 0;}    
+div.upcoming-block div.item-list ul li.views-row {width:50%; text-align:left;}  
+div.upcoming-block div.item-list ul li.views-row-odd {float:left; border-right:1px solid #ccc; padding:12px 4% 12px 0%;}
+div.upcoming-block div.item-list ul li.views-row-even {float:right; padding:12px 0% 12px 4%;}    
+div.upcoming-block div.item-list ul li.views-row blockquote {display:none;}   
+
+div.upcoming-block div.item-list ul li.views-row div.views-field-field-event-image {float:left;margin:0px 15px 15px 0px;}
+
+div.upcoming-block div.item-list ul li.views-row div.views-field-title  {padding-bottom:6px; }      
+div.upcoming-block div.item-list ul li.views-row div.views-field-title a {  font-size: 1.3em; line-height: 130%;  }  
 
 
 /* Subpages */
