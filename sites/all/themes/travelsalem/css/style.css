@@ -777,20 +777,11 @@ div.upcoming-block div.item-list ul li.views-row-odd {float:left; border-right:1
 div.upcoming-block div.item-list ul li.views-row-even {float:right; padding:12px 0% 12px 4%;}    
 div.upcoming-block div.item-list ul li.views-row blockquote {display:none;}   
 
-div.upcoming-block div.item-list ul li.views-row div.views-field-field-event-image {float:left;margin:0px 15px 15px 0px;}
+div.upcoming-block div.item-list ul li.views-row div.views-field-field-event-image {float:left;margin:0px 15px 35px 0px;}
 
 div.upcoming-block div.item-list ul li.views-row div.views-field-title  {padding-bottom:6px; }      
 div.upcoming-block div.item-list ul li.views-row div.views-field-title a {  font-size: 1.3em; line-height: 130%;  }  
 
-
-/* Subpages */
-
-.panel-3col-stacked .panel-col-first {width:20%; padding-right: 15px;}
-.panel-3col-stacked .panel-col-last {width:15%;  padding-left: 15px;}
-.panel-3col-stacked .panel-col {width:65%;  padding:0px 15px 20px 15px; border-right:1px solid #ddd; border-left:1px solid #ddd;}
-.panel-3col-stacked .panel-col-first .inside, .panel-3col-stacked .panel-col-last .inside, .panel-3col-stacked .panel-col .inside {margin:0px;}
-    
-    
     
 /* Interactive Map Overrides */
 
@@ -1017,76 +1008,103 @@ div#homerotator{margin: 20px auto; width: 100%; overflow:hidden;}
 /* Two-Column Subpages */
 
 /* LEFT */
-body.two-sidebars aside.col-sm-3.left {}
+body.two-sidebars aside.col-sm-3.left, div#standard-panel div.panel-col-first {}
 body.two-sidebars aside.col-sm-3.left .region-sidebar-first {background:none; border:none; }
-body.two-sidebars aside.col-sm-3.left h3 { text-align:center; background:#bbb; color:white; text-transform:uppercase;  font-family:"Museo Light"; font-weight:200; letter-spacing:.5px;}
+body.two-sidebars aside.col-sm-3.left h3,
+div#standard-panel div.panel-col-first div.inside h3
+{ text-align:center; background:#bbb; color:white; text-transform:uppercase;  font-family:"Museo Light"; font-weight:200; letter-spacing:.5px;}
+   
 
 /* MIDDLE */
     
-body.two-sidebars section.col-sm-6 { border-left:1px solid #ccc; border-right:1px solid #ccc;}
+body.two-sidebars section.col-sm-6, div#standard-panel div.panel-col { border-left:1px solid #ccc; border-right:1px solid #ccc;}
     
 /* RIGHT */
 
-body.two-sidebars aside.col-sm-3.right { padding:0px 0px 20px 15px ; width:15%;}
-body.two-sidebars aside.col-sm-3.right h2.block-title {text-align:center; background:#bbb; color:white; text-transform:uppercase; font-size:1em; font-family:"Museo Light"; font-weight:200;}
-body.two-sidebars aside.col-sm-3.right img {width:100%; height:auto; letter-spacing:.5px; margin-bottom:15px;}
+body.two-sidebars aside.col-sm-3.right { }
+body.two-sidebars aside.col-sm-3.right h2.block-title, div#standard-panel div.panel-col-last div.inside h3  {text-align:center; background:#bbb; color:white; text-transform:uppercase; font-size:1em; font-family:"Museo Light"; font-weight:200;}
+body.two-sidebars aside.col-sm-3.right img, div#standard-panel div.panel-col-last div.inside img {width:100%; height:auto;}
     
 @media(min-width:1200px){
     
 /* LEFT */
-body.two-sidebars aside.col-sm-3.left { width:20%; padding:0px 15px 20px 0px;}
+body.two-sidebars aside.col-sm-3.left, div#standard-panel div.panel-col-first { width:20%; padding:0px 15px 20px 0px;}
 body.two-sidebars aside.col-sm-3.left .region-sidebar-first {padding:0px;}
-body.two-sidebars aside.col-sm-3.left h3 {padding:4px; margin:0px 0px 10px 0px; text-align:center;  font-size:1em; }
-
-div#standard-panel div.panel-col-first { width:20%; padding-right:15px;} .panel-col-first .inside {margin:0px; padding-bottom:20px;}
+body.two-sidebars aside.col-sm-3.left h3,
+div.panel-col-first div.inside h3 {padding:4px; margin:0px 0px 10px 0px;   font-size:1em; }
 
 /* MIDDLE */
     
-body.two-sidebars section.col-sm-6 { padding:0px 20px 20px; width:65%;}
+body.two-sidebars section.col-sm-6, div#standard-panel div.panel-col { padding:0px 20px 20px; width:65%;}
     
 /* RIGHT */
 
-body.two-sidebars aside.col-sm-3.right { padding:0px 0px 20px 15px ; width:15%;}
-body.two-sidebars aside.col-sm-3.right h2.block-title {padding:4px; margin:0px 0px 10px 0px; }
-body.two-sidebars aside.col-sm-3.right img {width:100%; height:auto; letter-spacing:.5px; margin-bottom:15px;}        
+body.two-sidebars aside.col-sm-3.right, div#standard-panel div.panel-col-last { padding:0px 0px 20px 15px ; width:15%;}
+body.two-sidebars aside.col-sm-3.right h2.block-title, div#standard-panel div.panel-col-last div.inside h3  {padding:4px; margin:0px 0px 10px 0px; }
+body.two-sidebars aside.col-sm-3.right img, div#standard-panel div.panel-col-last div.inside img {width:100%; height:auto;}        
 }
     
 @media(min-width:980px) and (max-width:1199px){
     
 /* LEFT */
-body.two-sidebars aside.col-sm-3.left { width:22%; padding:0px 15px 20px 0px;}
+body.two-sidebars aside.col-sm-3.left, div#standard-panel div.panel-col-first { width:22%; padding:0px 15px 20px 0px;}
 body.two-sidebars aside.col-sm-3.left .region-sidebar-first {padding:0px;}
-body.two-sidebars aside.col-sm-3.left h3 {padding:4px; margin:0px 0px 10px 0px; text-align:center;  font-size:1em; }
+body.two-sidebars aside.col-sm-3.left h3,
+div#standard-panel div.panel-col-first div.inside h3,
+div#standard-panel div.panel-col-last div.inside h3,
+div#standard-panel div.panel-col-last div.inside h3  {padding:4px; margin:0px 0px 10px 0px;   font-size:1em; }
 
 /* MIDDLE */
     
-body.two-sidebars section.col-sm-6 { padding:0px 20px 20px; width:63%; border-left:1px solid #ccc; border-right:1px solid #ccc;}
+body.two-sidebars section.col-sm-6, div#standard-panel div.panel-col { padding:0px 20px 20px; width:63%; border-left:1px solid #ccc; border-right:1px solid #ccc;}
     
 /* RIGHT */
 
-body.two-sidebars aside.col-sm-3.right, div#standard-panel div.panel-col-last { padding:0px 0px 20px 15px ; } { padding:0px 0px 20px 15px ; width:20%;}
-body.two-sidebars aside.col-sm-3.right h2.block-title {padding:4px; margin:0px 0px 10px 0px; }
+body.two-sidebars aside.col-sm-3.right, div#standard-panel div.panel-col-last { padding:0px 0px 20px 15px; width:15%;}
+body.two-sidebars aside.col-sm-3.right h2.block-title, div#standard-panel div.panel-col-last div.inside h3  {padding:4px; margin:0px 0px 10px 0px; }
 body.two-sidebars aside.col-sm-3.right img {width:100%; height:auto; letter-spacing:.5px; margin-bottom:15px;}        
-}   }
+}   
 
 @media(min-width:768px) and (max-width:979px){
 /* LEFT */
-body.two-sidebars aside.col-sm-3.left { width:22%; padding:0px 15px 20px 0px;}
+body.two-sidebars aside.col-sm-3.left, div#standard-panel div.panel-col-first { width:22%; padding:0px 15px 20px 0px;}
 body.two-sidebars aside.col-sm-3.left .region-sidebar-first {padding:0px;}
-body.two-sidebars aside.col-sm-3.left h3 {padding:4px; margin:0px 0px 10px 0px; text-align:center;  font-size:1em; }
+body.two-sidebars aside.col-sm-3.left h3,
+div#standard-panel div.panel-col-first div.inside h3,
+div#standard-panel div.panel-col-last div.inside h3  {padding:4px; margin:0px 0px 10px 0px;   font-size:0.9em; }
 
 /* MIDDLE */
     
-body.two-sidebars section.col-sm-6 { padding:0px 20px 20px; width:63%; border-left:1px solid #ccc; border-right:1px solid #ccc;}
+body.two-sidebars section.col-sm-6, div#standard-panel div.panel-col  { padding:0px 20px 20px; width:63%; border-left:1px solid #ccc; border-right:1px solid #ccc;}
     
 /* RIGHT */
 
 body.two-sidebars aside.col-sm-3.right,
-div#standard-panel div.panel-col-last { padding:0px 0px 20px 15px ; }
-body.two-sidebars aside.col-sm-3.right h2.block-title {padding:4px; margin:0px 0px 10px 0px; }
+div#standard-panel div.panel-col-last { padding:0px 0px 20px 15px; width:15%;}
+body.two-sidebars aside.col-sm-3.right h2.block-title, div#standard-panel div.panel-col-last div.inside h3  {padding:4px; margin:0px 0px 10px 0px; }
 body.two-sidebars aside.col-sm-3.right img {width:100%; height:auto; letter-spacing:.5px; margin-bottom:15px;}    	
 }
+
 @media(min-width:481px) and (max-width:767px){
+	
+/* LEFT */
+body.two-sidebars aside.col-sm-3.left, div#standard-panel div.panel-col-first { width:26%; padding:0px 15px 20px 0px;}
+body.two-sidebars aside.col-sm-3.left .region-sidebar-first {padding:0px;}
+body.two-sidebars aside.col-sm-3.left h3,
+div#standard-panel div.panel-col-first div.inside h3, 
+div#standard-panel div.panel-col-last div.inside h3  {padding:4px; margin:0px 0px 10px 0px;   font-size:0.75em; }
+
+/* MIDDLE */
+    
+body.two-sidebars section.col-sm-6, div#standard-panel div.panel-col  { padding:0px 1% 20px; width:56%; border-left:1px solid #ccc; border-right:1px solid #ccc;}
+    
+/* RIGHT */
+
+body.two-sidebars aside.col-sm-3.right,
+div#standard-panel div.panel-col-last { padding:0px 0px 20px 15px; width:18%; }
+body.two-sidebars aside.col-sm-3.right h2.block-title, div#standard-panel div.panel-col-last div.inside h3  {padding:4px; margin:0px 0px 10px 0px; }
+body.two-sidebars aside.col-sm-3.right img {width:100%; height:auto; letter-spacing:.5px; margin-bottom:15px;}    	
+
 }
 @media (max-width:480px){
 }    
@@ -1101,30 +1119,40 @@ div#standard-panel {width:100%;  margin:0px auto;}
 
 /* LEFT */ 
 div#standard-panel div.panel-col-first div.inside {margin:0px;}
-div#standard-panel div.panel-col-first div.inside h3 {padding:4px; margin:0px 0px 10px 0px; text-align:center; background:#bbb; color:white; text-transform:uppercase; font-size:1em; font-family:"Museo Light"; font-weight:200; letter-spacing:.5px;}
+
 
 
 /* MIDDLE */ div#standard-panel div.panel-col-seventy { padding:0px 20px 20px; width:65%; border-left:1px solid #ccc; border-right:1px solid #ccc;}
 div#standard-panel div.panel-col-seventy div.inside {margin:0px;}
 
-/* RIGHT */ div#standard-panel div.panel-col-last {padding-left:15px; padding-bottom:20px;}
+/* RIGHT  div#standard-panel div.panel-col-last {padding-left:15px; padding-bottom:20px;}
 div#standard-panel div.panel-col-last div.inside {margin:0px;}
-div#standard-panel div.panel-col-last div.inside h3 {padding:4px; margin:0px 0px 10px 0px; text-align:center; background:#bbb; color:white; text-transform:uppercase; font-size:1em; font-family:"Museo Light"; font-weight:200;}
-div#standard-panel div.panel-col-last div.inside img {width:100%; height:auto; letter-spacing:.5px;}
+div#standard-panel div.panel-col-last div.inside img {width:100%; height:auto; letter-spacing:.5px;}*/
 
 /* Event Panel */
 
-div#standard-panel div#upcoming-column {}
-div#standard-panel div#upcoming-column h3 {padding:0px;}
-div#standard-panel div#upcoming-column h3 a {color:white; display:block; padding:4px;}
-div#standard-panel div#upcoming-column h3 a:hover {background:#632548;}
-div#standard-panel div#upcoming-column ul {padding:0px;}
-div#standard-panel div#upcoming-column ul li {list-style:none;}
-div#standard-panel div#upcoming-column ul li a {font-size:1.15em;}
-div#standard-panel div#upcoming-column ul li div.views-field-title {padding-top:24px; }
-div#standard-panel div#upcoming-column ul li.views-row-first div.views-field-title {padding-top:0px; }
-div#standard-panel div#upcoming-column ul li div.views-field-field-event-date {padding:2px 0px 8px; border-bottom:1px solid #ccc;}
-div#standard-panel div#upcoming-column ul li.views-row-last div.views-field-field-event-date {border:none;}
+div#standard-panel div#upcoming-column, section#block-views-calendar-block-2 {}
+
+div#standard-panel div#upcoming-column h3, section#block-views-calendar-block-2 h3 {padding:0px;}
+div#standard-panel div#upcoming-column h3, section#block-views-calendar-block-2 h3 a {color:white; display:block; padding:4px;}
+div#standard-panel div#upcoming-column h3 a:hover,
+section#block-views-calendar-block-2 h3 a:hover {background:#632548;}
+
+div#standard-panel div#upcoming-column ul,
+section#block-views-calendar-block-2 ul {padding:0px;}
+
+div#standard-panel div#upcoming-column ul li,
+section#block-views-calendar-block-2 ul li {list-style:none;}
+div#standard-panel div#upcoming-column ul li a,
+section#block-views-calendar-block-2 ul li a {font-size:1.15em;}
+
+div#standard-panel div#upcoming-column ul li div.views-field-title,
+section#block-views-calendar-block-2 ul li div.views-field-title  {padding-top:24px; }
+div#standard-panel div#upcoming-column ul li.views-row-first div.views-field-title,
+section#block-views-calendar-block-2 ul li.views-row-first div.views-field-title {padding-top:0px; }
+div#standard-panel div#upcoming-column ul li div.views-field-field-event-date, section#block-views-calendar-block-2 ul li div.views-field-field-event-date {padding:2px 0px 8px; border-bottom:1px solid #ccc;}
+div#standard-panel div#upcoming-column ul li.views-row-last div.views-field-field-event-date,
+section#block-views-calendar-block-2 ul li.views-row-last div.views-field-field-event-date {border:none;}
 
 div#standard-panel p {margin:0px 0px 18px;}
 div#standard-panel div.pane-node-field-event-date {border-right:2px solid white; border-bottom:2px solid white; background:#ecf1fa; text-align:center; padding:4px 10px; font-size:1.15em; font-family:"Museo Regular"; font-weight:400;   line-height:140%; text-transform:uppercase; letter-spacing:0.5px; width:100%; color:black;}
@@ -1148,7 +1176,7 @@ div#standard-panel div.pane-node-field-related-files {width:100%;}
 /* Listings Views */
 
 /* LEFT */ body.page-listings aside.col-sm-3.left .region-sidebar-first {background:none; border:none; padding:0px;}
-body.page-listings aside.col-sm-3.left h3 {padding:4px; margin:0px 0px 10px 0px; text-align:center; background:#bbb; color:white; text-transform:uppercase; font-size:1em; font-family:"Museo Light"; font-weight:200; letter-spacing:.5px;}
+
 
 body.page-listings aside.col-sm-3.left section#block-tb-megamenu-menu-clone-main-menu {float:left;}
 body.page-listings aside.col-sm-3.left section#block-tb-megamenu-menu-clone-main-menu div.tb-megamenu ul.tb-megamenu-nav li.level-1 {}
@@ -1170,6 +1198,26 @@ body.page-listings div.tb-megamenu-menu-clone-main-menu div.mega-inner {padding:
 body.page-listings div.tb-megamenu-menu-clone-main-menu ul.tb-megamenu-nav li.level-1 a.dropdown-toggle {padding:6px 10px;  }
 body.page-listings div.tb-megamenu-menu-clone-main-menu ul.tb-megamenu-nav li.level-2 a.dropdown-toggle {padding:6px 10px;  }
 body.page-listings div.tb-megamenu-menu-clone-main-menu ul.tb-megamenu-nav li.level-2 a {font-size:1em; letter-spacing:0.25px; padding-top:6px; padding-bottom:6px;}
+
+@media(min-width:1200px){
+ 
+}
+@media(min-width:980px) and (max-width:1199px){
+
+}
+
+@media(min-width:768px) and (max-width:979px){
+	
+}
+
+@media(min-width:481px) and (max-width:767px){
+	
+}
+
+@media (max-width:480px){
+	
+}    
+   
     
    
 
@@ -1257,7 +1305,7 @@ div.listings-views div.views-field-field-supporting-images img {width:100%; heig
     
 @media(min-width:980px) and (max-width:1199px){
 div.listings-views div.views-row {padding:15px 0%; min-height:180px;}
-div.listings-views div.views-row p {font-size:1.1em;}      
+div.listings-views div.views-row p {font-size:1em;}      
 div.listings-views div.views-row-odd {}
 div.listings-views div.views-row-even {}
 div.listings-views div.views-row-last {}
@@ -1350,7 +1398,7 @@ td.single-day div.item {padding:6px 0px;}
 div.month.day  {font-size:1.5em; padding:8px; width:100%;}
 div.month.day a { color:#632548 !important; font-weight:600; }
 div.month.day a:hover {}
-div.views-field.views-field-field-event-date span {font-size:1.1em;}
+div.views-field.views-field-field-event-date span {font-size:1em;}
 .view .date-nav-wrapper .date-prev {background:none; left:0; right:auto;}
 .view .date-nav-wrapper .date-prev a, .view .date-nav-wrapper .date-next a {margin:0px; border-radius:0px; text-transform:uppercase; letter-spacing:1px; font-weight:200; font-size:1.25em;}
 .view .date-nav-wrapper .date-next {background:none; right:0;}
