@@ -341,14 +341,14 @@ section#block-menu-menu-secondary-menu ul.menu li a {font-size:.85em; padding:0p
 section#block-menu-menu-secondary-menu {  margin-bottom:6px; position: absolute; width:94%;
     text-align: center;
     top: 130px;}
-section#block-menu-menu-secondary-menu ul.menu li a {font-size:1em; padding:0px 4px; letter-spacing:0.25px;}
+section#block-menu-menu-secondary-menu ul.menu li a {font-size:.85em; padding:0px 8px; letter-spacing:0.25px;}
 
 }
 @media (max-width:480px){
 	section#block-menu-menu-secondary-menu {  margin-bottom:6px; position: absolute; width:97%;
     text-align: center;
     top: 150px;}
-section#block-menu-menu-secondary-menu ul.menu li a {font-size:.9em; padding:0px 4px; letter-spacing:0px; line-height:130%;}
+section#block-menu-menu-secondary-menu ul.menu li a {font-size:.8em; padding:0px 8px; letter-spacing:0px; line-height:130%;}
 }
 
 /* Front */
@@ -1341,10 +1341,15 @@ div#homerotator div.jcarousel-container.jcarousel-container-horizontal {}
 div#homerotator{margin: 20px auto; width: 100%; overflow:hidden;}	
 }
 
+/* Right Sidebar Ad Rotator */   
+    
+div#standard-panel div.pane-ad-rotator {margin-bottom:12px;}
+div#standard-panel div.pane-ad-rotator img {height:auto; max-width:160px;}
+
 /* Two-Column Subpages */
 
 /* LEFT */
-body.two-sidebars aside.col-sm-3.left, div#standard-panel div.panel-col-first {}
+body.two-sidebars aside.col-sm-3.left, div#standard-panel div.panel-col-first {width:100%;}
 body.two-sidebars aside.col-sm-3.left .region-sidebar-first {background:none; border:none; }
 body.two-sidebars aside.col-sm-3.left h3,
 div#standard-panel div.panel-col-first div.inside h3
@@ -1378,7 +1383,7 @@ body.two-sidebars section.col-sm-6, div#standard-panel div.panel-col { padding:0
 
 body.two-sidebars aside.col-sm-3.right, div#standard-panel div.panel-col-last { padding:0px 0px 20px 15px ; width:15%;}
 body.two-sidebars aside.col-sm-3.right h2.block-title, div#standard-panel div.panel-col-last div.inside h3  {padding:4px; margin:0px 0px 10px 0px; font-size:1em; }
-body.two-sidebars aside.col-sm-3.right img, div#standard-panel div.panel-col-last div.inside img {width:100%; height:auto;}        
+body.two-sidebars aside.col-sm-3.right img, div#standard-panel div.panel-col-last div.inside img {width:100%; height:auto; max-width:160px;}        
 }
     
 @media(min-width:980px) and (max-width:1199px){
@@ -1448,6 +1453,8 @@ body.two-sidebars aside.col-sm-3.right img {width:100%; height:auto; letter-spac
 
 }
 @media (max-width:480px){
+    
+
 
 /* Standard Panel */
 
@@ -1468,8 +1475,10 @@ body.two-sidebars aside.col-sm-3.right,
 div#standard-panel div.panel-col-last { padding:0px 0px 20px 0px; width:100%; margin:0px auto;}
 aside.col-sm-3.right div.region-sidebar-second {width:36% auto;}
     
-/* Annual Guide */  section#block-block-4, div.pane-block-4 {max-width:180px; margin:0px auto;}   
-/* Global Greeter Network */ section#block-block-10 img, div.pane-block-10 img {max-width:50%;}    
+/* Annual Guide */  section#block-block-4, div.pane-block-4 {max-width:160px; margin:0px auto;}   
+/* Global Greeter Network */ section#block-block-10 img, div.pane-block-10 img {max-width:50%;} 
+section#block-block-10 p a, div.pane-block-10 p a {font-size:1em;}   
+/* Right Sidebar Ads on Panel Pages */ div#standard-panel div.pane-ad-rotator  {max-width:160px; margin:0px auto 12px;}    
     
 body.two-sidebars aside.col-sm-3.right h2.block-title, div#standard-panel div.panel-col-last div.inside h3  {padding:4px; margin:0px 0px 10px 0px; font-size:1em; }
 body.two-sidebars aside.col-sm-3.right img {width:100%; height:auto; letter-spacing:.5px; margin-bottom:15px;}   
