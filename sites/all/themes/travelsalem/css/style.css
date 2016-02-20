@@ -285,16 +285,17 @@ div.tb-megamenu-submenu.dropdown-menu {border-color:#632548 !important; margin-t
 @media(min-width:1200px){
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1.first a { padding:3px 10px;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a { padding:3px 10px; font-size:1.35em; letter-spacing:0.5px;}
-section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a {font-size:1.1em; letter-spacing:0.5px; border-bottom:1px solid #bbb;}
+section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a {font-size:1em; letter-spacing:0.5px; border-bottom:1px solid #bbb; padding:2px 6px;}
 }
 
 @media(min-width:980px) and (max-width:1199px){
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1.first a { padding:2px 8px;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a { padding:2px 8px; font-size:1.25em; letter-spacing:0.35px;}
-section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a {font-size:1.1em; letter-spacing:0.5px; border-bottom:1px solid #bbb;}    
+section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a {font-size:1em; letter-spacing:0.5px; border-bottom:1px solid #bbb;}    
 }
 @media(min-width:768px) and (max-width:979px){
 section.block-tb-megamenu {position:absolute; right:3%; top:12px;}
+section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a {font-size:1em; letter-spacing:0.5px; border-bottom:1px solid #bbb;}       
 }
 @media(min-width:481px) and (max-width:767px){
 section.block-tb-megamenu {position:absolute; right:3%; top:12px;}
@@ -1803,6 +1804,8 @@ div.views-field-field-countdown-to-event  span.views-label-field-countdown-to-ev
 
 div.pane-node-field-countdown-to-event {background:#eee; border-radius:2px; border:1px solid #999; width:80%; margin:0px 10%;}
 div.pane-node-field-countdown-to-event h4.pane-title {font-weight:200; text-align:center; font-family:"Museo Light"; font-size:1em; text-transform:uppercase; letter-spacing:1px;}
+
+span.countSeconds, span.countDiv.countDiv2 {display: none !important;}
 
 @media(min-width:1200px){
 }
