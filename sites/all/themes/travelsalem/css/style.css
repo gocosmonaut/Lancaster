@@ -11,6 +11,13 @@
 @media (max-width:480px){
 }
 
+/* Administration theme overrides */
+
+body.logged-in ul.tabs--primary.nav.nav-tabs {border-bottom:0px;}
+body.logged-in ul.tabs--primary.nav.nav-tabs li a {background:#632548; color:white; margin-right:16px; text-transform:uppercase; padding: 6px 12px; letter-spacing:2px; border:0px; border-radius:8px; } 
+body.logged-in ul.tabs--primary.nav.nav-tabs li a:hover {border:0px; background:red;}
+body.logged-in ul.tabs--primary.nav.nav-tabs li.active a {background:#eee; font-weight:300; color:#ccc; border:0px;}
+
 /* Universal */
 body {background: #fff; /* #f2e7ec; */ line-height:140%;}
 a { color:#632548;transition: all 0.3s ease 0s;}
@@ -19,9 +26,10 @@ a img:hover, img a:hover {opacity:.8; transition: all 0.2s ease 0s;}
 .front div.views-field-field-event-image:hover {background:#ffc600;}
 .well {background:none !important; padding:0px !important; border:0px !important; border-radius:0px !important; margin:0px !important;}
 focus { transition: all 0.2s ease 0s; text-decoration:none;}
-h1, h2, h3, h4  {color:black; letter-spacing: 0.25px; }
+h1, h2, h3, h4  {color:black; letter-spacing: 0.35px; }
 p {font-size:1.2em; line-height:135%; letter-spacing:0.25px;margin-bottom:15px;}
-h1 {font-size:1.4em; color:#798f4b;}
+div.panel-col p a {font-family: "Museo Regular";}
+
 h1.page-header {color:black;}
 .row {margin:0px !important;}
 .container {padding:0px !important;}
@@ -29,6 +37,10 @@ h1.page-header {color:black;}
 .navbar-default {border:0px; background:none;}
 footer.footer.container  {width:100%; max-width:none;}
 div.row section.col-sm-12 {padding:0px !important;}
+
+h2 {font-size:1.5em; color:#788e4a;}
+h3 {font-size:1.4em; color:black;}
+h4 {font-size:1.3em; color:black;}
 
 @media(min-width:1200px){
 .front div.main-container.container  { padding:0px; max-width:none; width:100%; margin-top:65px;}
@@ -89,6 +101,7 @@ header#navbar .navbar-btn a.logo {padding:0px;}
 header#navbar.affix-top {transition: all 0.3s ease 0s; opacity:1.0; background:white;}
 header#navbar.affix {background:white;  transition: all 0.3s ease 0s; border-bottom:1px solid #ddd; box-shadow: 0px 0px 10px #aaa;}
 .page-header {border-bottom:1px solid #ccc;}
+form.form-search fieldset.captcha-admin-links {display:none;}
 
 
 @media(min-width:1200px){
@@ -1232,7 +1245,7 @@ div#blog-pane div.views-field-view-node {margin:6px 0px;}
 .not-front div.view-blog div.views-field-field-publication-date {padding:0 0 10px 0;} 
 .not-front div.view-blog div.views-field-field-publication-date   span.date-display-single {color: #666;letter-spacing: 0.5px; text-transform: uppercase;}
 .not-front div.view-blog div.views-field-view-node a {color:white; float:right; padding: 4px 6px; background:#632548; text-transform: uppercase; margin:9px 0px; font-size:.9em; letter-spacing:0.5px;} 
-.not-front div.view-blog div.views-field-view-node a:hover {background:#798f4b;}    
+.not-front div.view-blog div.views-field-view-node a:hover {background:#788e4a;}    
     
 .not-front div.view-blog div.views-field-title,
 .not-front div.view-blog div.views-field-field-subtitle,
@@ -1526,7 +1539,8 @@ div.upcoming-subblock ul li.views-row-last div.views-field-field-event-date {bor
 div#standard-panel p {margin:0px 0px 18px;}
 div#standard-panel div.pane-node-field-event-date {border-right:2px solid white; border-bottom:2px solid white; background:#ecf1fa; text-align:center; padding:4px 10px; font-size:1.15em; font-family:"Museo Regular"; font-weight:400;   line-height:140%; text-transform:uppercase; letter-spacing:0.5px; width:100%; color:black;}
 
-div#standard-panel div.field-name-field-event-image .img-responsive {max-width:none; width:100%;}
+div#standard-panel div.field-name-field-event-image .img-responsive {max-width:none; width:100%; margin-bottom:10px;}
+
 div.field-name-field-supporting-images  div.table-responsive {width:100%;}
 div.field-name-field-supporting-images  div.table-responsive td {border-top:0px !important; padding:0px !important; background:none;}    
 div#standard-panel div.pane-node-field-supporting-images {margin:0 0 15px 15px; width:25%; float:right;}
@@ -1561,10 +1575,10 @@ body.page-listings div.tb-megamenu-menu-clone-main-menu li.active div.recreation
 body.page-listings div.tb-megamenu-menu-clone-main-menu li.active div.relocation-menu,
 body.page-listings div.tb-megamenu-menu-clone-main-menu li.active div.meetings-menu {display:block; position:relative; background:none; box-shadow:none; border:none; padding:0px;}
 
-body.page-listings div.tb-megamenu-menu-clone-main-menu li.active ul.tb-megamenu-subnav.level-1 {padding:0px; display:block;}
+body.page-listings div.tb-megamenu-menu-clone-main-menu li.active ul.tb-megamenu-subnav.level-1 {padding:0px; display:block; max-width: 220px !important;}
 
 body.page-listings div.tb-megamenu-menu-clone-main-menu div.mega-inner {padding:10px 0px !important;}
-body.page-listings div.tb-megamenu-menu-clone-main-menu ul.tb-megamenu-nav li.level-1 a.dropdown-toggle {padding:6px 10px;  }
+body.page-listings div.tb-megamenu-menu-clone-main-menu ul.tb-megamenu-nav li.level-1 a.dropdown-toggle {padding:6px !important; }
 body.page-listings div.tb-megamenu-menu-clone-main-menu ul.tb-megamenu-nav li.level-2 a.dropdown-toggle {padding:6px 10px;  }
 body.page-listings div.tb-megamenu-menu-clone-main-menu ul.tb-megamenu-nav li.level-2 a {font-size:1em; letter-spacing:0.25px; padding-top:6px; padding-bottom:6px;}
 
@@ -1588,6 +1602,7 @@ section#block-views-calendar-block-3 {display:none;}
 
 @media (max-width:480px){
 div#standard-panel div#upcoming-column {display:none;}	
+/* for pages with inline image formatting */ div#standard-panel div.panel-col img {width:100%; height:auto; margin-left:0px !important; margin-right:0px !important;}    
 }    
    
     
@@ -1629,7 +1644,7 @@ body.page-listings aside.col-sm-3.right img {width:100%; height:auto; letter-spa
 @media (max-width:480px){
 }    
 
-/* Catering */ section#block-block-6 p {font-size:1em; padding:0px 0px 16px 0px; text-align:center;}    
+/* Catering */ section#block-block-6 p, div.pane-block-6 p {font-size:1em; padding:0px 0px 16px 0px; text-align:center;}    
 
 div.listings-views div.views-row {border-bottom:1px solid #ccc;}
 div.listings-views div.views-row-odd {}
