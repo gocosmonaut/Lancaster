@@ -17,6 +17,8 @@ body.logged-in ul.tabs--primary.nav.nav-tabs {border-bottom:0px;}
 body.logged-in ul.tabs--primary.nav.nav-tabs li a {background:#632548; color:white; margin-right:16px; text-transform:uppercase; padding: 5px 12px; letter-spacing:2px; border:0px; border-radius:8px; } 
 body.logged-in ul.tabs--primary.nav.nav-tabs li a:hover {border:0px; background:red; font-size:12px;}
 body.logged-in ul.tabs--primary.nav.nav-tabs li.active a {background:#eee; font-weight:300; color:#ccc; border:0px;}
+body.cke_editable.cke_editable_themed {background:#f0f0f0;}
+body.cke_editable.cke_editable_themed p {font-family:"Museo Light"; }
 
 /* Universal */
 body {background: #fff; /* #f2e7ec; */ line-height:140%;}
@@ -28,7 +30,8 @@ a img:hover, img a:hover {opacity:.8; transition: all 0.2s ease 0s;}
 focus { transition: all 0.2s ease 0s; text-decoration:none;}
 h1, h2, h3, h4  {color:black; letter-spacing: 0.35px; }
 p {font-size:1.2em; line-height:135%; letter-spacing:0.25px;margin-bottom:15px;}
-div.panel-col p a {font-family: "Museo Regular";}
+section.col-sm-6 li, div.panel-col li {font-size:1.1em; line-height:140%;}
+section.col-sm-6 a, div.panel-col p a {font-family: "Museo Regular";}
 
 h1.page-header {color:black;}
 .row {margin:0px !important;}
