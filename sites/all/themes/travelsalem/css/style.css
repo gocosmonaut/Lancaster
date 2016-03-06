@@ -1338,9 +1338,11 @@ div#sponsorshow .jcarousel-next.jcarousel-next-horizontal {background:url(../../
 div#sponsorshow .jcarousel-next.jcarousel-next-horizontal:hover {background:url(../../../../default/files/siteart/arrow-right-on.png)	top left no-repeat; height:33px; width:18px;}
 
 div.logo-City-of-Salem, div.logo-Amtrak, div.logo-Pioneer-Trust-Bank, div.logo-The-Grand-Hotel-in-Salem,
-div.logo-Salem-Electric, div.logo-Salem-Health, div.logo-Huggins-Insurance, div.logo-Woodburn-Premium-Outlets {padding-top:20%;}
+div.logo-Salem-Electric, div.logo-Salem-Health, div.logo-Huggins-Insurance, div.logo-Woodburn-Premium-Outlets, div.logo-Cherriots {padding-top:20%;}
 
-div.logo-Polk-County, div.logo-Hampton-Inn, div.logo-Lancaster-Mall  {padding-top:10%;}
+div.logo-Left-Coast-Cellars {padding-top:15%;}
+
+div.logo-Polk-County, div.logo-Hampton-Inn, div.logo-Lancaster-Mall, div.logo-Hallie-Ford-Museum-of-Art, div.logo-Oregon-State-Fair   {padding-top:10%;}
 
 @media (max-width:480px){
 div#sponsorshow div.view-sponsor-slideshow li img {width:95%;}	
@@ -1391,6 +1393,7 @@ div#standard-panel div.panel-col-first div.inside h3
 /* MIDDLE */
     
 body.two-sidebars section.col-sm-6, div#standard-panel div.panel-col { border:none; width:100%; padding:0px;}
+body.two-sidebars section.col-sm-6 iframe, div#standard-panel div.panel-col iframe {width:100%; margin-top:15px; margin-bottom:15px;}
     
 /* RIGHT */
 
@@ -1410,6 +1413,7 @@ div.panel-col-first div.inside h3,
 /* MIDDLE */
     
 body.two-sidebars section.col-sm-6, div#standard-panel div.panel-col { padding:0px 20px 20px; width:65%; border-left:1px solid #ccc; border-right:1px solid #ccc;}
+div#standard-panel div.panel-col h1 {margin-top:0px;}    
     
 /* RIGHT */
 
@@ -1571,7 +1575,16 @@ div#standard-panel div.field-name-field-supporting-images blockquote.image-field
 div#standard-panel div.field-name-field-supporting-images blockquote.image-field-caption p {text-align:right; font-size:.9em; margin:6px 0px;}
 */
 
-div#standard-panel div.pane-node-field-related-files h4, div.views-label-field-related-files {background:#ccc; width:25%; padding:4px 8px 2px; text-transform:uppercase; font-size:1em; color:white; letter-spacing:1px; margin:12px 0px 3px;}
+div#standard-panel div.pane-node-field-related-files h4, div.views-label-field-related-files {
+    background: #ccc none repeat scroll 0 0;
+    color: white;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    margin: 12px 0 6px;
+    padding: 2px 8px 1px;
+    text-transform: uppercase;
+    width: 50%;}
+
 div#standard-panel div.pane-node-field-related-files {width:100%;}
 
 /* Listings Views */
@@ -1700,15 +1713,15 @@ div.listings-views div.views-field-body,
 div.listings-views div.views-field-field-listing-web-site,
 div.listings-views div.views-field-field-related-files,
 div.listings-views div.views-field-field-display-link-to-interactiv
-{padding-left:24%;}
+{padding-left:25%;}
 div.listings-views div.views-field-field-listing-web-site {padding-top:10px; padding-bottom:6px;}
-div.listings-views div.views-field-field-listing-web-site a {padding:2px 0px 8px 32px; }
+div.listings-views div.views-field-field-listing-web-site a {padding:2px 0px 8px 32px; font-size:0.9em; }
 div.listings-views div.views-field-field-display-link-to-interactiv {}    
-div.listings-views div.views-field-field-display-link-to-interactiv a {padding:2px 0px 8px 32px; }    
+div.listings-views div.views-field-field-display-link-to-interactiv a {padding:2px 0px 8px 32px; font-size:0.9em; }    
 
 div.listings-views div.views-field-title {padding-bottom:10px;}
 div.listings-views div.views-field-title a {font-size:1.3em; line-height:135%; }
-div.listings-views div.views-field-field-supporting-images {width:20%; margin:0px 4% 0px 0px; float:left;}
+div.listings-views div.views-field-field-supporting-images {width:20%; margin:0px 5% 0px 0px; float:left;}
 div.listings-views div.views-field-field-supporting-images img {width:100%; height:auto; max-height: 190px;}    
 }
     
@@ -1726,9 +1739,9 @@ div.listings-views div.views-field-field-related-files,
 div.listings-views div.views-field-field-display-link-to-interactiv
 {padding-left:24%;}
 div.listings-views div.views-field-field-listing-web-site {padding-top:10px; padding-bottom:6px;}
-div.listings-views div.views-field-field-listing-web-site a { background:url(../../../../default/files/siteart/web.png) top left no-repeat; padding:2px 0px 8px 32px;}
+div.listings-views div.views-field-field-listing-web-site a { background:url(../../../../default/files/siteart/web.png) top left no-repeat; padding:2px 0px 8px 32px; font-size:0.85em;}
 div.listings-views div.views-field-field-display-link-to-interactiv {}    
-div.listings-views div.views-field-field-display-link-to-interactiv a { background:url(../../../../default/files/siteart/pin.png) top left no-repeat; padding:2px 0px 8px 32px;}      
+div.listings-views div.views-field-field-display-link-to-interactiv a { background:url(../../../../default/files/siteart/pin.png) top left no-repeat; padding:2px 0px 8px 32px; font-size:0.85em;}      
 
 div.listings-views div.views-field-title {padding-bottom:10px;}
 div.listings-views div.views-field-title a {font-size:1.3em; line-height:135%; }
@@ -1748,15 +1761,15 @@ div.listings-views div.views-field-body,
 div.listings-views div.views-field-field-listing-web-site,
 div.listings-views div.views-field-field-related-files,
 div.listings-views div.views-field-field-display-link-to-interactiv
-{padding-left:24%;}
+{padding-left:25%;}
 div.listings-views div.views-field-field-listing-web-site {padding-top:10px; padding-bottom:6px;}
-div.listings-views div.views-field-field-listing-web-site a { background:url(../../../../default/files/siteart/web.png) top left no-repeat; padding:2px 0px 8px 32px;}
+div.listings-views div.views-field-field-listing-web-site a { background:url(../../../../default/files/siteart/web.png) top left no-repeat; padding:2px 0px 8px 32px; font-size:0.75em;}
 div.listings-views div.views-field-field-display-link-to-interactiv {}    
-div.listings-views div.views-field-field-display-link-to-interactiv a { background:url(../../../../default/files/siteart/pin.png) top left no-repeat;padding:2px 0px 8px 32px;}      
+div.listings-views div.views-field-field-display-link-to-interactiv a { background:url(../../../../default/files/siteart/pin.png) top left no-repeat;padding:2px 0px 8px 32px; font-size:0.75em;}      
 
 div.listings-views div.views-field-title {padding-bottom:10px;}
 div.listings-views div.views-field-title a {font-size:1.3em; line-height:135%; }
-div.listings-views div.views-field-field-supporting-images {width:20%; margin:0px 4% 0px 0px; float:left;}
+div.listings-views div.views-field-field-supporting-images {width:20%; margin:0px 5% 0px 0px; float:left;}
 div.listings-views div.views-field-field-supporting-images img {width:100%; height:auto;}    
 }        
 
@@ -1773,8 +1786,12 @@ div.listings-views div.views-field-field-listing-web-site,
 div.listings-views div.views-field-field-related-files,
 div.listings-views div.views-field-field-display-link-to-interactiv
 {padding-left:24%;}
+    
+div.listings-views div.views-field-field-listing-web-site
+{padding-left:0%;}
+    
 div.listings-views div.views-field-field-listing-web-site {padding-top:10px; padding-bottom:6px;}
-div.listings-views div.views-field-field-listing-web-site a { background:url(../../../../default/files/siteart/web.png) top left no-repeat; padding:2px 0px 8px 32px;}
+div.listings-views div.views-field-field-listing-web-site a { background:url(../../../../default/files/siteart/web-19.png) top left no-repeat; padding:2px 0px 8px 22px; font-size:.85em;}
 div.listings-views div.views-field-field-display-link-to-interactiv {}    
 div.listings-views div.views-field-field-display-link-to-interactiv a { background:url(../../../../default/files/siteart/pin.png) top left no-repeat;padding:2px 0px 8px 32px;}      
 
@@ -1801,7 +1818,7 @@ div.listings-views div.views-field-field-related-files,
 div.listings-views div.views-field-field-display-link-to-interactiv
 {padding-left:0%;}
 div.listings-views div.views-field-field-listing-web-site {padding-top:10px; padding-bottom:6px;}
-div.listings-views div.views-field-field-listing-web-site a { background:url(../../../../default/files/siteart/web.png) top left no-repeat; padding:2px 0px 8px 30px;}
+div.listings-views div.views-field-field-listing-web-site a { background:url(../../../../default/files/siteart/web-19.png) top left no-repeat; padding:2px 0px 8px 25px; font-size:.85em}
 div.listings-views div.views-field-field-display-link-to-interactiv {}    
 div.listings-views div.views-field-field-display-link-to-interactiv a { background:url(../../../../default/files/siteart/pin.png) top left no-repeat;padding:2px 0px 8px 30px;}      
 
