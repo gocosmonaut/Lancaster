@@ -40,6 +40,8 @@ h1.page-header {color:black;}
 .navbar-default {border:0px; background:none;}
 footer.footer.container  {width:100%; max-width:none;}
 div.row section.col-sm-12 {padding:0px !important;}
+span.required, span.form-required {color:#788e4a;}
+ul.pagination li.active span {background:#632548; border-color:#632548;}
 
 h1 {font-size:1.8em; color:#788e4a;}
 h2 {font-size:1.5em; color:#788e4a;}
@@ -2573,6 +2575,40 @@ ul.calendar-links, .region-content ul.calendar-links {
 }
 
 */
+
+/* Forms  */
+
+body.node-type-webform .form-control {display: block;
+    width: 100%;
+    height: inherit;
+    padding: 6px 9px;
+    font-size: 1.2em;
+    line-height: 100%;
+    color: #555555;
+    vertical-align: middle;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 4px; margin: 4px 0px 20px;
+}
+/* body.node-type-webform */ label.control-label {  text-transform: uppercase; letter-spacing: .75px; color: #333; margin-bottom:0px;}
+body.node-type-webform fieldset {margin-top:20px;}
+/* body.node-type-webform */ fieldset.webform-component-fieldset legend.panel-heading span.panel-title {font-size:1em; font-family: "Rotis"; color:#788e4a;}
+fieldset.webform-component-fieldset label.control-label {text-transform:none;}
+body.node-type-webform input.form-control.form-text {width:66.666%; color:black;}
+
+body.node-type-webform .webform-container-inline div.description {display: block;
+    margin-bottom: 16px;
+    font-size: 1em;
+    line-height: 140%;
+    padding-left: 3%;}
+body.node-type-webform fieldset div.help-block {
+color: #333;
+    font-size: 1em;
+    margin: 0px 0px 15px;
+    padding-left: 3%;
+    line-height: 140%;
+}
 
 /* Footer */
 
