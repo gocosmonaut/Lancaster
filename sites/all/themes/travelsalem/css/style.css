@@ -825,7 +825,7 @@ div.upcoming-block div.views-exposed-form div#edit-field-event-region-tid-wrappe
 div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper label,     
 div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper label,
 div.upcoming-block div.views-exposed-form div#edit-field-event-region-tid-wrapper label {
-text-transform:uppercase; letter-spacing:0.5px; font-family:"Museo Light"; font-weight:normal;}
+text-transform:uppercase; letter-spacing:1px; font-family:"Rotis"; font-weight:normal; color: #788e4a; font-size:1.1em;}
 
 div.upcoming-block div.views-exposed-form div.views-submit-button button,
 div.upcoming-block div.views-exposed-form div.views-reset-button button 
@@ -854,19 +854,22 @@ div.upcoming-block div.form-item {}
 div.panel-col div.upcoming-block {}   
 
 div.upcoming-block div.views-exposed-widget { }  
-div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper {width:49%; float:left;}
-div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper {width:49%; float:right;}
-div.upcoming-block div.views-exposed-form div#edit-field-event-region-tid-wrapper {width:49%; float:right;}
+div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper {width:48%; float:left; height:210px;}
+div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper {margin-bottom:10px;}    
+div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper,
+div.upcoming-block div.views-exposed-form div#edit-field-event-region-tid-wrapper
+{width: 48%; float: left; margin-left: 4%; height:100px;}
 
 div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper label,     
 div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper label,
-div.upcoming-block div.views-exposed-form div#edit-field-event-region-tid-wrapper label{} 
+div.upcoming-block div.views-exposed-form div#edit-field-event-region-tid-wrapper label{padding-bottom:8px;} 
     
-div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper label.control-label {float:left; text-align:left; width:35%; font-size:0.9em; padding-top:3px;}
+div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper label.control-label {float:left; text-align:left; width:35%; font-size:0.9em; padding-top:3px; color:black; font-family: "Museo Light";}
     
     
-div.upcoming-block div.views-exposed-form div.views-submit-button {}
-div.upcoming-block div.views-exposed-form div.views-reset-button {}    
+div.upcoming-block div.views-exposed-form div.views-submit-button {padding:0px; float:none;}
+div.upcoming-block div.views-exposed-form div.views-reset-button {}  
+body.event div.view-empty {padding-top:10px;}    
     
 div.upcoming-block div.views-exposed-form input {margin-right:0px;}
 div.upcoming-block div.views-exposed-form select {line-height:140%;}   
@@ -876,151 +879,19 @@ div.upcoming-block div#edit-date-filter-max-wrapper {width:100%;}
 div.panel-col div.upcoming-block .container-inline-date .form-item {width:100%; margin-right:0px;}
 div.panel-col div.upcoming-block .container-inline-date .form-item div.date-padding  { float:right; width:65%; }        
 div.panel-col div.upcoming-block .container-inline-date .form-item div.date-padding input.form-control  {width:100%; padding:3px 0px;}
-
-    
-/*    
-section.block-views h2.block-title, div.pane-upcoming-events-search-form h2.pane-title { font-size:1.3em; padding-bottom:12px; text-align:center; }
-    
-div.upcoming-block {width:90%; margin:0px auto;}
-.front div.upcoming-block {width:90%; margin:0px auto; max-width:900px;}  
-    
-div.panel-col div.upcoming-block {width:100%;}   
-    
-div.upcoming-block div.views-exposed-widget {padding:0px; float:none;}  
-    
-div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper
- {padding:1% 2% 0; width:48%; float:left; border:1px solid #ddd; border-radius:2px;}
-    
-div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper,
-div.upcoming-block div.views-exposed-form div#edit-field-event-region-tid-wrapper {padding:1.5% 2% 2%; width:24%; float:right; border:1px solid #ddd;}
-div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper {margin-left:1%;}    
-    
-div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper label,     
-div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper label,
-div.upcoming-block div.views-exposed-form div#edit-field-event-region-tid-wrapper label {text-transform:uppercase; letter-spacing:0.5px; font-family:"Museo Light"; font-weight:normal; font-size:0.9em;}    
-div.upcoming-block div.views-exposed-form div.views-submit-button {width:48%; float:right;}
-div.upcoming-block div.views-exposed-form div.views-reset-button {width:25%; float:right;}    
-    
-div.upcoming-block div.views-exposed-form div.views-submit-button button, div.upcoming-block div.views-exposed-form div.views-reset-button button   { padding:6px 14px; font-size:1.1em;  border:0px;  margin-top: 18px;}
-div.upcoming-block div.views-exposed-form div.views-submit-button button:hover, div.upcoming-block div.views-exposed-form div.views-reset-button button:hover {background:#788e4a;}
-    
-div.upcoming-block div.views-exposed-form input { text-align:center; margin-right:0px;}
-div.upcoming-block div.views-exposed-form select { text-align:left; font-size:1em; line-height:160%;}   
-
-div.upcoming-block div#edit-date-filter-min-wrapper {float:left; width:44%; padding:2%;}
-div.upcoming-block div#edit-date-filter-max-wrapper {float:right; width:44%; padding:2%}
-div.panel-col div.upcoming-block .container-inline-date .form-item, div.panel-col div.upcoming-block  .container-inline-date .form-item input  {width:100%;}
-
-div.upcoming-block div.form-item {margin-right: 0px;}	
-	
 }
-/*
 @media(min-width:980px) and (max-width:1199px){
-div.upcoming-block div#edit-date-filter-wrapper {padding:1.5% 2%; width:48%; float:left; border:1px solid #ddd;}   
-div.pane-upcoming-events-search-form {margin-top:24px;}
-section.block-views h2.block-title, div.pane-upcoming-events-search-form h2.pane-title { font-size:1.3em; padding-bottom:12px; text-align:center; }
-div.upcoming-block {width:90%; margin:0px auto;}
-div.panel-col div.upcoming-block {width:100%;}   
-div.upcoming-block div.views-exposed-widget {padding:0px; float:none;}  
-div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper {padding:1% 2% 0; width:48%; float:left; border:1px solid #ddd;}
-div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper,
-    div.upcoming-block div.views-exposed-form  div#edit-field-event-region-tid-wrapper {padding:1% 2% 2%; width:24%; float:right; border:1px solid #ddd;}
-div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper label,     
-div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper label,
-    div.upcoming-block div.views-exposed-form div#edit-field-event-region-tid-wrapper label {text-transform:uppercase; letter-spacing:0.5px; font-weight:normal; font-size:0.75em;}    
-div.upcoming-block div.views-exposed-form div.views-submit-button {width:48%; float:right;}
-div.upcoming-block div.views-exposed-form div.views-reset-button {width:25%; float:right;}    
-    
-div.upcoming-block div.views-exposed-form div.views-submit-button button, div.upcoming-block div.views-exposed-form div.views-reset-button button   { padding:6px 14px; font-size:1.1em;  border:0px;  margin-top: 18px;}
-div.upcoming-block div.views-exposed-form div.views-submit-button button:hover, div.upcoming-block div.views-exposed-form div.views-reset-button button:hover {background:#788e4a;}
-    
-div.upcoming-block div.views-exposed-form input { text-align:center; margin-right:0px;}
-div.upcoming-block div.views-exposed-form select { text-align:left; font-size:1em; line-height:140%;}   
-
-div.upcoming-block div#edit-date-filter-min-wrapper {float:left; width:44%; padding:2%;}
-div.upcoming-block div#edit-date-filter-max-wrapper {float:right; width:44%; padding:2%}
-div.panel-col div.upcoming-block .container-inline-date .form-item, div.panel-col div.upcoming-block  .container-inline-date .form-item input  {width:100%;}
-
-div.upcoming-block div.form-item {margin-right: 0px;}		
 }
+
 @media(min-width:768px) and (max-width:979px){
-div.upcoming-block div#edit-date-filter-wrapper {padding:1.5% 2%; width:48%; float:left; border:1px solid #ddd;}   
-div.pane-upcoming-events-search-form {margin-top:24px;}
-section.block-views h2.block-title, div.pane-upcoming-events-search-form h2.pane-title { font-size:1.3em; padding-bottom:12px; text-align:center; }
-div.upcoming-block {width:90%; margin:0px auto;}
-div.panel-col div.upcoming-block {width:100%;}   
-div.upcoming-block div.views-exposed-widget {padding:0px; float:none;}  
-div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper {padding:1% 2% 0; width:48%; float:left; border:1px solid #ddd;}
-div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper {padding:1% 2% 2%; width:48%; float:right; border:1px solid #ddd;}
-div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper label,     
-div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper label {text-transform:uppercase; letter-spacing:1px; font-weight:normal;}    
-div.upcoming-block div.views-exposed-form div.views-submit-button {width:48%; float:right;}
-div.upcoming-block div.views-exposed-form div.views-reset-button {width:25%; float:right;}    
-    
-div.upcoming-block div.views-exposed-form div.views-submit-button button, div.upcoming-block div.views-exposed-form div.views-reset-button button   { padding:6px 14px; font-size:1.1em;  border:0px;  margin-top: 18px;}
-div.upcoming-block div.views-exposed-form div.views-submit-button button:hover, div.upcoming-block div.views-exposed-form div.views-reset-button button:hover {background:#788e4a;}
-    
-div.upcoming-block div.views-exposed-form input { text-align:center; margin-right:0px;}
-div.upcoming-block div.views-exposed-form select { text-align:left; font-size:1.35em; line-height:140%;}   
-
-div.upcoming-block div#edit-date-filter-min-wrapper {float:left; width:44%; padding:2%;}
-div.upcoming-block div#edit-date-filter-max-wrapper {float:right; width:44%; padding:2%}
-div.panel-col div.upcoming-block .container-inline-date .form-item, div.panel-col div.upcoming-block  .container-inline-date .form-item input  {width:100%;}
-
-div.upcoming-block div.form-item {margin-right: 0px;}		
 }
+
 @media(min-width:481px) and (max-width:767px){
-div.upcoming-block div#edit-date-filter-wrapper {padding:1.5% 2%; width:48%; float:left; border:1px solid #ddd;}   
-div.pane-upcoming-events-search-form {margin-top:24px;}
-section.block-views h2.block-title, div.pane-upcoming-events-search-form h2.pane-title { font-size:1.3em; padding-bottom:12px; text-align:center; }
-div.upcoming-block {width:90%; margin:0px auto;}
-div.panel-col div.upcoming-block {width:100%;}   
-div.upcoming-block div.views-exposed-widget {padding:0px; float:none;}  
-div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper {padding:2%; width:100%; float:left; border:1px solid #ddd;}
-div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper {padding:2%; width:100%; float:right; border:1px solid #ddd; margin-top:12px;}
-div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper label,     
-div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper label {text-transform:uppercase; letter-spacing:1px; font-weight:normal;}    
-div.upcoming-block div.views-exposed-form div.views-submit-button {width:48%; float:none; margin:0px auto;}
-div.upcoming-block div.views-exposed-form div.views-reset-button {width:25%; float:right;}    
-    
-div.upcoming-block div.views-exposed-form div.views-submit-button button, div.upcoming-block div.views-exposed-form div.views-reset-button button   { padding:6px 14px; font-size:1.1em;  border:0px;  margin-top: 18px;}
-div.upcoming-block div.views-exposed-form div.views-submit-button button:hover, div.upcoming-block div.views-exposed-form div.views-reset-button button:hover {background:#788e4a;}
-    
-div.upcoming-block div.views-exposed-form input { text-align:center; margin-right:0px;}
-div.upcoming-block div.views-exposed-form select { text-align:left; font-size:1.2em; line-height:150%;}   
-
-div.upcoming-block div#edit-date-filter-min-wrapper {float:left; width:44%; padding:2%;}
-div.upcoming-block div#edit-date-filter-max-wrapper {float:right; width:44%; padding:2%}
-div.panel-col div.upcoming-block .container-inline-date .form-item, div.panel-col div.upcoming-block  .container-inline-date .form-item input  {width:100%;}
-
-div.upcoming-block div.form-item {margin-right: 0px;}		
 }
+
 @media (max-width:480px){
-div.upcoming-block div#edit-date-filter-wrapper {padding:1.5% 2%; width:48%; float:left; border:1px solid #ddd;}   
-div.pane-upcoming-events-search-form {margin-top:24px;}
-section.block-views h2.block-title, div.pane-upcoming-events-search-form h2.pane-title { font-size:1.3em; padding-bottom:12px; text-align:center; }
-div.upcoming-block {width:90%; margin:0px auto;}
-div.panel-col div.upcoming-block {width:100%;}   
-div.upcoming-block div.views-exposed-widget {padding:0px; float:none;}  
-div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper {padding:2%; width:100%; float:left; border:1px solid #ddd;}
-div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper {padding:2%; width:100%; float:right; border:1px solid #ddd; margin-top:12px;}
-div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper label,     
-div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper label {text-transform:uppercase; letter-spacing:1px; font-weight:normal;}    
-div.upcoming-block div.views-exposed-form div.views-submit-button {width:48%; float:none; margin:0px auto;}
-div.upcoming-block div.views-exposed-form div.views-reset-button {width:25%; float:right;}    
-    
-div.upcoming-block div.views-exposed-form div.views-submit-button button, div.upcoming-block div.views-exposed-form div.views-reset-button button   { padding:6px 14px; font-size:1.1em;  border:0px;  margin-top: 18px;}
-div.upcoming-block div.views-exposed-form div.views-submit-button button:hover, div.upcoming-block div.views-exposed-form div.views-reset-button button:hover {background:#788e4a;}
-    
-div.upcoming-block div.views-exposed-form input { text-align:center; margin-right:0px;}
-div.upcoming-block div.views-exposed-form select { text-align:left; font-size:1.2em; line-height:150%;}   
-
-div.upcoming-block div#edit-date-filter-min-wrapper {float:left; width:44%; padding:2%;}
-div.upcoming-block div#edit-date-filter-max-wrapper {float:right; width:44%; padding:2%}
-div.panel-col div.upcoming-block .container-inline-date .form-item, div.panel-col div.upcoming-block  .container-inline-date .form-item input  {width:100%;}
-
-div.upcoming-block div.form-item {margin-right: 0px;}		
 }
+
 
 /* Calendar Block Search Results */
 
