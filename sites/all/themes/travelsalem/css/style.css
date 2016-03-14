@@ -841,24 +841,102 @@ div#fullcalendar h4 a:hover {background:#788e4a;}
 .front div.upcoming-block .container-inline-date .form-item div.date-padding  { float:right; width:100%;
 }}
 
+
 /* Event Search Block on Calendar Grid Page */ 
 
+body.page-events-event-calendar div.upcoming-block .container-inline-date .form-item div.date-padding input.form-control  {width:100%; padding:3px 0px; text-align:center;}
+body.page-events-event-calendar div.upcoming-block div.views-exposed-form div.views-submit-button button
+{margin-bottom:20px; }
+
 @media(min-width:1200px){
+body.page-events-event-calendar div.upcoming-block {width:90%; margin:0px auto; max-width: 900px;}
+body.page-events-event-calendar div.pane-upcoming-events-search-form {min-height:340px; float:left; width:100%;}
+body.page-events-event-calendar div.upcoming-block div.item-list {float:left;}     
+
+body.page-events-event-calendar div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper {width:48%; float:left; height:210px;}
+    
+body.page-events-event-calendar div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper {margin-bottom:10px;}  
+    
+body.page-events-event-calendar div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper,
+body.page-events-event-calendar div.upcoming-block div.views-exposed-form div#edit-field-event-region-tid-wrapper
+{width:48%; float: left; margin-left: 4%; height:100px;}
+
+body.page-events-event-calendar div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper label,     
+body.page-events-event-calendar div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper label,
+body.page-events-event-calendar div.upcoming-block div.views-exposed-form div#edit-field-event-region-tid-wrapper label{padding-bottom:8px;} 
+    
+body.page-events-event-calendar div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper label.control-label {float:left; text-align:left; width:35%; font-size:0.9em; padding-top:3px; color:black; font-family: "Museo Light";}
+     
+body.page-events-event-calendar div.upcoming-block div.views-exposed-form div.views-submit-button {padding:0px; float:none;}
+body.page-events-event-calendar div.upcoming-block div.views-exposed-form div.views-reset-button {}  
+body.page-events-event-calendar body.event div.view-empty {padding-top:10px;}    
+    
+body.page-events-event-calendar div.upcoming-block div.views-exposed-form input {margin-right:0px;}
+body.page-events-event-calendar div.upcoming-block div.views-exposed-form select {line-height:140%;}   
+
+body.page-events-event-calendar div.upcoming-block div#edit-date-filter-min-wrapper {width:100%;}
+body.page-events-event-calendar div.upcoming-block div#edit-date-filter-max-wrapper {width:100%;}
+body.page-events-event-calendar div.upcoming-block .container-inline-date .form-item {width:100%; margin-right:0px;}
+body.page-events-event-calendar div.upcoming-block .container-inline-date .form-item div.date-padding  { float:right; width:65%; }        
 }
+
 @media(min-width:980px) and (max-width:1199px){
-}
+body.page-events-event-calendar div.upcoming-block {width:90%; margin:0px auto; max-width: 900px;}  
+    
+body.page-events-event-calendar div.pane-upcoming-events-search-form {min-height:340px; float:left; width:100%;}  
+body.page-events-event-calendar div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper label.control-label {float:left; text-align:left; width:35%; font-size:0.9em; padding-top:3px; color:black; font-family: "Museo Light";}
+    
+body.page-events-event-calendar div.upcoming-block div.views-exposed-form input {width:100%;}   
+body.page-events-event-calendar div.upcoming-block div#edit-date-filter-min-wrapper {width:100%;}
+body.page-events-event-calendar div.upcoming-block div#edit-date-filter-max-wrapper {width:100%;}    
+body.page-events-event-calendar div.upcoming-block .container-inline-date .form-item {width:100%; margin-right:0px;}
+body.page-events-event-calendar div.upcoming-block .container-inline-date .form-item div.date-padding  { float:right; width:65%; }    }
+
 @media(min-width:768px) and (max-width:979px){
-}
+body.page-events-event-calendar div.upcoming-block {width:90%; margin:0px auto; max-width: 900px;}
+body.page-events-event-calendar div.pane-upcoming-events-search-form {min-height:340px; float:left; width:100%;}
+
+body.page-events-event-calendar div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper label.control-label {float:left; text-align:left; width:35%; font-size:0.9em; padding-top:3px; color:black; font-family: "Museo Light";}
+    
+body.page-events-event-calendar div.upcoming-block div.views-exposed-form input {width:100%;}   
+body.page-events-event-calendar div.upcoming-block div#edit-date-filter-min-wrapper {width:100%;}
+body.page-events-event-calendar div.upcoming-block div#edit-date-filter-max-wrapper {width:100%;}    
+body.page-events-event-calendar div.upcoming-block .container-inline-date .form-item {width:100%; margin-right:0px;}
+body.page-events-event-calendar div.upcoming-block .container-inline-date .form-item div.date-padding  { float:right; width:65%; }    }
+    
 @media(min-width:481px) and (max-width:767px){
+body.page-events-event-calendar div.upcoming-block {width:80%; margin:0px auto; min-width:460px;}
+body.page-events-event-calendar div.pane-upcoming-events-search-form {min-height:340px; float:left; width:100%;}
+    
+body.page-events-event-calendar div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper label.control-label {float:left; text-align:left; width:35%; font-size:0.9em; padding-top:3px; color:black; font-family: "Museo Light";}
+    
+body.page-events-event-calendar div.upcoming-block div.views-exposed-form input {width:100%;}   
+body.page-events-event-calendar div.upcoming-block div#edit-date-filter-min-wrapper {width:100%;}
+body.page-events-event-calendar div.upcoming-block div#edit-date-filter-max-wrapper {width:100%;}    
+body.page-events-event-calendar div.upcoming-block .container-inline-date .form-item {width:100%; margin-right:0px;}
+body.page-events-event-calendar div.upcoming-block .container-inline-date .form-item div.date-padding  { float:right; width:65%; }  
 }
 @media (max-width:480px){
-}
+body.page-events-event-calendar div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper, 
+body.page-events-event-calendar div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper,
+body.page-events-event-calendar div.upcoming-block div.views-exposed-form div#edit-field-event-region-tid-wrapper
+{padding:3% 4%;}
+    
+body.page-events-event-calendar div.upcoming-block {width:80%; margin:0px auto; }
+body.page-events-event-calendar div.pane-upcoming-events-search-form {min-height:340px; float:left; width:100%;}
+body.page-events-event-calendar div.upcoming-block div.views-exposed-form input {width:100%;}   
+body.page-events-event-calendar div.upcoming-block div#edit-date-filter-min-wrapper {width:100%;}
+body.page-events-event-calendar div.upcoming-block div#edit-date-filter-max-wrapper {width:100%;}    
+body.page-events-event-calendar div.upcoming-block .container-inline-date .form-item {width:100%; margin-right:0px;}
+body.page-events-event-calendar div.upcoming-block .container-inline-date .form-item div.date-padding  { float:right; width:100%;
+}}
 
 /* Event Search Block on List View Page */ 
+body.page-node-40255 div.pane-upcoming-events-search-form,
+body.page-node-40255 div.pane-upcoming-events-search-form h2.pane-title  {margin-top:0px;} 
 
 @media(min-width:1200px){
-body.page-node-40255 div.pane-upcoming-events-search-form,
-body.page-node-40255 div.pane-upcoming-events-search-form h2.pane-title  {margin-top:0px;}    
+  
 }
 @media(min-width:980px) and (max-width:1199px){
 }
@@ -867,6 +945,12 @@ body.page-node-40255 div.pane-upcoming-events-search-form h2.pane-title  {margin
 @media(min-width:481px) and (max-width:767px){
 }
 @media (max-width:480px){
+body.page-node-40255 div.pane-upcoming-events-search-form,
+body.page-node-40255 div.pane-upcoming-events-search-form h2.pane-title  {margin-top:24px;}  
+body.page-node-40255 div.pane-upcoming-events-search-form div#edit-date-filter-wrapper, 
+body.page-node-40255 div.pane-upcoming-events-search-form div#edit-field-event-category-tid-wrapper,
+body.page-node-40255 div.pane-upcoming-events-search-form div#edit-field-event-region-tid-wrapper
+{padding:3% 4% !important;}    
 }
 
 /* Event Search Blocks on Subpages */    
@@ -1057,11 +1141,11 @@ div.upcoming-block div.form-item {}
 div.panel-col div.upcoming-block {}   
 
 div.upcoming-block div.views-exposed-widget { }  
-div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper {width:100%; float:none; height:auto; margin-bottom:10px;}
+div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper {width:100%; float:none; height:auto; margin-bottom:10px; 3% 4%;}
 div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper {margin-bottom:10px;}    
 div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper,
 div.upcoming-block div.views-exposed-form div#edit-field-event-region-tid-wrapper
-{width: 100%; float: none; margin-left: 0%; height:auto;}
+{width: 100%; float: none; margin-left: 0%; height:auto; padding:3% 4%;}
 
 div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper label,     
 div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper label,
@@ -1181,6 +1265,7 @@ body.page-node-40255 div.upcoming-block div.item-list ul li.views-row-last {bord
 }
 @media(min-width:980px) and (max-width:1199px){
 body.page-node-40255 div.upcoming-block div.item-list ul li.views-row {border-bottom:1px solid #ccc; padding-top:10px;}    
+    
 body.page-node-40255 div.upcoming-block div.item-list ul li.views-row-last {border:0px;}    
 }
 @media(min-width:768px) and (max-width:979px){
