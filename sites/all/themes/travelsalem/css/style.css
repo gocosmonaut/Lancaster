@@ -1608,6 +1608,11 @@ div#homerotator{margin: 20px auto; width: 100%; overflow:hidden;}
 div#standard-panel div.pane-ad-rotator {margin-bottom:12px;}
 div#standard-panel div.pane-ad-rotator img {height:auto; max-width:160px;}
 
+/* Booking Engine Placeholder */
+iframe#bookframe  {max-width:278px !important; top:0 !important; border:1px solid brown;     border: 1px solid #ddd; border-radius: 3px;}
+iframe#bookframe div#gagdet {width:100% !important; max-width:278px !important;}
+iframe#bookframe div#gagdet input#submit {background:red !important;}
+
 /* Two-Column Subpages */
 
 /* LEFT */
@@ -2832,36 +2837,86 @@ ul.calendar-links, .region-content ul.calendar-links {
 
 /* Forms  */
 
-body.node-type-webform .form-control {display: block;
-    width: 100%;
-    height: inherit;
-    padding: 6px 9px;
-    font-size: 1.2em;
-    line-height: 100%;
-    color: #555555;
-    vertical-align: middle;
-    background-color: #ffffff;
-    background-image: none;
-    border: 1px solid #cccccc;
-    border-radius: 4px; margin: 4px 0px 20px;
-}
-/* body.node-type-webform */ label.control-label {  text-transform: uppercase; letter-spacing: .75px; color: #333; margin-bottom:5px; font-weight:300;}
-body.node-type-webform fieldset {margin-top:20px;}
-/* body.node-type-webform */ fieldset.webform-component-fieldset legend.panel-heading span.panel-title {font-size:1em; font-family: "Rotis"; color:#788e4a;}
-fieldset.webform-component-fieldset label.control-label {text-transform:none;}
+body.node-type-webform form.webform-client-form .form-control {display: block; width: 100%; height: inherit; padding: 6px 9px; font-size: 1.2em; line-height: 100%; color: #555555; vertical-align: middle; background-color: #ffffff; background-image: none; border: 1px solid #cccccc; border-radius: 4px; margin: 4px 0px 20px; }
+/* body.node-type-webform */ label.control-label {  letter-spacing: .5px; color: #333; margin-bottom:5px; font-weight:300;}
+body.node-type-webform fieldset {/* margin-top:20px;*/ border:2px solid #ccc;}
+body.node-type-webform fieldset .panel-heading {background:#e9e9e9;}
+body.node-type-webform fieldset.webform-component-fieldset legend.panel-heading span.panel-title,
+body.node-type-webform fieldset .panel-heading a.panel-title {font-size:1em; font-family: "Rotis"; color:#788e4a;}
+body.node-type-webform fieldset.webform-component-fieldset label.control-label {text-transform:none;}
 body.node-type-webform input.form-control.form-text {width:66.666%; color:black;}
+body.node-type-webform .webform-container-inline div.description {display: block; margin-bottom: 16px; font-size: 1em; line-height: 140%; padding-left: 3%;}
+body.node-type-webform fieldset div.help-block {color: #333; font-size: 1em; margin: 0px 0px 15px; padding-left: 3%;line-height: 140%;}
+body.node-type-webform form.webform-client-form input.webform-calendar{ height:32px; width:32px;}
+body.node-type-webform form.webform-client-form div#webform-component-date-token p {text-align:center;}
 
-body.node-type-webform .webform-container-inline div.description {display: block;
-    margin-bottom: 16px;
-    font-size: 1em;
-    line-height: 140%;
-    padding-left: 3%;}
-body.node-type-webform fieldset div.help-block {
-color: #333;
-    font-size: 1em;
-    margin: 0px 0px 15px;
-    padding-left: 3%;
-    line-height: 140%;
+body.node-type-webform form.webform-client-form div.form-item-submitted-show-dates-start-time-ampm.radio,
+body.node-type-webform form.webform-client-form div.form-item-submitted-show-dates-move-out-time-ampm.radio,
+body.node-type-webform form.webform-client-form div.form-item-submitted-meeting-dates-start-time-2-ampm.radio,
+body.node-type-webform form.webform-client-form div.form-item-submitted-meeting-dates-=-move-out-time-2-ampm.radio {padding-left:0px;}
+
+body.node-type-webform form.webform-client-form div.form-item-submitted-show-dates-start-time-ampm.radio input,
+body.node-type-webform form.webform-client-form div.form-item-submitted-show-dates-move-out-time-ampm.radio input,
+body.node-type-webform form.webform-client-form div.form-item-submitted-meeting-dates-start-time-2-ampm.radio input,
+body.node-type-webform form.webform-client-form div.form-item-submitted-meeting-dates-move-out-time-2-ampm.radio input {float:none;margin-left:0px; margin-right:8px;}
+
+body.node-type-webform form.webform-client-form div.form-actions.form-wrapper {text-align:center; margin:12px 0;}
+body.node-type-webform form.webform-client-form div.form-actions.form-wrapper button.btn-primary.form-submit {border:0px; border-radius:3px; font-size:1.4em; background:#632548; text-transform:uppercase; letter-spacing:1px;}
+body.node-type-webform form.webform-client-form div.form-actions.form-wrapper button.btn-primary.form-submit:hover {background:red;}
+
+@media(min-width:1200px){
+body.node-type-webform form.webform-client-form {border-radius:3px; background:#f7f7f7; padding:2%; margin-top:12px;}   
+    
+body.node-type-webform form.webform-client-form .form-control.form-file {width:80%; margin-top:0px;}   
+body.node-type-webform form.webform-client-form div.form-managed-file span.input-group-btn   {vertical-align:top; }       
+body.node-type-webform form.webform-client-form div.form-managed-file button.btn-primary { background:#632548; border-radius:3px; border:0px; }
+    
+    
+body.node-type-webform form.webform-client-form div.webform-component-date {margin-bottom:20px;} 
+body.node-type-webform.ff form.webform-client-form div.webform-component-date {margin-bottom:32px;}   
+
+body.node-type-webform form.webform-client-form div.webform-component-webform_time label {margin-right:0px;}    
+body.node-type-webform form.webform-client-form div.webform-component-webform_time {margin-bottom:42px;} 
+body.node-type-webform.ff form.webform-client-form div.webform-component-webform_time {margin-bottom:42px;}   
+    
+body.node-type-webform form.webform-client-form select.day,
+body.node-type-webform form.webform-client-form select.month,
+body.node-type-webform form.webform-client-form select.year,
+body.node-type-webform form.webform-client-form select.hour, 
+body.node-type-webform form.webform-client-form select.minute { float:left; margin-right:4%;}   
+
+body.node-type-webform form.webform-client-form select.day {width:12%;}
+body.node-type-webform form.webform-client-form select.month {width:18%;}
+    
+body.node-type-webform form.webform-client-form select.year,
+body.node-type-webform form.webform-client-form select.hour, 
+body.node-type-webform form.webform-client-form select.minute {width:14%;}    
+    
+body.node-type-webform form.webform-client-form div#webform-component-general-information--phone input,
+body.node-type-webform form.webform-client-form div#webform-component-general-information--fax input {width:26%;}
+    
+body.node-type-webform form.webform-client-form div#webform-component-general-information--city input {width:31%;}    
+
+body.node-type-webform form.webform-client-form div#webform-component-general-information--zip input,
+body.node-type-webform form.webform-client-form div#webform-component-show-dates--show-attendance input   ,
+body.node-type-webform form.webform-client-form div#webform-component-show-dates--show-space input,
+body.node-type-webform form.webform-client-form div#webform-component-show-dates--net-square-feet input,
+body.node-type-webform form.webform-client-form div#webform-component-show-dates--gross-square-feet input {width:21%;}  
+    
+body.node-type-webform form.webform-client-form div.webform-component-select select {margin-left:20px; font-family:"Museo Light"; font-size:1.2em; margin-bottom:20px;}
+
+}
+
+
+@media(min-width:980px) and (max-width:1199px){
+body.node-type-webform form.webform-client-form {border-radius:3px; background:#f7f7f7; padding:2%; margin-top:12px;}    
+}
+@media(min-width:768px) and (max-width:979px){
+}
+@media(min-width:481px) and (max-width:767px){
+}
+@media (max-width:480px){
+body.node-type-webform input.form-control.form-text {width:100%; color:black;}    
 }
 
 /* Footer */
