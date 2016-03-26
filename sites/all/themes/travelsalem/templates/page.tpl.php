@@ -113,7 +113,7 @@
   </div>
 </header>
 
-<div class="main-container container">
+<div class="main-container container" >
 
   <header role="banner" id="page-header">
     <?php if (!empty($site_slogan)): ?>
@@ -122,7 +122,9 @@
 
     <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
-
+      <?php if (!empty($page['highlighted'])): ?>
+        <div class="highlighted" data-spy="affix" data-offset-top="200" role="banner"><?php print render($page['highlighted']); ?></div>
+      <?php endif; ?>
   <div class="row">
 
     <?php if (!empty($page['sidebar_first'])): ?>
@@ -132,9 +134,7 @@
     <?php endif; ?>
 
     <section<?php print $content_column_class; ?>>
-      <?php if (!empty($page['highlighted'])): ?>
-        <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
-      <?php endif; ?>
+
       <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>

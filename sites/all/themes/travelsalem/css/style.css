@@ -152,6 +152,37 @@ header#navbar a.logo.navbar-btn img { width:100%;}
 
 }
 
+/* Scrolling Page Title */
+.front div.highlighted {display:none;}
+div.highlighted {position:fixed; background:#fafafa; padding: 10px 6px 6px; border-bottom:1px solid #ddd; text-align:center; opacity:0;  max-width:1170px; margin:0px auto; box-shadow:10px 10px 100px white; }
+div.highlighted p {font-size: 1.65em;font-family: "Rotis";line-height: 120%;}
+div.highlighted p a {color:#788e4a;}
+div.highlighted.affix-top { opacity:0; transition: all 0.3s ease 0s; padding:0px; margin-top:-100px; }
+div.highlighted.affix { transition: all 0.3s ease 0s;   opacity:1.0;   z-index:200; }
+
+@media(min-width:1200px){
+div.highlighted {width:100%;}  
+div.highlighted.affix {  margin-top:-32px;}
+}
+@media(min-width:980px) and (max-width:1199px){
+div.highlighted {width:96%;}  
+div.highlighted.affix {  margin-top:-32px;}    
+}
+@media(min-width:768px) and (max-width:979px){
+div.highlighted {width:94%;}     
+div.highlighted.affix {  margin-top:-32px;}  
+}
+
+@media(min-width:481px) and (max-width:767px){
+div.highlighted {width:94%;}     
+div.highlighted.affix {  margin-top:-28px;}  
+}
+
+@media (max-width:480px){
+div.highlighted {width:96%;}     
+div.highlighted.affix {  margin-top:-12px;}  
+}
+
 /* Front */
 .panel-separator {display:none;}
 
@@ -313,14 +344,20 @@ section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a { padd
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a {font-size:1em; letter-spacing:0.5px; border-bottom:1px solid #bbb;}    
 }
 @media(min-width:768px) and (max-width:979px){
-section.block-tb-megamenu {position:absolute; right:3%; top:12px;}
+section.block-tb-megamenu {position:absolute; right:3%; top:12px; display:none;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a {font-size:1em; letter-spacing:0.5px; border-bottom:1px solid #bbb;}       
 }
 @media(min-width:481px) and (max-width:767px){
-section.block-tb-megamenu {position:absolute; right:3%; top:12px;}
+section.block-tb-megamenu {position:absolute; right:3%; top:12px; display:none;}
 }
 @media (max-width:480px){
-section.block-tb-megamenu {position:absolute; right:3%; top:12px;}
+section.block-tb-megamenu {position:absolute; right:3%; top:12px; display:none;}
+}
+
+/* Main Menu Superfish */
+
+@media(min-width:980px){
+section#block-superfish-1 { display:none;}
 }
 
 
