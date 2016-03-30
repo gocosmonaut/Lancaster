@@ -284,7 +284,7 @@ button.btn.btn-primary {border-radius:0px 6px 6px 0px; border:1px solid #b7b7b7;
 .navbar #block-search-form {margin-top:10px; float:right;}
 }
 @media(min-width:768px) and (max-width:979px){
-.navbar #block-search-form {margin-right:6%; float:right; margin-top:10px;}
+.navbar #block-search-form {margin-right:10%; float:right; margin-top:10px;}
 }
 @media(min-width:481px) and (max-width:767px){
 .navbar #block-search-form {position:absolute;right:12%; top:10px; float:none;}
@@ -356,8 +356,29 @@ section.block-tb-megamenu {position:absolute; right:3%; top:12px; display:none;}
 
 /* Main Menu Superfish */
 
+section#block-superfish-1 { position:absolute; width:inherit;}
+section#block-superfish-1 div.sf-accordion-toggle {width:100%;}
+section#block-superfish-1 div.sf-accordion-toggle a, section#block-superfish-1 div.sf-accordion-toggle a.sf-expanded {padding:0px; border:2px solid #999;  border-radius:6px; width:6%; float:right;}
+section#block-superfish-1 div.sf-accordion-toggle a span {height:100%; width:100%;}
+
 @media(min-width:980px){
-section#block-superfish-1 { display:none;}
+section#block-superfish-1 {display:none;}
+}
+
+@media(min-width:768px) and (max-width:979px){
+section#block-superfish-1 {right:3%; top:10px;} 
+section#block-superfish-1 div.sf-accordion-toggle {}    
+section#block-superfish-1 div.sf-accordion-toggle a {width:100%; height:34px; }
+    
+    ul.sf-menu.sf-accordion {float:right; width:50%;}
+    ul.sf-menu.sf-accordion a {padding-right:10px !important; font-size:1.35em; font-family: "Rotis"; padding:0.5em 0.5em 0.5em 0.75em !important;}
+      ul.sf-menu.sf-accordion li.sf-expanded {background:white !important;}
+}
+
+@media(min-width:481px) and (max-width:767px){
+}
+
+@media (max-width:480px){
 }
 
 
