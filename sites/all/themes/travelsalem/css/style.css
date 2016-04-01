@@ -2896,15 +2896,26 @@ ul.calendar-links, .region-content ul.calendar-links {
 /* Forms  */
 
 body.node-type-webform form.webform-client-form .form-control {display: block; width: 100%; height: inherit; padding: 6px 9px; font-size: 1.2em; line-height: 100%; color: #555555; vertical-align: middle; background-color: #ffffff; background-image: none; border: 1px solid #cccccc; border-radius: 4px; margin: 4px 0px 20px; }
-/* body.node-type-webform */ label.control-label {  letter-spacing: .5px; color: #333; margin-bottom:5px; font-weight:300;}
-body.node-type-webform fieldset {/* margin-top:20px;*/ border:2px solid #ccc;}
-body.node-type-webform fieldset .panel-heading {background:#e9e9e9;}
-body.node-type-webform fieldset.webform-component-fieldset legend.panel-heading span.panel-title,
-body.node-type-webform fieldset .panel-heading a.panel-title {font-size:1em; font-family: "Rotis"; color:#788e4a;}
+/* body.node-type-webform  label.control-label {  letter-spacing: .5px; color: #333; margin-bottom:5px; font-weight:300;}*/
+body.node-type-webform  label.control-label {text-transform:uppercase;  letter-spacing:1px; margin-bottom:6px; font-size:.85em;}
+body.node-type-webform.chrome  label.control-label {font-weight:bold;}
+body.node-type-webform.ff  label.control-label {font-weight:500;}
 
-body.node-type-webform fieldset.webform-component-fieldset label.control-label {text-transform:none;}
+body.node-type-webform fieldset {/* margin-top:20px;*/ border:2px solid #ccc;}
+body.node-type-webform fieldset .panel-heading {background:#e9e9e9; padding:6px 15px !important;}
+body.node-type-webform fieldset.webform-component-fieldset legend.panel-heading span.panel-title,
+body.node-type-webform fieldset .panel-heading a.panel-title {font-size:1em; font-family: "Rotis"; color:#788e4a; line-height:140%; }
+body.node-type-webform form.webform-client-form div.description {margin-bottom:12px; padding-left: 20px;}
+
+/* body.node-type-webform fieldset.webform-component-fieldset label.control-label {text-transform:none;} */
 body.node-type-webform input.form-control.form-text {width:66.666%; color:black;}
-body.node-type-webform fieldset#webform-component-planning-a-move-to-salem label.control-label {display:none;}
+body.node-type-webform fieldset#webform-component-planning-a-move-to-salem label.control-label,
+body.node-type-webform fieldset#webform-component-would-you-like-to-receive-our-e-newsletters-if-so-which-e-newsletter-are-you-interested-in label.control-label 
+{display:none;}
+
+
+body.node-type-webform fieldset#webform-component-would-you-like-to-receive-our-e-newsletters-if-so-which-e-newsletter-are-you-interested-in  div.form-checkboxes label.control-label {display:block;}
+
 body.node-type-webform fieldset#webform-component-planning-a-move-to-salem div.form-checkboxes label.control-label {display:block;     font-weight: 600;
     color: black;}
 
@@ -2932,7 +2943,7 @@ body.node-type-webform form.webform-client-form div.form-actions.form-wrapper bu
 
 
 @media(min-width:1200px){
-body.node-type-webform form.webform-client-form {border-radius:3px; background:#f7f7f7; padding:2%; margin-top:12px;}   
+body.node-type-webform form.webform-client-form {border-radius:3px; background:#f7f7f7; padding:2%; margin-top:18px;}   
     
 body.node-type-webform form.webform-client-form .form-control.form-file {width:80%; margin-top:0px;}   
 body.node-type-webform form.webform-client-form div.form-managed-file span.input-group-btn   {vertical-align:top; }       
@@ -2942,9 +2953,12 @@ body.node-type-webform form.webform-client-form div.form-managed-file button.btn
 body.node-type-webform form.webform-client-form div.webform-component-date {margin-bottom:20px;} 
 body.node-type-webform.ff form.webform-client-form div.webform-component-date {margin-bottom:32px;}   
 
-body.node-type-webform form.webform-client-form div.webform-component-webform_time label {margin-right:0px;}    
+body.node-type-webform form.webform-client-form div.webform-component-webform_time label {margin-right:4px;}    
 body.node-type-webform form.webform-client-form div.webform-component-webform_time {margin-bottom:42px;} 
 body.node-type-webform.ff form.webform-client-form div.webform-component-webform_time {margin-bottom:42px;}   
+    
+body.node-type-webform div#webform-component-date-of-birth  {margin-bottom:50px;}
+body.node-type-webform.ff div#webform-component-date-of-birth  {margin-bottom:60px;}    
     
 body.node-type-webform form.webform-client-form select.day,
 body.node-type-webform form.webform-client-form select.month,
@@ -2961,13 +2975,15 @@ body.node-type-webform form.webform-client-form select.minute {width:14%;}
     
 body.node-type-webform form.webform-client-form div#webform-component-general-information--phone input,
 body.node-type-webform form.webform-client-form div#webform-component-general-information--fax input,
-input#edit-submitted-phone, input#edit-submitted-first-name    
+input#edit-submitted-phone, input#edit-submitted-first-name, input#edit-submitted-emergency-contact-contact-phone    
 {width:26% !important;}
     
 body.node-type-webform form.webform-client-form div#webform-component-general-information--city input,
 input#edit-submitted-last-name,
 input#edit-submitted-free-visitors-guide-city,
-input#edit-submitted-free-visitors-guide-country
+input#edit-submitted-free-visitors-guide-country,
+input#edit-submitted-country
+    
 {width:31% !important;}    
 
 body.node-type-webform form.webform-client-form div#webform-component-general-information--zip input,
@@ -2976,7 +2992,11 @@ input#edit-submitted-zip-2,
 body.node-type-webform form.webform-client-form div#webform-component-show-dates--show-attendance input   ,
 body.node-type-webform form.webform-client-form div#webform-component-show-dates--show-space input,
 body.node-type-webform form.webform-client-form div#webform-component-show-dates--net-square-feet input,
-body.node-type-webform form.webform-client-form div#webform-component-show-dates--gross-square-feet input {width:21% !important;}  
+body.node-type-webform form.webform-client-form div#webform-component-show-dates--gross-square-feet input,
+body.node-type-webform form.webform-client-form div#webform-component-meeting-facility-requirements--estimated-attendance input,
+body.node-type-webform form.webform-client-form div#webform-component-meeting-facility-requirements--meeting-space input,
+input#edit-submitted-zip
+    {width:21% !important;}  
     
 body.node-type-webform form.webform-client-form div.webform-component-select select {margin-left:20px; font-family:"Museo Light"; font-size:1.2em; margin-bottom:20px;}
 
@@ -2984,7 +3004,7 @@ body.node-type-webform form.webform-client-form div.webform-component-select sel
 
 
 @media(min-width:980px) and (max-width:1199px){
-body.node-type-webform form.webform-client-form {border-radius:3px; background:#f7f7f7; padding:2%; margin-top:12px;}    
+    
 }
 @media(min-width:768px) and (max-width:979px){
 }
