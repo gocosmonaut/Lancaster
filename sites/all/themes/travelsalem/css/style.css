@@ -2896,20 +2896,28 @@ ul.calendar-links, .region-content ul.calendar-links {
 /* Forms  */
 
 body.node-type-webform form.webform-client-form .form-control {display: block; width: 100%; height: inherit; padding: 6px 9px; font-size: 1.2em; line-height: 100%; color: #555555; vertical-align: middle; background-color: #ffffff; background-image: none; border: 1px solid #cccccc; border-radius: 4px; margin: 4px 0px 20px; }
-/* body.node-type-webform  label.control-label {  letter-spacing: .5px; color: #333; margin-bottom:5px; font-weight:300;}*/
-body.node-type-webform  label.control-label {text-transform:uppercase;  letter-spacing:1px; margin-bottom:6px; font-size:.85em;}
+body.node-type-webform form.webform-client-form h4 {    margin: 6px 0 8px;
+    font-size: 1.2em;
+    color: #788e4a;}
+body.node-type-webform  label.control-label {text-transform:uppercase;  letter-spacing:1px; margin-bottom:6px; font-size:.9em;}
 body.node-type-webform.chrome  label.control-label {font-weight:bold;}
 body.node-type-webform.ff  label.control-label {font-weight:500;}
+body.node-type-webform div.form-checkboxes {border-top:1px solid #ddd; padding-top:12px; padding-bottom:12px;}
+body.node-type-webform div.webform-component-radios {margin-bottom: 20px; margin-top:8px;}
+body.node-type-webform div.webform-component-radios div.form-type-radio.radio {padding-bottom:8px;}
+body.node-type-webform div.webform-component-radios div.form-type-radio.radio label {text-transform:none; font-size:1.05em; font-weight:normal; letter-spacing:0.5px; }
+body.node-type-webform div.captcha {margin-bottom:40px;}
+body.node-type-webform div#webform-component-date-token,
+body.node-type-webform div#webform-component-participation-agreement--date-token {text-align:center; font-size:1.25em; padding: 10px;}
 
-body.node-type-webform fieldset {/* margin-top:20px;*/ border:2px solid #ccc;}
-body.node-type-webform fieldset .panel-heading {background:#e9e9e9; padding:6px 15px !important;}
+body.node-type-webform fieldset {/* margin-top:20px;*/ border:2px solid #ddd; box-shadow: 2px 2px 8px #ccc;}
+body.node-type-webform fieldset .panel-heading {background:#e2e2e2; padding:6px 15px !important;}
 body.node-type-webform fieldset.webform-component-fieldset legend.panel-heading span.panel-title,
 body.node-type-webform fieldset .panel-heading a.panel-title {font-size:1em; font-family: "Rotis"; color:#788e4a; line-height:140%; }
 body.node-type-webform form.webform-client-form div.description {margin-bottom:12px; padding-left: 20px;}
 
-/* body.node-type-webform fieldset.webform-component-fieldset label.control-label {text-transform:none;} */
 body.node-type-webform input.form-control.form-text {width:66.666%; color:black;}
-body.node-type-webform fieldset#webform-component-planning-a-move-to-salem label.control-label,
+/* body.node-type-webform fieldset#webform-component-planning-a-move-to-salem label.control-label, */
 body.node-type-webform fieldset#webform-component-would-you-like-to-receive-our-e-newsletters-if-so-which-e-newsletter-are-you-interested-in label.control-label 
 {display:none;}
 
@@ -2921,9 +2929,12 @@ body.node-type-webform fieldset#webform-component-planning-a-move-to-salem div.f
 
 body.node-type-webform fieldset#webform-component-planning-a-move-to-salem div.description {padding-left:20px; margin-bottom:8px;}
 
+body.node-type-webform div#webform-component-possible-story-ideas--mission p:last-child {border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;}
+
 
 body.node-type-webform .webform-container-inline div.description {display: block; margin-bottom: 16px; font-size: 1em; line-height: 140%; padding-left: 3%;}
-body.node-type-webform fieldset div.help-block {color: #333; font-size: 1em; margin: 0px 0px 15px; padding-left: 3%;line-height: 140%;}
+body.node-type-webform fieldset div.help-block {color: #333; font-size: 1em; margin: 0px 0px 15px; line-height: 140%;}
 body.node-type-webform form.webform-client-form input.webform-calendar{ height:32px; width:32px;}
 body.node-type-webform form.webform-client-form div#webform-component-date-token p {text-align:center;}
 
@@ -2940,10 +2951,11 @@ body.node-type-webform form.webform-client-form div.form-item-submitted-meeting-
 body.node-type-webform form.webform-client-form div.form-actions.form-wrapper {text-align:center; margin:12px 0;}
 body.node-type-webform form.webform-client-form div.form-actions.form-wrapper button.btn-primary.form-submit {border:0px; border-radius:3px; font-size:1.4em; background:#632548; text-transform:uppercase; letter-spacing:1px;}
 body.node-type-webform form.webform-client-form div.form-actions.form-wrapper button.btn-primary.form-submit:hover {background:red;}
+body.node-type-webform form.webform-client-form div.webform-component-select select {margin-left:20px; font-family:"Museo Light"; font-size:1.25em; margin-bottom:20px;}
 
 
 @media(min-width:1200px){
-body.node-type-webform form.webform-client-form {border-radius:3px; background:#f7f7f7; padding:2%; margin-top:18px;}   
+body.node-type-webform form.webform-client-form {border-radius:3px; background:#f2f2f2; padding:2.5%; margin-top:18px;}   
     
 body.node-type-webform form.webform-client-form .form-control.form-file {width:80%; margin-top:0px;}   
 body.node-type-webform form.webform-client-form div.form-managed-file span.input-group-btn   {vertical-align:top; }       
@@ -2957,6 +2969,8 @@ body.node-type-webform form.webform-client-form div.webform-component-webform_ti
 body.node-type-webform form.webform-client-form div.webform-component-webform_time {margin-bottom:42px;} 
 body.node-type-webform.ff form.webform-client-form div.webform-component-webform_time {margin-bottom:42px;}   
     
+fieldset#webform-component-please-let-us-know-your-travel-dates-to-and-from-salem--please-list-your-date-time-preferences-for-your-greeter-visit div.description {margin-top:40px;}  
+    
 body.node-type-webform div#webform-component-date-of-birth  {margin-bottom:50px;}
 body.node-type-webform.ff div#webform-component-date-of-birth  {margin-bottom:60px;}    
     
@@ -2966,42 +2980,65 @@ body.node-type-webform form.webform-client-form select.year,
 body.node-type-webform form.webform-client-form select.hour, 
 body.node-type-webform form.webform-client-form select.minute { float:left; margin-right:4%;}   
 
+input#edit-submitted-group-information-number-adults,
+input#edit-submitted-group-information-number-children    
+    {width:10%;}       
+    
 body.node-type-webform form.webform-client-form select.day {width:12%;}
-body.node-type-webform form.webform-client-form select.month {width:18%;}
     
 body.node-type-webform form.webform-client-form select.year,
 body.node-type-webform form.webform-client-form select.hour, 
-body.node-type-webform form.webform-client-form select.minute {width:14%;}    
+body.node-type-webform form.webform-client-form select.minute {width:14%;}     
     
-body.node-type-webform form.webform-client-form div#webform-component-general-information--phone input,
-body.node-type-webform form.webform-client-form div#webform-component-general-information--fax input,
-input#edit-submitted-phone, input#edit-submitted-first-name, input#edit-submitted-emergency-contact-contact-phone    
+body.node-type-webform form.webform-client-form select.month {width:18%;} 
+    
+input#edit-submitted-general-information-zip,
+input#edit-submitted-free-visitors-guide-zip, 
+input#edit-submitted-zip-2,     
+input#edit-submitted-show-dates-show-attendance,
+input#edit-submitted-show-dates-show-space,
+input#edit-submitted-show-dates-net-square-feet,
+input#edit-submitted-show-dates-gross-square-feet,
+input#edit-submitted-meeting-facility-requirements-estimated-attendance,
+input#edit-submitted-meeting-facility-requirements-meeting-space,
+input#edit-submitted-language-second-language,
+input#edit-submitted-language-third-language,  
+input#edit-submitted-package-cost,    
+input#edit-submitted-zip,
+input#edit-submitted-business-info-zip {width:21% !important;}      
+    
+input#edit-submitted-general-information-fax,
+input#edit-submitted-phone,
+input#edit-submitted-first-name,
+input#edit-submitted-emergency-contact-contact-phone,
+input#edit-submitted-contact-information-phone,    
+input#edit-submitted-business-info-business-phone,
+input#edit-submitted-business-info-toll-free,
+input#edit-submitted-lodging-info-if-staying-in-a-hotel-hotel-phone,
+input#edit-submitted-lodging-info-visiting-phone,
+input#edit-submitted-reference-info-reference-phone    
 {width:26% !important;}
     
-body.node-type-webform form.webform-client-form div#webform-component-general-information--city input,
+input#edit-submitted-general-information-city,
 input#edit-submitted-last-name,
 input#edit-submitted-free-visitors-guide-city,
 input#edit-submitted-free-visitors-guide-country,
-input#edit-submitted-country
+input#edit-submitted-country,
+input#edit-submitted-city,
+input#edit-submitted-general-information-city {width:31% !important;}
     
-{width:31% !important;}    
+input#edit-submitted-contact-information-name,
+input#edit-submitted-general-information-name,
+input#edit-submitted-general-information-contact,    
+input#edit-submitted-contact-name,
+input#edit-submitted-emergency-contact-contact-name,    
+input#edit-submitted-lodging-info-if-staying-in-a-hotel-reservation-name,  
+input#edit-submitted-reference-info-ref-contact-name,    
+input#edit-submitted-general-information-decision-maker {width:50% !important;}    
+    
 
-body.node-type-webform form.webform-client-form div#webform-component-general-information--zip input,
-input#edit-submitted-free-visitors-guide-zip, 
-input#edit-submitted-zip-2,     
-body.node-type-webform form.webform-client-form div#webform-component-show-dates--show-attendance input   ,
-body.node-type-webform form.webform-client-form div#webform-component-show-dates--show-space input,
-body.node-type-webform form.webform-client-form div#webform-component-show-dates--net-square-feet input,
-body.node-type-webform form.webform-client-form div#webform-component-show-dates--gross-square-feet input,
-body.node-type-webform form.webform-client-form div#webform-component-meeting-facility-requirements--estimated-attendance input,
-body.node-type-webform form.webform-client-form div#webform-component-meeting-facility-requirements--meeting-space input,
-input#edit-submitted-zip
-    {width:21% !important;}  
-    
-body.node-type-webform form.webform-client-form div.webform-component-select select {margin-left:20px; font-family:"Museo Light"; font-size:1.2em; margin-bottom:20px;}
 
 }
-
 
 @media(min-width:980px) and (max-width:1199px){
     
