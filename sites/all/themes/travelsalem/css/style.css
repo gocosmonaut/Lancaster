@@ -2976,8 +2976,8 @@ body.node-type-webform form.webform-client-form div.description {}
 
 body.node-type-webform input.form-control.form-text,
 body.add-listing-form input.form-control.form-text {width:66.666%; color:black;}
-body.node-type-webform fieldset#webform-component-planning-a-move-to-salem label.control-label,
-body.node-type-webform fieldset#webform-component-would-you-like-to-receive-our-e-newsletters-if-so-which-e-newsletter-are-you-interested-in label.control-label 
+body.node-type-webform div#webform-component-would-you-like-to-receive-our-e-newsletters-if-so-which-e-newsletter-are-you-interested-in--event--activity-e-newsletter label.control-label,
+body.node-type-webform div#webform-component-would-you-like-to-receive-our-e-newsletters-if-so-which-e-newsletter-are-you-interested-in--consumer-e-newsletter label.control-label 
 {display:none;}
 
 body.node-type-webform fieldset#webform-component-would-you-like-to-receive-our-e-newsletters-if-so-which-e-newsletter-are-you-interested-in  div.form-checkboxes label.control-label {display:block;}
