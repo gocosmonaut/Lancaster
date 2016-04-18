@@ -1497,42 +1497,24 @@ div.pond-secondary-column-content div.pond-column.pond-secondary-column3 {margin
 
 /* Instagram Pane */
 
-div#instagram-pane {border:1px solid #ccc;  background:white; max-height:400px; height:100%;}
+div#instagram-pane {border:1px solid #ccc;  background:white;}
 div#instagram-pane div.pane-content {padding:4px 8px 0px;}
-
-div#instagram-pane h3  {background: #aaa none repeat scroll 0 0; color: white; font-family: "Museo Light"; font-size: 0.9em; letter-spacing: 1px; margin: 4px 0 6px; text-align: center; text-transform: uppercase;}
+div#instagram-pane h3  {background: #aaa none repeat scroll 0 0;
+    color: white;
+    font-family: "Museo Light";
+    font-size: 0.9em;
+    letter-spacing: 1px;
+   margin: 4px 0 6px;
+    
+    text-align: center;
+    text-transform: uppercase;}
 	
-div#instagram-pane h3 a { color:white; display:block; padding: 4px;  }
-div#instagram-pane h3 a:hover {background: #632548;}
-
-@media(min-width:1200px){
-}
-@media(min-width:980px) and (max-width:1199px){
-}
-@media(min-width:768px) and (max-width:979px){
-}
-@media(min-width:481px) and (max-width:767px){
-}
-@media (max-width:480px){
-div#instagram-pane {max-height:none;}
-}
-
+	div#instagram-pane h3 a { color:white; display:block; padding: 4px;  }
+	div#instagram-pane h3 a:hover {background: #632548;}
 
 /* Facebook Pane */
 
 div#facebook-pane {border:1px solid #ccc; background:white; }
-
-@media(min-width:1200px){
-}
-@media(min-width:980px) and (max-width:1199px){
-}
-@media(min-width:768px) and (max-width:979px){
-}
-@media(min-width:481px) and (max-width:767px){
-}
-@media (max-width:480px){
-}
-
 
 /* Blog Pane */
 
@@ -1549,19 +1531,19 @@ div#blog-pane p {}
 div#blog-pane div.views-field-view-node {text-align:right;}
 
 @media(min-width:1200px){
-div#blog-pane {padding:4px 8px 0px 8px;   min-height:255px; height:400px;}
+div#blog-pane {padding:4px 8px 0px 8px;   min-height:255px;}
 div#blog-pane div.pane-content {padding:0px 4px;}
 div#blog-pane h4  {letter-spacing: 1px;margin: 4px 4px 6px; font-size: 0.9em; letter-spacing: 1px; }
 div#blog-pane h4 a {  line-height:130%;padding:4px;  }
 div#blog-pane h5 {margin:3px 0px 9px; font-size:1.2em;}
-div#blog-pane div.views-field.views-field-title {margin-top:12px; padding:0px 0px 4px 0px;}
-div#blog-pane div.views-field.views-field-title span.field-content a {font-size:1.4em;  height:400px;}
-div#blog-pane div.views-field-field-supporting-images {float:right; margin: 0px 0 18px 18px;}
-div#blog-pane p {font-size:1.05em; line-height:135%;}
+div#blog-pane div.views-field.views-field-title {margin-top:12px; padding:0px;}
+div#blog-pane div.views-field.views-field-title span.field-content a {font-size:1.4em;}
+div#blog-pane div.views-field-field-supporting-images {float:right; margin: 0px 0 15px 15px;}
+div#blog-pane p {font-size:1em;}
 div#blog-pane div.views-field-view-node {margin:6px 0px;}
 }
 @media(min-width:980px) and (max-width:1199px){
-div#blog-pane {padding:4px 8px 0px 8px;   min-height:255px;  height:400px;}
+div#blog-pane {padding:4px 8px 0px 8px;   min-height:255px; }
 div#blog-pane div.pane-content {padding:0px 4px;}
 div#blog-pane h4  {letter-spacing: 1px;margin: 4px 4px 6px; font-size: 0.9em; letter-spacing: 1px; }
 div#blog-pane h4 a {  line-height:130%;padding:4px;  }
@@ -1569,7 +1551,7 @@ div#blog-pane h5 {margin:3px 0px 9px; font-size:1.2em;}
 div#blog-pane div.views-field.views-field-title {margin-top:12px;}
 div#blog-pane div.views-field.views-field-title span.field-content a {font-size:1.4em;}
 div#blog-pane div.views-field-field-supporting-images {float:right; margin: 0px 0 15px 15px;}
-div#blog-pane p {font-size:1.05em; line-height:135%;}
+div#blog-pane p {font-size:1em;}
 div#blog-pane div.views-field-view-node {margin:6px 0px;}
 }
 @media(min-width:768px) and (max-width:979px){
@@ -1581,7 +1563,7 @@ div#blog-pane h5 {margin:3px 0px 9px; font-size:1.2em;}
 div#blog-pane div.views-field.views-field-title {margin-top:12px;}
 div#blog-pane div.views-field.views-field-title span.field-content a {font-size:1.3em;}
 div#blog-pane div.views-field-field-supporting-images {float:right; margin: 0px 0 10px 10px; max-width:90px;}
-div#blog-pane p {font-size:1em; line-height:130%;}
+div#blog-pane p {font-size:.9em; line-height:115%;}
 div#blog-pane div.views-field-view-node {margin:6px 0px;}
 }
 @media(min-width:481px) and (max-width:767px){
@@ -3089,7 +3071,7 @@ body.node-type-webform div#webform-component-date-token,
 body.node-type-webform div#webform-component-participation-agreement--date-token { font-size:1.25em; padding: 10px;}
 
 body.node-type-webform fieldset,
-body.add-listing-form fieldset    { box-shadow: 2px 2px 8px #ccc;}
+body.add-listing-form fielset    { box-shadow: 2px 2px 8px #ccc;}
 body.node-type-webform fieldset .panel-heading { padding:6px 15px !important;}
 body.node-type-webform fieldset.webform-component-fieldset legend.panel-heading span.panel-title,
 body.node-type-webform fieldset .panel-heading a.panel-title {font-size:1em; line-height:140%; }
@@ -3728,110 +3710,6 @@ input#edit-submitted-general-information-decision-maker {width:100% !important;}
 
 input#edit-submitted-business-info-short-description-20-word-max {width:100% !important;}  
 }    
-
-/* Submit an Event Form */
-
-form#events-node-form--2 {}   
-form#events-node-form--2 .form-control {display: block; height: inherit; color: #555555; vertical-align: middle; background-color: #ffffff; background-image: none; border: 1px solid #cccccc; border-radius: 4px; margin: 4px 0px 20px; }
-form#events-node-form--2 h3 {color: #788e4a;}
-form#events-node-form--2 label.control-label { margin-bottom:5px; }
-form#events-node-form--2.chrome label.control-label {font-weight:bold;}
-form#events-node-form--2.ff  label.control-label {font-weight:500;}
-form#events-node-form--2 div.form-checkboxes {border-top:1px solid #ddd;}
-form#events-node-form--2 div.webform-component-radios div.form-type-radio.radio label {text-transform:none;  font-weight:normal; }
-form#events-node-form--2 div.captcha {}
-form#events-node-form--2 div#webform-component-date-token,
-form#events-node-form--2 div#webform-component-participation-agreement--date-token {text-align:center;}
-form#events-node-form--2 div.pane-node-field-event-date {background:none; padding:0px;}
-
-form#events-node-form--2 fieldset, form#events-node-form--2 fieldset {border:2px solid #ddd;}
-form#events-node-form--2 fieldset .panel-heading{background:#e2e2e2;}
-form#events-node-form--2 fieldset.webform-component-fieldset legend.panel-heading span.panel-title,
-form#events-node-form--2 fieldset .panel-heading a.panel-title
-{font-family: "Rotis"; color:#788e4a; line-height:140%; }
-form#events-node-form--2 div.description {}
-
-form#events-node-form--2  input.form-control.form-text {width:66.666%; color:black;}
-form#events-node-form--2 fieldset#webform-component-would-you-like-to-receive-our-e-newsletters-if-so-which-e-newsletter-are-you-interested-in  div.form-checkboxes label.control-label {display:block;}
-
-form#events-node-form--2 .webform-container-inline div.description {display: block; line-height: 140%; }
-
-form#events-node-form--2 fieldset div.help-block {color: #333; line-height: 140%;}
-form#events-node-form--2 input.webform-calendar { height:32px; width:32px;}
-form#events-node-form--2 div#webform-component-date-token p {text-align:center;}
-
-
-form#events-node-form--2 div.form-actions.form-wrapper {text-align:center;}
-form#events-node-form--2 button.btn-primary.form-submit {border:0px; border-radius:3px; background:#632548; text-transform:uppercase; }
-form#events-node-form--2 button.btn-primary.form-submit:hover {background:red;}
-form#events-node-form--2 select { font-family:"Museo Light";}
-
-
-@media(min-width:1200px){
-form#events-node-form--2 {padding:2.5%; margin-top:18px;}   
-form#events-node-form--2 .form-control {padding: 6px 9px; font-size: 1.2em; line-height: 100%; margin: 4px 0px 20px; }
-form#events-node-form--2 h3 {margin: 6px 0 8px; font-size: 1.2em; }
-form#events-node-form--2  label.control-label   {font-size:1.1em; padding: 6px 0;}
-form#events-node-form--2.chrome label.control-label {letter-spacing:0.5px;}
-form#events-node-form--2.ff  label.control-label {font-weight:500;}
-form#events-node-form--2 div.form-checkboxes { padding-top:12px; padding-bottom:12px;}
-form#events-node-form--2 div.webform-component-radios {margin-bottom: 20px; margin-top:8px;}
-form#events-node-form--2 div.webform-component-radios div.form-type-radio.radio {padding-bottom:8px;}
-form#events-node-form--2 div.webform-component-radios div.form-type-radio.radio label { font-size:1.05em; font-weight:normal; letter-spacing:0.5px; }
-form#events-node-form--2 div.captcha {margin-bottom:40px;}
-
-form#events-node-form--2 fieldset#webform-component-planning-a-move-to-salem div.description {padding-left:20px; margin-bottom:8px;}
-
-form#events-node-form--2 div#webform-component-possible-story-ideas--mission p:last-child { padding-bottom: 10px;}
-
-
-form#events-node-form--2 .webform-container-inline div.description {display: block; margin-bottom: 16px; font-size: 1em; line-height: 140%; padding-left: 3%;}
-
-form#events-node-form--2 fieldset div.help-block {font-size: 1em; margin: 0px 0px 15px; line-height: 140%;}
-
-form#events-node-form--2 div.form-actions.form-wrapper {margin:12px 0;}
-form#events-node-form--2 button.btn-primary.form-submit {font-size:1.4em; letter-spacing:1px;}
-form#events-node-form--2 button.btn-primary.form-submit:hover {background:red;}
-form#events-node-form--2 select {margin-left:20px; font-size:1.25em; margin-bottom:20px;}    
-    
-form#events-node-form--2 .form-control.form-file {width:80%; margin-top:0px;}   
-form#events-node-form--2 div.form-managed-file span.input-group-btn   {vertical-align:top; }       
-form#events-node-form--2 div.form-managed-file button.btn-primary { background:#632548; border-radius:3px; border:0px; }
-    
-    
-form#events-node-form--2 div.webform-component-date {margin-bottom:20px;} 
-form#events-node-form--2.ff form.webform-client-form div.webform-component-date {margin-bottom:32px;}   
-
-form#events-node-form--2 div.webform-component-webform_time label {margin-right:4px;}    
-form#events-node-form--2 div.webform-component-webform_time {margin-bottom:42px;} 
-form#events-node-form--2.ff form.webform-client-form div.webform-component-webform_time {margin-bottom:42px;}   
-    
-form#events-node-form--2 div.pane-node-field-event-audience,
-form#events-node-form--2 div.pane-node-field-contact-name,
-form#events-node-form--2 div.pane-node-body {padding-top:20px;}
-
-    
-input#edit-field-zip-und-0-value--2  {width:21% !important;}      
-    
-input#edit-field-phone-und-0-value--2,
-input#edit-field-toll-free-und-0-value--2,
-input#edit-field-contact-phone-und-0-value--2
-{width:26% !important;}
-    
-select#edit-field-city-und--2   {width:31% !important;}
-    
-}
-
-@media(min-width:980px) and (max-width:1199px){
-}
-@media(min-width:768px) and (max-width:979px){
-}
-@media(min-width:481px) and (max-width:767px){
-}
-@media (max-width:480px){
-}
-
-
 
 /* Footer */
 
