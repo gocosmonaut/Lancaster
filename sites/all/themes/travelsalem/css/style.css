@@ -50,18 +50,18 @@ h4 {font-size:1.3em; color:black;}
 
 @media(min-width:1200px){
 .front div.main-container.container  { padding:0px; max-width:none; width:100%; margin-top:65px;}
-.not-front div.main-container.container {max-width:1170px; margin:85px auto 0;}
+body.not-front div.main-container.container {max-width:1170px; margin:130px auto 0;}
 body.logged-in.front div.main-container.container  { margin-top:40px;}
-body.logged-in.not-front div.main-container.container { margin:60px auto 0;}
+body.logged-in.not-front div.main-container.container { margin:100px auto 0;}
 .col-sm-12 { margin: 0 auto; width:100%;}   
 h1.page-header { font-size:2.5em;}    
 }
 
 @media(min-width:980px) and (max-width:1199px){
 .front div.main-container.container  { padding:0px; max-width:none; width:100%; margin-top:65px;}
-.not-front div.main-container.container {max-width:none; width:96%; margin:85px auto 0;}
+body.not-front div.main-container.container {max-width:none; width:96%; margin:130px auto 0;}
 body.logged-in.front div.main-container.container  { margin-top:40px;}
-body.logged-in.not-front div.main-container.container { margin:60px auto 0;}
+body.logged-in.not-front div.main-container.container { margin:100px auto 0;}
 .col-sm-12 { margin: 0 auto; width:100%;}   
 h1.page-header { font-size:2.4em;}      
 }
@@ -69,7 +69,7 @@ h1.page-header { font-size:2.4em;}
 .front div.main-container.container  { padding:0px; max-width:none; width:100%; margin-top:65px;}
 .not-front div.main-container.container {max-width:none; width:94%; margin:85px auto 0;}
 body.logged-in.front div.main-container.container  { margin-top:40px;}
-body.logged-in.not-front div.main-container.container { margin:60px auto 0;}
+body.logged-in.not-front div.main-container.container { margin:100px auto 0;}
 .col-sm-12 { margin: 0 auto; width:100%;}       
 h1.page-header { font-size:2.25em;}   
 div.field-name-body img {max-width:100%;}    
@@ -114,14 +114,14 @@ form.form-search fieldset.captcha-admin-links {display:none;}
 
 
 @media(min-width:1200px){
-header#navbar {height:122px;}
+header#navbar {height:162px;}
 header#navbar div.navbar-collapse.collapse {padding:0px; margin:0px;}
 header#navbar a.logo.navbar-btn {margin-top:14px; max-width:240px; width:100%;}
 header#navbar a.logo.navbar-btn img { width:100%;}
 }
 
 @media(min-width:980px) and (max-width:1199px){
-header#navbar {height:122px;}
+header#navbar {height:162px;}
 header#navbar div.navbar-collapse.collapse {padding:0px; margin:0px;}
 header#navbar div.container {width:96%;}
 header#navbar a.logo.navbar-btn { margin-top:10px; max-width:210px; width:90%;}
@@ -162,11 +162,11 @@ div.highlighted.affix { transition: all 0.3s ease 0s;   opacity:1.0;   z-index:2
 
 @media(min-width:1200px){
 div.highlighted {width:100%;}  
-div.highlighted.affix {  margin-top:-32px;}
+div.highlighted.affix {  margin-top:-40px;}
 }
 @media(min-width:980px) and (max-width:1199px){
 div.highlighted {width:96%;}  
-div.highlighted.affix {  margin-top:-32px;}    
+div.highlighted.affix {  margin-top:-40px;}    
 }
 @media(min-width:768px) and (max-width:979px){
 div.highlighted {width:94%;}     
@@ -489,6 +489,29 @@ section#block-menu-menu-secondary-menu ul.menu li a {font-size:.8em; padding:0px
 .pond-container {margin:0px;}
 div.pond-container.pond-sandwich {margin-bottom:0px;}
 
+/* Front: Booking Engine */
+div#booking-engine {background:/* cornsilk */ #e4cd97; border-bottom:1px solid /* sienna */ #661713 ;  margin:0px auto; width:100%; }
+div#booking-engine section#booking-block {max-width:1170px; margin:0px auto; width:100%; padding-top:12px; text-align:center; text-transform: uppercase; font-size:.85em; color:#888; }
+div#booking-engine section#booking-block p {letter-spacing: 3px;}
+
+@media(min-width:1200px){
+div#booking-engine {height:42px; max-height:42px; }
+div#booking-engine section#booking-block {width:96%; margin:0px auto;}    
+}
+@media(min-width:980px) and (max-width:1199px){
+div#booking-engine {height:42px; max-height:42px; }   
+div#booking-engine section#booking-block {width:96%; margin:0px auto;}      
+}
+@media(min-width:768px) and (max-width:979px){
+div#booking-engine {display:none;}    
+}
+@media(min-width:481px) and (max-width:767px){
+div#booking-engine {display:none;}      
+}
+@media (max-width:480px){
+div#booking-engine {display:none;}      
+}
+
 /* Carousel */
 div#SalemCarousel {background: /* #f9f8ce */ #f7f7f7;}
 div#SalemCarousel .carousel-control.left, div#SalemCarousel .carousel-control.right {background-image:none;}
@@ -567,13 +590,13 @@ div#SalemCarousel .carousel-indicators {display:none;}
 }
 
 /* Front - Wistia Videos */
-div#wistia-home {width:100%; max-width:1170px; margin:0px auto; min-height: 600px; text-align:center;}
+div#wistia-home {width:100%; max-width:1170px; margin:0px auto; min-height: 570px; text-align:center;}
 div#wistia-home div.video-left {width:80%; float:left;}
-div#wistia-home div.video-right {width:20%; float:right; padding-left:4%;}
+div#wistia-home div.video-right {width:20%; margin-left:80%; padding-left:2%;}
 div#wistia-home div.video-right div.video-thumb {margin-bottom:10%;}
 
 @media(min-width:1200px){
-div#wistia-home {width:96%; margin:0px auto;}    
+div#wistia-home {width:96%; margin:0px auto; padding:15px; background:#f0f0f0; border:1px solid #ccc; border-radius: 3px;}    
 }
 @media(min-width:980px) and (max-width:1199px){
 div#wistia-home {width:96%; margin:0px auto;}      
@@ -812,7 +835,7 @@ div#fullcalendar h4 a {color:white; background:#632548; text-transform:uppercase
 div#fullcalendar h4 a:hover {background:#788e4a;}
 
 @media(min-width:1200px){
-div#featured-events {max-width:1170px; width:100%; margin:0px auto; min-height: 390px;}
+div#featured-events {max-width:1170px; width:100%; margin:0px auto; min-height: 390px; padding-top:20px;}
 div#featured-events div.views-row { vertical-align:top;  width:23%; float:left; padding-top: 18px;}
 div#featured-events div.views-row-first, div#featured-events div.views-row-last {margin:0px;}
 div#featured-events div.views-row-2 {margin:0px 1.3333% 0px 2.66666%;}

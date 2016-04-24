@@ -74,7 +74,12 @@
  */
 ?>
 <header id="navbar" data-spy="affix" data-offset-top="80" role="banner"  class="<?php print $navbar_classes; ?>" >
-  <div class="container">
+   <div id="booking-engine">
+    <?php if (!empty($page['booking'])): ?>
+            <?php print render($page['booking']); ?>
+          <?php endif; ?> 
+    </div>   
+  <div class="container">  
     <div class="navbar-header">
       <?php if ($logo): ?>
       <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
