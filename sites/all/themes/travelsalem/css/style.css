@@ -314,8 +314,7 @@ header#navbar ul.menu li a:hover {background:none; color:#7b914e;}*/
 /* TB Mega Menu */
 header section.block-tb-megamenu {float:right;}
 section.block-tb-megamenu div.tb-megamenu {background-color:white;}
-section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav {float:right; margin-top:2px;}
-section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 {}
+section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav {float:right; margin-top:0px;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 {}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a {color: #632548; font-weight:300; font-family: "Museo Light";  border:0px;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1.first a {padding-left:0px;}
@@ -437,44 +436,53 @@ section#block-superfish-1 ul.sf-menu.sf-accordion li.sf-depth-3 a {padding-right
 }    
 
 
-/* Secondary Navigation */
+/* TB Mega Menu Secondary */
 
-section#block-menu-menu-secondary-menu { float:right;}
-section#block-menu-menu-secondary-menu ul.menu {}
-section#block-menu-menu-secondary-menu ul.menu li {display:inline-block;}
-section#block-menu-menu-secondary-menu ul.menu li a {color:#373030; text-transform:uppercase; text-align:right; }
-section#block-menu-menu-secondary-menu ul.menu li.first a {padding-left:0px;}
-section#block-menu-menu-secondary-menu ul.menu li.last a {padding-right:0px;}
-section#block-menu-menu-secondary-menu span.caret {display:none;}
+section#block-tb-megamenu-menu-secondary-menu { float:right;}
+section#block-tb-megamenu-menu-secondary-menu li {}
+section#block-tb-megamenu-menu-secondary-menu li a {font-family:'Museo Regular';    font-size: .95em;
+    padding: 0px 6px;
+    letter-spacing: 0.5px; color: #373030; text-transform:uppercase; font-weight:500;}
+section#block-tb-megamenu-menu-secondary-menu ul.tb-megamenu-nav li.level-1.first a {padding-left:0px;}
+section#block-tb-megamenu-menu-secondary-menu ul.tb-megamenu-nav li.level-1.last a {padding-right:0px;}
 
-section#block-menu-menu-secondary-menu ul.menu li.expanded.dropdown.open ul.dropdown-menu  {}
-section#block-menu-menu-secondary-menu ul.menu li.expanded.dropdown.open ul.dropdown-menu li {display:inline; ;}
-section#block-menu-menu-secondary-menu ul.menu li.expanded.dropdown.open ul.dropdown-menu li.leaf a {color:#632548; text-transform: none;text-align:left; border-bottom:1px solid #bbb;}
-section#block-menu-menu-secondary-menu ul.menu li.expanded.dropdown.open ul.dropdown-menu li.leaf.active a {background:#632548; color:white;}
-section#block-menu-menu-secondary-menu ul.menu li.expanded.dropdown.open ul.dropdown-menu li.leaf a:hover {background:#d9d9d9;}
+section#block-tb-megamenu-menu-secondary-menu ul.tb-megamenu-nav li.level-1.active a {background:white; color:black;}
+section#block-tb-megamenu-menu-secondary-menu ul.tb-megamenu-nav li.level-1.open a {background:none;  }
+section#block-tb-megamenu-menu-secondary-menu ul.tb-megamenu-nav li.level-1 a:hover {color:black;}
+section#block-tb-megamenu-menu-secondary-menu a.dropdown-toggle span.caret  {display:none !important;}
+
+section#block-tb-megamenu-menu-secondary-menu div.dropdown-menu.mega-dropdown-menu.nav-child  {background:#eee;}
+section#block-tb-megamenu-menu-secondary-menu div.tb-megamenu ul.tb-megamenu-nav li.level-2 {}
+section#block-tb-megamenu-menu-secondary-menu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a {font-family: "Museo Regular"; text-transform: none;}
+section#block-tb-megamenu-menu-secondary-menu div.tb-megamenu ul.tb-megamenu-nav li.level-2.open a {background:none; border-bottom:1px solid #bbb;}
+section#block-tb-megamenu-menu-secondary-menu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a:hover {background:#d9d9d9; }
+
+section.block-tb-megamenu div.dropdown-menu.mega-dropdown-menu.nav-child div#tb-megamenu-column-2 {background:white;}
 
 @media(min-width:1200px){
-section#block-menu-menu-secondary-menu {  margin-bottom:8px;}
-section#block-menu-menu-secondary-menu ul.menu li a {font-size:.95em; padding:0px 6px; letter-spacing:0.5px;}
-section#block-menu-menu-secondary-menu ul.menu li.expanded.dropdown.open ul.dropdown-menu li.leaf a { font-size:1em; letter-spacing:0.5px; padding:3px 14px;}    
-
+section#block-tb-megamenu-menu-secondary-menu {margin-bottom:2px;margin-top:0px;}
+section#block-tb-megamenu-menu-secondary-menu div.tb-megamenu ul.tb-megamenu-nav li.level-1.first a { padding:3px 10px;}
+section#block-tb-megamenu-menu-secondary-menu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a { padding:3px 10px;  letter-spacing:0.5px;}
+section#block-tb-megamenu-menu-secondary-menu div.tb-megamenu ul.tb-megamenu-nav li.level-1.last a { padding-right:0px;}    
+section#block-tb-megamenu-menu-secondary-menu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a {font-size:1em; letter-spacing:0.5px; border-bottom:1px solid #bbb; padding:2px 6px;}
 }
+
 @media(min-width:980px) and (max-width:1199px){
-section#block-menu-menu-secondary-menu {  margin-bottom:6px;}
-section#block-menu-menu-secondary-menu ul.menu li a {font-size:.85em; padding:0px 4px; letter-spacing:0.25px;}
+section#block-tb-megamenu-menu-secondary-menu {  margin-bottom:6px;}
+section#block-tb-megamenu-menu-secondary-menu ul.menu li a {font-size:.85em; padding:0px 4px; letter-spacing:0.25px;}
 section#block-menu-menu-secondary-menu ul.menu li.expanded.dropdown.open ul.dropdown-menu li.leaf a { font-size:1em; letter-spacing:0.5px; padding:3px 14px;}        
 
 }
 @media(min-width:768px) and (max-width:979px){
-section#block-menu-menu-secondary-menu {  margin-bottom:6px;}
-section#block-menu-menu-secondary-menu ul.menu li a {font-size:.85em; padding:0px 4px; letter-spacing:0.25px;}
+section#block-tb-megamenu-menu-secondary-menu {  margin-bottom:6px;}
+section#block-tb-megamenu-menu-secondary-menu ul.menu li a {font-size:.85em; padding:0px 4px; letter-spacing:0.25px;}
 
 }
 @media(min-width:481px) and (max-width:767px){
-section#block-menu-menu-secondary-menu {  margin-bottom:6px; position: absolute; width:94%;
+section#block-tb-megamenu-menu-secondary-menu {  margin-bottom:6px; position: absolute; width:94%;
     text-align: center;
     top: 130px;}
-section#block-menu-menu-secondary-menu ul.menu li a {font-size:.85em; padding:0px 8px; letter-spacing:0.25px;}
+section#block-tb-megamenu-menu-secondary-menu ul.menu li a {font-size:.85em; padding:0px 8px; letter-spacing:0.25px;}
 
 }
 @media (max-width:480px){
@@ -3781,6 +3789,7 @@ input#edit-submitted-business-info-short-description-20-word-max {width:100% !im
 
 /* Submit an Event Form */
 
+body.page-add-an-event {}
 form#events-node-form--2 {}   
 form#events-node-form--2 .form-control {display: block; height: inherit; color: #555555; vertical-align: middle; background-color: #ffffff; background-image: none; border: 1px solid #cccccc; border-radius: 4px; margin: 4px 0px 20px; }
 form#events-node-form--2 h3 {color: #788e4a;}
@@ -3816,9 +3825,28 @@ form#events-node-form--2 button.btn-primary.form-submit {border:0px; border-radi
 form#events-node-form--2 button.btn-primary.form-submit:hover {background:red;}
 form#events-node-form--2 select { font-family:"Museo Light";}
 
+form#events-node-form--2 div.pane-node-field-event-date {font-size:1em; margin:15px 0px;}
+form#events-node-form--2 div.pane-node-field-event-date label.control-label {font-size:.9em;}
+form#events-node-form--2 div.pane-node-field-event-date input.form-control.form-text {width:100%;    margin-bottom: 6px}
+form#events-node-form--2 div.pane-node-field-event-date div.date-no-float.start-date-wrapper {width:100%; float:left;}
+form#events-node-form--2 div.pane-node-field-event-date div.date-no-float.end-date-wrapper {width:100%; float:left;}
+form#events-node-form--2 div.pane-node-field-event-date div.form-item-field-event-date-und-0-value-time,
+form#events-node-form--2 div.pane-node-field-event-date div.form-item-field-event-date-und-0-value2-time{margin-left:20px;}
+form#events-node-form--2 div.pane-node-field-event-date .panel-heading {padding:5px 10px; text-align:left; font-family:"Rotis"; text-transform:none; }
+form#events-node-form--2 div.pane-node-field-event-date .panel-heading span.panel-title {font-size:0.9em;}
+form#events-node-form--2 div.pane-node-field-event-date .panel-body {padding:10px 15px;}
+form#events-node-form--2 div.pane-node-field-event-date div.help-block {font-size: 0.9em;
+    padding: 0px 0px 0px 10px;
+    text-align: left;
+    font-weight: 300;
+    line-height: 140%;
+    text-transform: none;
+    letter-spacing: 0px;
+    color: #999;}
+form#events-node-form--2 div.pane-node-field-event-date div.form-item-field-event-date-und-0-show-repeat-settings {display:none;} /* temporary */
 
 @media(min-width:1200px){
-form#events-node-form--2 {padding:2.5%; margin-top:18px;}   
+form#events-node-form--2 {/* padding:2.5%;  margin-top:18px; */}   
 form#events-node-form--2 .form-control {padding: 6px 9px; font-size: 1.2em; line-height: 100%; margin: 4px 0px 20px; }
 form#events-node-form--2 h3 {margin: 6px 0 8px; font-size: 1.2em; }
 form#events-node-form--2  label.control-label   {font-size:1.1em; padding: 6px 0;}
@@ -3837,7 +3865,7 @@ form#events-node-form--2 div#webform-component-possible-story-ideas--mission p:l
 
 form#events-node-form--2 .webform-container-inline div.description {display: block; margin-bottom: 16px; font-size: 1em; line-height: 140%; padding-left: 3%;}
 
-form#events-node-form--2 fieldset div.help-block {font-size: 1em; margin: 0px 0px 15px; line-height: 140%;}
+form#events-node-form--2 fieldset div.help-block {/*font-size: 0.9em; margin: 0px 0px 10px; text-align:left; font-weight:400; line-height: 140%; text-transform: none;*/}
 
 form#events-node-form--2 div.form-actions.form-wrapper {margin:12px 0;}
 form#events-node-form--2 button.btn-primary.form-submit {font-size:1.4em; letter-spacing:1px;}
@@ -3861,7 +3889,8 @@ form#events-node-form--2 div.pane-node-field-contact-name,
 form#events-node-form--2 div.pane-node-body {padding-top:20px;}
 
     
-input#edit-field-zip-und-0-value--2  {width:21% !important;}      
+input#edit-field-zip-und-0-value--2,
+input#edit-field-what-is-the-admission-cost-und-0-value--2   {width:21% !important;}      
     
 input#edit-field-phone-und-0-value--2,
 input#edit-field-toll-free-und-0-value--2,
