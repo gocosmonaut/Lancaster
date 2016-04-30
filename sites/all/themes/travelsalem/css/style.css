@@ -329,7 +329,6 @@ section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 {}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a {font-family: "Museo Regular";}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2.open a {background:none; border-bottom:1px solid #bbb;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a:hover {background:#d9d9d9; }
-
 section.block-tb-megamenu div.dropdown-menu.mega-dropdown-menu.nav-child div#tb-megamenu-column-2 {background:white;}
 
 div.tb-megamenu-submenu.dropdown-menu {border-color:#632548 !important; margin-top:6px;}
@@ -338,6 +337,9 @@ div.tb-megamenu-submenu.dropdown-menu {border-color:#632548 !important; margin-t
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1.first a { padding:3px 10px;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a { padding:3px 10px; font-size:1.35em; letter-spacing:0.5px;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a {font-size:1em; letter-spacing:0.5px; border-bottom:1px solid #bbb; padding:2px 6px;}
+section.block-tb-megamenu div.tb-megamenu li.level-2.last a,
+section.block-tb-megamenu div.tb-megamenu li.level-3.last a    {border-bottom:0px;} 
+section.block-tb-megamenu div.tb-megamenu div.tb-megamenu-column.col-split {border-right:1px solid blue;}
 }
 
 @media(min-width:980px) and (max-width:1199px){
@@ -498,8 +500,8 @@ section#block-menu-menu-secondary-menu ul.menu li a {font-size:.8em; padding:0px
 div.pond-container.pond-sandwich {margin-bottom:0px;}
 
 /* Front: Booking Engine */
-div#booking-engine {background:/* cornsilk */ #e4cd97; border-bottom:1px solid /* sienna */ #661713 ;  margin:0px auto; width:100%; }
-div#booking-engine section#booking-block {max-width:1170px; margin:0px auto; width:100%; padding-top:12px; text-align:center; text-transform: uppercase; font-size:.85em; color:#888; }
+div#booking-engine {background:/* cornsilk */ #788e4a; border-bottom:1px solid /* sienna */ #bbb ;  margin:0px auto; width:100%; }
+div#booking-engine section#booking-block {max-width:1170px; margin:0px auto; width:100%; padding-top:12px; text-align:center; text-transform: uppercase; font-size:.85em; color:#ddd; }
 div#booking-engine section#booking-block p {letter-spacing: 3px;}
 
 @media(min-width:1200px){
@@ -1757,10 +1759,10 @@ div#sponsorshow .jcarousel-prev.jcarousel-prev-horizontal {background:url(../../
 div#sponsorshow .jcarousel-next.jcarousel-next-horizontal {background:url(../../../../default/files/siteart/arrow-right-off.png)	top left no-repeat; height:33px; width:18px;}
 div#sponsorshow .jcarousel-next.jcarousel-next-horizontal:hover {background:url(../../../../default/files/siteart/arrow-right-on.png)	top left no-repeat; height:33px; width:18px;}
 
-div.logo-City-of-Salem, div.logo-Amtrak, div.logo-Pioneer-Trust-Bank, div.logo-The-Grand-Hotel-in-Salem,
+div.logo-City-of-Salem, div.logo-Amtrak,  div.logo-Pioneer-Trust-Bank, div.logo-The-Grand-Hotel-in-Salem,
 div.logo-Salem-Electric, div.logo-Salem-Health, div.logo-Huggins-Insurance, div.logo-Woodburn-Premium-Outlets, div.logo-Cherriots {padding-top:20%;}
 
-div.logo-Left-Coast-Cellars {padding-top:15%;}
+div.logo-Left-Coast-Cellars, div.logo-Brooks-Winery {padding-top:15%;}
 
 div.logo-Polk-County, div.logo-Hampton-Inn, div.logo-Lancaster-Mall, div.logo-Hallie-Ford-Museum-of-Art, div.logo-Oregon-State-Fair   {padding-top:10%;}
 
