@@ -22,7 +22,8 @@ body.cke_editable.cke_editable_themed p {font-family:"Museo Light"; }
 
 /* Universal */
 body {background: #fff; /* #f2e7ec; */ line-height:140%;}
-a { color:#632548;transition: all 0.3s ease 0s; word-wrap: break-word;}
+a { color:#632548;transition: all 0.3s ease 0s;}
+p a {word-wrap: break-word;}
 a:hover {text-decoration:none; color:#788e4a; transition: all 0.2s ease 0s;}
 a img:hover, img a:hover {opacity:.8; transition: all 0.2s ease 0s;}
 .front div.views-field-field-event-image:hover {background:#ffc600;}
@@ -312,34 +313,38 @@ section#block-system-main-menu ul.menu li.last a {padding-right:0px;}
 header#navbar ul.menu li a:hover {background:none; color:#7b914e;}*/
 
 /* TB Mega Menu */
-header section.block-tb-megamenu {float:right;}
+header section.block-tb-megamenu {float:right; }
 section.block-tb-megamenu div.tb-megamenu {background-color:white;}
+section.block-tb-megamenu div.tb-megamenu a, section.block-tb-megamenu div.tb-megamenu a:hover {display: block; white-space: normal; cursor: pointer; box-sizing: border-box;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav {float:right; margin-top:0px;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 {}
-section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a {color: #632548; font-weight:300; font-family: "Museo Light";  border:0px;}
+section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a {color: #632548; font-weight:300; font-family: "Museo Light";  border:0px; background:white; }
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1.first a {padding-left:0px;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1.last a {padding-right:0px;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1.active a {background:white; color:black;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1.open a {background:none;}
-section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a:hover {color:black;}
+section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a:hover {color:black; display: block; white-space: normal; z-index:9999; cursor: pointer; }
 section.block-tb-megamenu div.tb-megamenu a.dropdown-toggle span.caret  {display:none !important;}
+
+section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2.last a,
+section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-3.last a,
+section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-4.last a   {border-bottom:0px !important;} 
 
 section.block-tb-megamenu div.dropdown-menu.mega-dropdown-menu.nav-child  {background:#eee;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 {}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a {font-family: "Museo Regular";}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2.open a {background:none; border-bottom:1px solid #bbb;}
-section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a:hover {background:#d9d9d9; }
+section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a:hover {background:#788e4a; color:white; }
+
 section.block-tb-megamenu div.dropdown-menu.mega-dropdown-menu.nav-child div#tb-megamenu-column-2 {background:white;}
 
 div.tb-megamenu-submenu.dropdown-menu {border-color:#632548 !important; margin-top:6px;}
+section.block-tb-megamenu div.tb-megamenu div.tb-megamenu-column.col-split {border-right:1px solid #bbb; background:#e1e1e1;}
 
 @media(min-width:1200px){
-section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1.first a { padding:3px 10px;}
-section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a { padding:3px 10px; font-size:1.35em; letter-spacing:0.5px;}
+section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1.first a { padding:3px 10px; }
+section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a { padding:3px 10px; font-size:1.35em; letter-spacing:0.5px;  position:static;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a {font-size:1em; letter-spacing:0.5px; border-bottom:1px solid #bbb; padding:2px 6px;}
-section.block-tb-megamenu div.tb-megamenu li.level-2.last a,
-section.block-tb-megamenu div.tb-megamenu li.level-3.last a    {border-bottom:0px;} 
-section.block-tb-megamenu div.tb-megamenu div.tb-megamenu-column.col-split {border-right:1px solid blue;}
 }
 
 @media(min-width:980px) and (max-width:1199px){
@@ -364,6 +369,7 @@ section#block-superfish-1 { position:absolute; width:inherit;}
 section#block-superfish-1 div.sf-accordion-toggle {width:100%;}
 section#block-superfish-1 div.sf-accordion-toggle a, section#block-superfish-1 div.sf-accordion-toggle a.sf-expanded { border:2px solid #999;  border-radius:6px;}
 section#block-superfish-1 div.sf-accordion-toggle a span {}
+section#block-superfish-1 {z-index: 1030;}
 
 section#block-superfish-1  li.sf-expanded {background:#ddd;}
 section#block-superfish-1  li:last-child {border-radius:0;}
@@ -444,7 +450,7 @@ section#block-tb-megamenu-menu-secondary-menu { float:right;}
 section#block-tb-megamenu-menu-secondary-menu li {}
 section#block-tb-megamenu-menu-secondary-menu li a {font-family:'Museo Regular';    font-size: .95em;
     padding: 0px 6px;
-    letter-spacing: 0.5px; color: #373030; text-transform:uppercase; font-weight:500;}
+    letter-spacing: 0.5px; color: #373030; text-transform:uppercase; font-weight:500; }
 section#block-tb-megamenu-menu-secondary-menu ul.tb-megamenu-nav li.level-1.first a {padding-left:0px;}
 section#block-tb-megamenu-menu-secondary-menu ul.tb-megamenu-nav li.level-1.last a {padding-right:0px;}
 
@@ -455,7 +461,7 @@ section#block-tb-megamenu-menu-secondary-menu a.dropdown-toggle span.caret  {dis
 
 section#block-tb-megamenu-menu-secondary-menu div.dropdown-menu.mega-dropdown-menu.nav-child  {background:#eee;}
 section#block-tb-megamenu-menu-secondary-menu div.tb-megamenu ul.tb-megamenu-nav li.level-2 {}
-section#block-tb-megamenu-menu-secondary-menu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a {font-family: "Museo Regular"; text-transform: none;}
+section#block-tb-megamenu-menu-secondary-menu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a {font-family: "Museo Regular"; text-transform: none; z-index:1030;}
 section#block-tb-megamenu-menu-secondary-menu div.tb-megamenu ul.tb-megamenu-nav li.level-2.open a {background:none; border-bottom:1px solid #bbb;}
 section#block-tb-megamenu-menu-secondary-menu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a:hover {background:#d9d9d9; }
 
@@ -464,7 +470,7 @@ section.block-tb-megamenu div.dropdown-menu.mega-dropdown-menu.nav-child div#tb-
 @media(min-width:1200px){
 section#block-tb-megamenu-menu-secondary-menu {margin-bottom:2px;margin-top:0px;}
 section#block-tb-megamenu-menu-secondary-menu div.tb-megamenu ul.tb-megamenu-nav li.level-1.first a { padding:3px 10px;}
-section#block-tb-megamenu-menu-secondary-menu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a { padding:3px 10px;  letter-spacing:0.5px;}
+section#block-tb-megamenu-menu-secondary-menu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a { padding:3px 10px;  letter-spacing:0.5px;  position:static;}
 section#block-tb-megamenu-menu-secondary-menu div.tb-megamenu ul.tb-megamenu-nav li.level-1.last a { padding-right:0px;}    
 section#block-tb-megamenu-menu-secondary-menu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a {font-size:1em; letter-spacing:0.5px; border-bottom:1px solid #bbb; padding:2px 6px;}
 }
@@ -623,6 +629,12 @@ div#wistia-home div.video-left {width:100%; margin-bottom:8%;}
 div#wistia-home div.video-right {width:100%; padding:0px;} 
 div#wistia-home div.video-right div.video-thumb {margin-bottom:8%;}    
 }
+
+/* Video Page */
+
+div.video-page-container {padding-bottom:15px;}
+div.video-page-container h2 {margin:25px 0;}
+div.video-page-container h2.first {margin-top:0px;}
 
 /* Front - Marketing Bands */
 div#band-places, div#band-eat-drink, div#band-recreation {width:100%;}
@@ -1851,7 +1863,7 @@ div#standard-panel div.panel-col h1 {margin-top:0px;}
 /* RIGHT */
 
 body.two-sidebars aside.col-sm-3.right, div#standard-panel div.panel-col-last { padding:0px 0px 20px 15px ; width:15%;}
-body.two-sidebars aside.col-sm-3.right h2.block-title, div#standard-panel div.panel-col-last div.inside h3  {padding:4px; margin:0px 0px 10px 0px; font-size:1em; }
+body.two-sidebars aside.col-sm-3.right h2.block-title, div#standard-panel div.panel-col-last div.inside h3  {padding:4px; margin:10px 0; font-size:1em; }
 body.two-sidebars aside.col-sm-3.right img, div#standard-panel div.panel-col-last div.inside img {width:100%; height:auto; max-width:160px;}        
 }
     
