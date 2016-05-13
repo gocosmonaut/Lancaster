@@ -318,13 +318,19 @@ section.block-tb-megamenu div.tb-megamenu {background-color:white;}
 section.block-tb-megamenu div.tb-megamenu a, section.block-tb-megamenu div.tb-megamenu a:hover {display: block; white-space: normal; cursor: pointer; box-sizing: border-box;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav {float:right; margin-top:0px;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 {}
-section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a {color: #632548; font-weight:300; font-family: "Museo Light";  border:0px; background:white; }
+section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a {color: #632548; font-weight:300; font-family: "Museo Light";  border:0px; background:white; display:block; height:100%; width:100%; position:relative; white-space:nowrap; z-index:11; }
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1.first a {padding-left:0px;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1.last a {padding-right:0px;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1.active a {background:white; color:black;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1.open a {background:none;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a:hover {color:black; display: block; white-space: normal; z-index:9999; cursor: pointer; }
-section.block-tb-megamenu div.tb-megamenu a.dropdown-toggle span.caret  {display:none !important;}
+section.block-tb-megamenu div.tb-megamenu a.dropdown-toggle span.caret  {display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: white;
+    width: 100%;
+    height: 100%;}
 
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2.last a,
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-3.last a,
@@ -332,7 +338,7 @@ section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-4.last a  
 
 section.block-tb-megamenu div.dropdown-menu.mega-dropdown-menu.nav-child  {background:#eee;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 {}
-section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a {font-family: "Museo Regular";}
+section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a {font-family: "Museo Regular";  white-space: normal;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2.open a {background:none; border-bottom:1px solid #bbb;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a:hover {background:#788e4a; color:white; }
 
