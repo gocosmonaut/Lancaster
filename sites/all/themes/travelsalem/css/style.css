@@ -50,10 +50,10 @@ h3 {font-size:1.4em; color:black;}
 h4 {font-size:1.3em; color:black;}
 
 @media(min-width:1200px){
-.front div.main-container.container  { padding:0px; max-width:none; width:100%; margin-top:65px;}
-body.not-front div.main-container.container {max-width:1170px; margin:130px auto 0;}
-body.logged-in.front div.main-container.container  { margin-top:40px;}
-body.logged-in.not-front div.main-container.container { margin:100px auto 0;}
+.front div.main-container.container  { padding:0px; max-width:none; width:100%; margin-top:120px;}
+body.not-front div.main-container.container {max-width:1170px; margin:200px auto 0;}
+body.logged-in.front div.main-container.container  { margin-top:120px;}
+body.logged-in.not-front div.main-container.container { margin:170px auto 0;}
 .col-sm-12 { margin: 0 auto; width:100%;}   
 h1.page-header { font-size:2.5em;}    
 }
@@ -163,20 +163,20 @@ div.highlighted.affix { transition: all 0.3s ease 0s;   opacity:1.0;   z-index:2
 
 @media(min-width:1200px){
 div.highlighted {width:100%;}  
-div.highlighted.affix {  margin-top:-40px;}
+div.highlighted.affix {  margin-top:-80px;}
 }
 @media(min-width:980px) and (max-width:1199px){
 div.highlighted {width:96%;}  
-div.highlighted.affix {  margin-top:-40px;}    
+div.highlighted.affix {  margin-top:-80px;}    
 }
 @media(min-width:768px) and (max-width:979px){
 div.highlighted {width:94%;}     
-div.highlighted.affix {  margin-top:-32px;}  
+div.highlighted.affix {  margin-top:-72px;}  
 }
 
 @media(min-width:481px) and (max-width:767px){
 div.highlighted {width:94%;}     
-div.highlighted.affix {  margin-top:-28px;}  
+div.highlighted.affix {  margin-top:-68px;}  
 }
 
 @media (max-width:480px){
@@ -512,26 +512,26 @@ section#block-menu-menu-secondary-menu ul.menu li a {font-size:.8em; padding:0px
 div.pond-container.pond-sandwich {margin-bottom:0px;}
 
 /* Front: Booking Engine */
-div#booking-engine {background:/* cornsilk */ #788e4a; border-bottom:1px solid /* sienna */ #bbb ;  margin:0px auto; width:100%; }
-div#booking-engine section#booking-block {max-width:1170px; margin:0px auto; width:100%; padding-top:12px; text-align:center; text-transform: uppercase; font-size:.85em; color:#ddd; }
+div#booking-engine {background:/* cornsilk */ #788e4a; border-bottom:1px solid /* sienna */ #bbb ;  margin:0px auto; width:100%; max-height:65px; }
+div#booking-engine section#booking-block {max-width:1170px; margin:0px auto; width:100%; padding-top:0px; text-align:center; text-transform: uppercase; font-size:.85em; color:#ddd; }
 div#booking-engine section#booking-block p {letter-spacing: 3px;}
 
 @media(min-width:1200px){
-div#booking-engine {height:42px; max-height:42px; }
-div#booking-engine section#booking-block {width:96%; margin:0px auto;}    
+div#booking-engine {height:65px;  }
+div#booking-engine section#booking-block {width:96%; margin:0px auto; margin:15px auto 0;}    
 }
 @media(min-width:980px) and (max-width:1199px){
 div#booking-engine {height:42px; max-height:42px; }   
 div#booking-engine section#booking-block {width:96%; margin:0px auto;}      
 }
 @media(min-width:768px) and (max-width:979px){
-div#booking-engine {display:none;}    
+div#booking-engine {}    
 }
 @media(min-width:481px) and (max-width:767px){
-div#booking-engine {display:none;}      
+div#booking-engine {}      
 }
 @media (max-width:480px){
-div#booking-engine {display:none;}      
+div#booking-engine {}      
 }
 
 /* Carousel */
@@ -2136,7 +2136,7 @@ body.page-listings div.tb-megamenu-menu-clone-main-menu li.active div.meetings-m
 body.page-listings div.tb-megamenu-menu-clone-main-menu li.active ul.tb-megamenu-subnav.level-1 {padding:0px; display:block; }
 
 body.page-listings div.tb-megamenu-menu-clone-main-menu div.mega-inner {padding:10px 0px !important;}
-body.page-listings div.tb-megamenu-menu-clone-main-menu ul.tb-megamenu-nav li.level-1 a.dropdown-toggle {padding:6px !important; max-width: 220px !important; }
+body.page-listings div.tb-megamenu-menu-clone-main-menu ul.tb-megamenu-nav li.level-1 a.dropdown-toggle {padding:6px !important; max-width: 220px !important; white-space:normal; }
 body.page-listings div.tb-megamenu-menu-clone-main-menu ul.tb-megamenu-nav li.level-2 {max-width:200px;}
 body.page-listings div.tb-megamenu-menu-clone-main-menu ul.tb-megamenu-nav li.level-2 a.dropdown-toggle {padding:6px 10px; max-width: 200px !important; }
 body.page-listings div.tb-megamenu-menu-clone-main-menu ul.tb-megamenu-nav li.level-2 a {font-size:1em; letter-spacing:0.25px; padding-top:6px; padding-bottom:6px;}
@@ -3256,6 +3256,8 @@ input#edit-submitted-show-dates-net-square-feet,
 input#edit-submitted-show-dates-gross-square-feet,
 input#edit-submitted-meeting-facility-requirements-estimated-attendance,
 input#edit-submitted-meeting-facility-requirements-meeting-space,
+input#edit-submitted-meeting-facility-requirements-peak-rooms,
+input#edit-submitted-meeting-facility-requirements-total-rooms,     
 input#edit-submitted-language-second-language,
 input#edit-submitted-language-third-language,  
 input#edit-submitted-package-cost,    
@@ -3387,6 +3389,8 @@ input#edit-submitted-show-dates-net-square-feet,
 input#edit-submitted-show-dates-gross-square-feet,
 input#edit-submitted-meeting-facility-requirements-estimated-attendance,
 input#edit-submitted-meeting-facility-requirements-meeting-space,
+input#edit-submitted-meeting-facility-requirements-peak-rooms,
+input#edit-submitted-meeting-facility-requirements-total-rooms,     
 input#edit-submitted-language-second-language,
 input#edit-submitted-language-third-language,  
 input#edit-submitted-package-cost,    
@@ -3518,6 +3522,8 @@ input#edit-submitted-show-dates-net-square-feet,
 input#edit-submitted-show-dates-gross-square-feet,
 input#edit-submitted-meeting-facility-requirements-estimated-attendance,
 input#edit-submitted-meeting-facility-requirements-meeting-space,
+input#edit-submitted-meeting-facility-requirements-peak-rooms,
+input#edit-submitted-meeting-facility-requirements-total-rooms,     
 input#edit-submitted-language-second-language,
 input#edit-submitted-language-third-language,  
 input#edit-submitted-package-cost,    
@@ -3648,6 +3654,8 @@ input#edit-submitted-show-dates-net-square-feet,
 input#edit-submitted-show-dates-gross-square-feet,
 input#edit-submitted-meeting-facility-requirements-estimated-attendance,
 input#edit-submitted-meeting-facility-requirements-meeting-space,
+input#edit-submitted-meeting-facility-requirements-peak-rooms,
+input#edit-submitted-meeting-facility-requirements-total-rooms,     
 input#edit-submitted-language-second-language,
 input#edit-submitted-language-third-language,  
 input#edit-submitted-package-cost,    
@@ -3780,8 +3788,10 @@ input#edit-submitted-show-dates-net-square-feet,
 input#edit-submitted-show-dates-gross-square-feet,
 input#edit-submitted-meeting-facility-requirements-estimated-attendance,
 input#edit-submitted-meeting-facility-requirements-meeting-space,
+input#edit-submitted-meeting-facility-requirements-peak-rooms,
+input#edit-submitted-meeting-facility-requirements-total-rooms,     
 input#edit-submitted-language-second-language,
-input#edit-submitted-language-third-language,  
+input#edit-submitted-language-third-language,    
 input#edit-submitted-package-cost,    
 input#edit-submitted-zip,
 input#edit-submitted-business-info-zip {width:52% !important;}      

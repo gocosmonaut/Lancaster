@@ -74,11 +74,7 @@
  */
 ?>
 <header id="navbar" data-spy="affix" data-offset-top="80" role="banner"  class="<?php print $navbar_classes; ?>" >
-   <div id="booking-engine">
-    <?php if (!empty($page['booking'])): ?>
-            <?php print render($page['booking']); ?>
-          <?php endif; ?> 
-    </div>   
+ 
   <div class="container">  
     <div class="navbar-header">
       <?php if ($logo): ?>
@@ -98,6 +94,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+        
     </div>
 
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
@@ -115,7 +112,13 @@
         </nav>
       </div>
     <?php endif; ?>
+      
   </div>
+       <div id="booking-engine">
+    <?php if (!empty($page['booking'])): ?>
+            <?php print render($page['booking']); ?>
+          <?php endif; ?> 
+    </div>  
 </header>
 
 <div class="main-container container" >
