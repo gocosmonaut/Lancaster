@@ -870,7 +870,7 @@ div#featured-events div.views-row { vertical-align:top;  width:23%; float:left; 
 div#featured-events div.views-row-first, div#featured-events div.views-row-last {margin:0px;}
 div#featured-events div.views-row-2 {margin:0px 1.3333% 0px 2.66666%;}
 div#featured-events div.views-row-3 {margin:0px 2.6666% 0px 1.33333%;}
-div#featured-events div.views-row img {width:100%; height:auto; margin-bottom:20px; min-height:200px; }
+div#featured-events div.views-row img {width:100%; height:auto; margin-bottom:20px; min-height:200px; max-height:200px; }
 div#featured-events div.views-row div.views-field-title {margin-bottom:6px; }
 div#featured-events div.views-row div.views-field-title a { letter-spacing:0.25px; line-height:120%; font-size:1.45em;}
 
@@ -885,7 +885,7 @@ div#featured-events div.views-row { vertical-align:top;  width:23%; float:left; 
 div#featured-events div.views-row-first, div#featured-events div.views-row-last {margin:0px;}
 div#featured-events div.views-row-2 {margin:0px 1.3333% 0px 2.66666%;}
 div#featured-events div.views-row-3 {margin:0px 2.6666% 0px 1.33333%;}
-div#featured-events div.views-row img {width:100%; height:auto; margin-bottom:20px; }
+div#featured-events div.views-row img {width:100%; height:auto; margin-bottom:20px; max-height:175px; }
 div#featured-events div.views-row div.views-field-title {margin-bottom:6px; }
 div#featured-events div.views-row div.views-field-title a { letter-spacing:0.25px; line-height:125%; font-size:1.45em;}
 
@@ -900,7 +900,7 @@ div#featured-events div.views-row { vertical-align:top;  width:23%; float:left; 
 div#featured-events div.views-row-first, div#featured-events div.views-row-last {margin:0px;}
 div#featured-events div.views-row-2 {margin:0px 1.3333% 0px 2.66666%;}
 div#featured-events div.views-row-3 {margin:0px 2.6666% 0px 1.33333%;}
-div#featured-events div.views-row img {width:100%; height:auto; margin-bottom:20px; }
+div#featured-events div.views-row img {width:100%; height:auto; margin-bottom:20px; max-height:160px; }
 div#featured-events div.views-row div.views-field-title {margin-bottom:6px; }
 div#featured-events div.views-row div.views-field-title a { letter-spacing:0.25px; line-height:125%; font-size:1.4em;}
 
@@ -2013,10 +2013,16 @@ body.two-sidebars aside.col-sm-3.right h2.block-title, div#standard-panel div.pa
 body.two-sidebars aside.col-sm-3.right img {width:100%; height:auto; letter-spacing:.5px; margin-bottom:15px;}   
 }
 
+/* Members Menu Block Superfish */
+
+div#members-sidebar ul {width:100%;}
+div#members-sidebar ul li a { padding:6px !important; max-width: 220px !important; white-space:normal; }
+
+
 /* Menu Blocks */
 
 div.menu-block-wrapper {width:100%;}
-div.menu-block-wrapper ul li {display:block; position:relative; background:none; box-shadow:none; border:none; padding:0px;}
+div.menu-block-wrapper ul li {display:block; position:relative; background:none; box-shadow:none; border:none; padding:0px; width:100%;}
 div.menu-block-wrapper ul li a {font-size: 1em; font-family: "museo regular";
     letter-spacing: 0.25px;
     padding-bottom: 6px;
