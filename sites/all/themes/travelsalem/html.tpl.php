@@ -67,8 +67,8 @@
   <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <?php print $scripts; ?>
 
+  <?php print $scripts; ?>
 </head>
 <body<?php print $body_attributes; ?>>
   <a name="topofpage" style="position:absolute; top:0;" ></a><div id="skip-link">

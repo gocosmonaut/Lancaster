@@ -22,9 +22,9 @@ body.cke_editable.cke_editable_themed p {font-family:"Museo Light"; }
 
 /* Universal */
 body {background: #fff; /* #f2e7ec; */ line-height:140%;}
-a { color:#632548;transition: all 0.3s ease 0s;}
-p a {word-wrap: break-word;}
-a:hover {text-decoration:none; color:#788e4a; transition: all 0.2s ease 0s;}
+a { color:#632548; cursor: pointer !important; }
+p a {word-wrap: break-word; }
+a:hover {text-decoration:none; color:#788e4a; transition: all 0.2s ease 0s; }
 a img:hover, img a:hover {opacity:.8; transition: all 0.2s ease 0s;}
 .front div.views-field-field-event-image:hover {background:#ffc600;}
 .well {background:none !important; padding:0px !important; border:0px !important; border-radius:0px !important; margin:0px !important;}
@@ -343,7 +343,7 @@ header#navbar ul.menu li a:hover {background:none; color:#7b914e;}*/
 /* TB Mega Menu */
 header section.block-tb-megamenu {float:right; }
 section.block-tb-megamenu div.tb-megamenu {background-color:white;}
-section.block-tb-megamenu div.tb-megamenu a, section.block-tb-megamenu div.tb-megamenu a:hover {display: block; white-space: normal; cursor: pointer; box-sizing: border-box;}
+section.block-tb-megamenu div.tb-megamenu a, section.block-tb-megamenu div.tb-megamenu a:hover {display: block; white-space: normal; box-sizing: border-box;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav {float:right; margin-top:0px;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 {}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a {color: #632548; font-weight:300; font-family: "Museo Light";  border:0px; background:white; display:block; height:100%; width:100%; position:relative; white-space:nowrap; z-index:11; }
@@ -351,7 +351,7 @@ section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1.first a 
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1.last a {padding-right:0px;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1.active a {background:white; color:black;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1.open a {background:none;}
-section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a:hover {color:black; display: block; white-space: normal; z-index:9999; cursor: pointer; }
+section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a:hover {color:black; display: block; white-space: normal; z-index:9999;  }
 section.block-tb-megamenu div.tb-megamenu a.dropdown-toggle span.caret  {display: inline-block;
     position: absolute;
     top: 0;
@@ -714,11 +714,16 @@ div#wistia-home div.video-right div.video-thumb {margin-bottom:6%;}
 div#wistia-home div.video-prompt img {margin-bottom:20px;}      
 }
 
-/* Video Page */
+/* Video Pages */
 
 div.video-page-container {padding-bottom:15px;}
 div.video-page-container h2 {margin:25px 0;}
 div.video-page-container h2.first {margin-top:0px;}
+div.view-id-videos div.views-field-title {margin-bottom:20px;}
+div.view-id-videos div.views-field-title span a {font-size:1.6em;}
+div.view-id-videos span.views-field-field-video-category {line-height:40px; font-size: 1.25em;}
+div.view-id-videos div.views-row {padding-top: 10px; border-top: 1px solid #ddd;}
+div.view-id-videos div.views-row-first {padding-top: 0px; border-top: none;}
 
 /* Front - Marketing Bands */
 div#band-places, div#band-eat-drink, div#band-recreation {width:100%;}
