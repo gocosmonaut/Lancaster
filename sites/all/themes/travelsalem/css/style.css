@@ -379,6 +379,23 @@ section.block-tb-megamenu div.dropdown-menu.mega-dropdown-menu.nav-child div#tb-
 div.tb-megamenu-submenu.dropdown-menu {border-color:#632548 !important; margin-top:6px;}
 section.block-tb-megamenu div.tb-megamenu div.tb-megamenu-column.col-split {border-right:1px solid #bbb; background:#e1e1e1;}
 
+.tb-megamenu .nav li.dropdown.active > .dropdown-toggle,
+.tb-megamenu .nav li.dropdown.open.active > .dropdown-toggle,
+.tb-megamenu .nav li.dropdown.open > .dropdown-toggle,
+.tb-megamenu .nav > li.dropdown.open.active > a:hover,
+.tb-megamenu .nav > li.dropdown.open.active > a:focus,
+.tb-megamenu .nav-collapse .nav > li > a:hover,
+.tb-megamenu .nav-collapse .nav > li > a:focus,
+.tb-megamenu .nav-collapse .nav > li.active > a:hover,
+.tb-megamenu .nav-collapse .nav > li.active > a:focus,
+.tb-megamenu .nav > .active > a,
+.tb-megamenu .nav > .active > a:hover,
+.tb-megamenu .nav > .active > a:focus {
+  background-color: white !important;
+  border:0px !important;
+  color: #788e4a !important;
+}
+
 @media(min-width:1200px){
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1.first a { padding:3px 10px; }
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a { padding:3px 10px; font-size:1.35em; letter-spacing:0.5px;  position:static;}
