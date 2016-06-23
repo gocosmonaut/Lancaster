@@ -364,6 +364,8 @@ section.block-tb-megamenu div.tb-megamenu a.dropdown-toggle span.caret  {display
     width: 1%;
     height: 1%;}
 
+/* attempted Chrome fix */
+section#block-tb-megamenu-main-menu li ul, section#block-tb-megamenu-main-menu li ul li {overflow:visible !important; z-index:9999;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2.last a,
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-3.last a,
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-4.last a   {border-bottom:0px !important;} 
@@ -4070,6 +4072,8 @@ form#webform-client-form-40451 input#edit-submitted-visitors-guide-zip {margin: 
 
 
 /* Submit an Event Form */
+
+body.not-logged-in.page-node .alert-success {display:none;}
 
 body.page-add-an-event {}
 form#events-node-form--2 {}   

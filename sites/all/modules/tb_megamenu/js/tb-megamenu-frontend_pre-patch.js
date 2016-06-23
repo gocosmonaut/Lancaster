@@ -40,7 +40,7 @@ Drupal.TBMegaMenu = Drupal.TBMegaMenu || {};
       });
       
       
-      var isTouch = 'ontouchstart' in window && !(/hp-tablet/gi).test(navigator.appVersion) && !(/Windows NT(.*)Chrome/gi).test(navigator.appVersion);
+      var isTouch = 'ontouchstart' in window && !(/hp-tablet/gi).test(navigator.appVersion);
       if(!isTouch){
         $(document).ready(function($){
           var mm_duration = 0;
