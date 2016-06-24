@@ -2204,8 +2204,8 @@ div.panel-col-bottom div.sidebar-superfish     {display:none;}
 }
 @media(min-width:768px) and (max-width:979px){
 footer section.block-superfish,
-div.panel-col-bottom div.sidebar-superfish     {display:none;}   }
-
+div.panel-col-bottom div.sidebar-superfish     {display:none;}   
+}4000
 @media(min-width:481px) and (max-width:767px){
 div.panel-col-first div.menu-block-wrapper {display:none;} 
 footer section.block-superfish, div.panel-col-bottom div.sidebar-superfish { background: white none repeat scroll 0 0; font-size: 1.25em; max-height: 60px; padding: 20px; position: fixed;  width: 100%; bottom: 0px;  box-shadow: 1px 1px 8px #aaa; left:0px;}    
@@ -2215,7 +2215,6 @@ div.panel-col-bottom div.sidebar-superfish h2.pane-title   {display:none}
 footer section.block-superfish select  { width:70%; margin:0px auto;}  
 div.panel-col-bottom div.sidebar-superfish select    { width:90%; margin:0px 2.5%;}        
 }
-    
 @media (max-width:480px){
 div.panel-col-first div.menu-block-wrapper {display:none;}  
     
@@ -4074,7 +4073,7 @@ form#webform-client-form-40451 input#edit-submitted-visitors-guide-zip {margin: 
 
 /* Submit an Event Form */
 
-body.not-logged-in.page-node .alert-success, body.not-logged-in.page-node .alert-danger, body.not-logged-in.page-node div.error  {display:none;}
+body.not-logged-in.page-node .alert-success {display:none;}
 
 body.page-add-an-event {}
 form#events-node-form--2 {}   
