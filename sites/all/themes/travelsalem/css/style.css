@@ -51,26 +51,26 @@ h4 {font-size:1.3em; color:black;}
 
 @media(min-width:1200px){
 .front div.main-container.container  { padding:0px; max-width:none; width:100%; margin-top:120px;}
-body.not-front div.main-container.container {max-width:1170px; margin:230px auto 0;}
+body.not-front div.main-container.container {max-width:1170px; margin:240px auto 0;}
 body.logged-in.front div.main-container.container  { margin-top:90px;}
-body.logged-in.not-front div.main-container.container { margin:150px auto 0;}
+body.logged-in.not-front div.main-container.container { margin:190px auto 0;}
 .col-sm-12 { margin: 0 auto; width:100%;}   
 h1.page-header { font-size:2.5em;}    
 }
 
 @media(min-width:980px) and (max-width:1199px){
 .front div.main-container.container  { padding:0px; max-width:none; width:100%; margin-top:125px;}
-body.not-front div.main-container.container {max-width:none; width:96%; margin:250px auto 0;}
+body.not-front div.main-container.container {max-width:none; width:96%; margin:260px auto 0;}
 body.logged-in.front div.main-container.container  { margin-top:10px;}
-body.logged-in.not-front div.main-container.container { margin:190px auto 0;}
+body.logged-in.not-front div.main-container.container { margin:210px auto 0;}
 .col-sm-12 { margin: 0 auto; width:100%;}   
 h1.page-header { font-size:2.4em;}      
 }
 @media(min-width:768px) and (max-width:979px){
 .front div.main-container.container  { padding:0px; max-width:none; width:100%; margin-top:135px;}
-.not-front div.main-container.container {max-width:none; width:94%; margin:200px auto 0;}
+.not-front div.main-container.container {max-width:none; width:94%; margin:210px auto 0;}
 body.logged-in.front div.main-container.container  { margin-top:10px;}
-body.logged-in.not-front div.main-container.container { margin:180px auto 0;}
+body.logged-in.not-front div.main-container.container { margin:200px auto 0;}
 .col-sm-12 { margin: 0 auto; width:100%;}       
 h1.page-header { font-size:2.25em;}   
 div.field-name-body img {max-width:100%;}   
@@ -174,42 +174,42 @@ div.highlighted.affix { transition: all 0.3s ease 0s;   opacity:1.0;   z-index:2
 
 @media(min-width:1200px){
 div.highlighted {width:100%;}  
-.not-logged-in div.highlighted.affix {  margin-top:-115px;}
-.logged-in div.highlighted.affix {  margin-top:-55px;}    
+.not-logged-in div.highlighted.affix {  margin-top:-130px;}
+.logged-in div.highlighted.affix {  margin-top:-105px;}    
 }
 @media(min-width:1001px) and (max-width:1199px){
 div.highlighted {width:96%;}  
-.not-logged-in div.highlighted.affix {  margin-top:-80px;} 
-.logged-in div.highlighted.affix {  margin-top:-80px;}        
+.not-logged-in div.highlighted.affix {  margin-top:-145px;} 
+.logged-in div.highlighted.affix {  margin-top:-125px;}        
 }
 @media(min-width:980px) and (max-width:1000px){
 div.highlighted {width:96%;}  
-.not-logged-in div.highlighted.affix {  margin-top:-35px;}   
-.logged-in div.highlighted.affix {  margin-top:-35px;}      
+.not-logged-in div.highlighted.affix {  margin-top:-90px;}   
+.logged-in div.highlighted.affix {  margin-top:-90px;}      
 }
 
 @media(min-width:768px) and (max-width:979px){
 div.highlighted {width:94%;}     
-.not-logged-in div.highlighted.affix {  margin-top:-66px;}  
-.logged-in div.highlighted.affix {  margin-top:-88px;}      
+.not-logged-in div.highlighted.affix {  margin-top:-80px;}  
+.logged-in div.highlighted.affix {  margin-top:-120px;}      
 }
 
 @media(min-width:481px) and (max-width:767px){
 div.highlighted {width:94%;}     
-.not-logged-in div.highlighted.affix {  margin-top:-40px;}  
-.logged-in div.highlighted.affix {  margin-top:-40px;}      
+.not-logged-in div.highlighted.affix {  margin-top:-50px;}  
+.logged-in div.highlighted.affix {  margin-top:110px;}      
 }
 
 @media(min-width:421px) and (max-width:480px){
 div.highlighted {width:96%;}     
-.not-logged-in div.highlighted.affix {  margin-top:0px;}  
-.logged-in div.highlighted.affix {  margin-top:0px;}      
+.not-logged-in div.highlighted.affix {  margin-top:-30px;}  
+.logged-in div.highlighted.affix {  margin-top:155px;}      
 }
 
 @media (max-width:420px){
 div.highlighted {width:96%;}     
-.not-logged-in div.highlighted.affix {  margin-top:-12px;}  
-.logged-in div.highlighted.affix {  margin-top:-12px;}      
+.not-logged-in div.highlighted.affix {  margin-top:-10px;}  
+.logged-in div.highlighted.affix {  margin-top:250px;}      
 }
 
 /* Front */
@@ -1924,12 +1924,40 @@ div.pane-node-field-subtitle  {font-size:1.5em; font-weight:600; padding-bottom:
 div.view-newsletters img {max-width:100%; height:auto; margin-top:8px; margin-bottom:8px;}
 div.view-newsletters div.views-row h2 {padding-top:15px; border-top:1px solid #bbb;  margin: 0 0 6px; font-size: 1.75em;}
 div.view-newsletters div.views-row-first h2 { border:none;}
+div.view-newsletters div.pane-node-field-event-image {}
 div.view-newsletters div.views-row div.field-name-body {padding-bottom:15px;}
 
 .page-members-newsletters div.views-field-title {padding-bottom:18px;}
 .page-members-newsletters div.views-field-title a {font-size:1.65em; line-height:140%; }
 
-.page-members-newsletters div.view-id-newsletters_alpha div.views-row {border-bottom:1px solid #666; padding:15px 0px;}
+body.node-type-blog div.pane-node-field-event-image {margin-bottom: 24px;}
+body.node-type-blog div.pane-node-field-supporting-images {float:right; max-width:180px; height:auto;}
+body.node-type-blog div.pane-node-field-supporting-images img {margin-bottom:8px !important;}
+body.node-type-blog div.pane-node-field-supporting-images blockquote.image-field-caption p {font-size:1.2em;}
+
+body.node-type-blog a.newsletter-return {background: #632548;color: white;margin-right: 16px; text-transform: uppercase; padding: 4px 6px; letter-spacing: 1px;border: 0px;border-radius: 4px; font-size: .9em;} 
+body.node-type-blog a.newsletter-return:hover {border:0px; background:#999; font-size:12px;}
+
+
+.page-members-newsletters div.view-id-newsletters_alpha div.views-row {border-bottom:1px solid #bbb; padding:20px 0px;}
+.page-members-newsletters div.view-id-newsletters_alpha div.views-row.views-row-first {padding:0px 0px 20px;}
+.page-members-newsletters div.view-id-newsletters_alpha div.views-row.views-row-last {border:0px;}
+.page-members-newsletters div.view-id-newsletters_alpha blockquote {border: none; padding: 8px 0 0 10px; text-align: right;}
+.page-members-newsletters div.view-id-newsletters_alpha blockquote p {font-size:1em; color:#999;}
+.page-members-newsletters div.view-id-newsletters_alpha div.views-field-field-event-image {margin:10px auto 12px;}
+
+
+
+@media(min-width:1200px){
+}
+@media(min-width:980px) and (max-width:1199px){
+}
+@media(min-width:768px) and (max-width:979px){
+}
+@media(min-width:481px) and (max-width:767px){
+}
+@media (max-width:480px){
+}
 
 /* Sponsor Slideshow */
 
@@ -2163,7 +2191,7 @@ div#standard-panel div.panel-col-last { padding:0px 0px 20px 0px; width:100%; ma
 aside.col-sm-3.right div.region-sidebar-second {margin:0px auto;}
 body.page-listings aside.col-sm-3.right div.region-sidebar-second {width:94%;}
     
-/* Annual Guide */  section#block-block-4, div.pane-block-4 {max-width:160px; margin:0px auto;}   
+/* Annual Guide */  section#block-block-4, div.pane-block-4, div.view-ad-rotator {max-width:160px; margin:0px auto;}   
 /* Global Greeter Network */ section#block-block-10 img, div.pane-block-10 img {max-width:50%;} 
 section#block-block-10 p a, div.pane-block-10 p a {font-size:1em;}   
 /* Right Sidebar Ads on Panel Pages */ div#standard-panel div.pane-ad-rotator  {max-width:160px; margin:0px auto 12px;}    
@@ -2263,7 +2291,7 @@ div.field-name-field-supporting-images  div.table-responsive td {border-top:0px 
 div#standard-panel div.pane-node-field-supporting-images {margin:0 0 15px 15px; width:25%; float:right;}
 div#standard-panel div.pane-node-field-supporting-images img {height: auto; margin: 0 0 15px;width: 100%; }
 div#standard-panel div.field-name-field-event-image blockquote.image-field-caption {margin:0px; padding:0px; border:0px;}
-div#standard-panel div.field-name-field-event-image blockquote.image-field-caption p {text-align:right; font-size:1em; margin:6px 0px 12px;}
+div#standard-panel div.field-name-field-event-image blockquote.image-field-caption p {text-align:right; font-size:1.05em; margin:6px 0px 12px; color:#999;}
 .front blockquote.image-field-caption  {display:none;}
 /*
 div#standard-panel div.field-name-field-supporting-images blockquote.image-field-caption {margin:0px; padding:0px; border:0px;}
