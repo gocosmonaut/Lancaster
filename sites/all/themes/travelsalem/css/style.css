@@ -179,8 +179,8 @@ div.highlighted {width:100%;}
 }
 @media(min-width:1001px) and (max-width:1199px){
 div.highlighted {width:96%;}  
-.not-logged-in div.highlighted.affix {  margin-top:-145px;} 
-.logged-in div.highlighted.affix {  margin-top:-125px;}        
+.not-logged-in div.highlighted.affix {  margin-top:-140px;} 
+.logged-in div.highlighted.affix {  margin-top:-135px;}        
 }
 @media(min-width:980px) and (max-width:1000px){
 div.highlighted {width:96%;}  
@@ -208,7 +208,7 @@ div.highlighted {width:96%;}
 
 @media (max-width:420px){
 div.highlighted {width:96%;}     
-.not-logged-in div.highlighted.affix {  margin-top:-10px;}  
+.not-logged-in div.highlighted.affix {  margin-top:-30px;}  
 .logged-in div.highlighted.affix {  margin-top:250px;}      
 }
 
@@ -4144,21 +4144,60 @@ form#events-node-form--2 div.pane-node-field-event-date {font-size:1em; margin:1
 form#events-node-form--2 div.pane-node-field-event-date label.control-label {font-size:.9em;}
 form#events-node-form--2 div.pane-node-field-event-date input.form-control.form-text {width:100%;    margin-bottom: 6px}
 form#events-node-form--2 div.pane-node-field-event-date div.date-no-float.start-date-wrapper {width:100%; float:left;}
-form#events-node-form--2 div.pane-node-field-event-date div.date-no-float.end-date-wrapper {width:100%; float:left;}
+form#events-node-form--2 div.pane-node-field-event-date div.date-no-float.end-date-wrapper {/* width:100%; */ float:left;}
 form#events-node-form--2 div.pane-node-field-event-date div.form-item-field-event-date-und-0-value-time,
 form#events-node-form--2 div.pane-node-field-event-date div.form-item-field-event-date-und-0-value2-time{margin-left:20px;}
 form#events-node-form--2 div.pane-node-field-event-date .panel-heading {padding:5px 10px; text-align:left; font-family:"Rotis"; text-transform:none; }
 form#events-node-form--2 div.pane-node-field-event-date .panel-heading span.panel-title {font-size:0.9em;}
 form#events-node-form--2 div.pane-node-field-event-date .panel-body {padding:10px 15px;}
 form#events-node-form--2 div.pane-node-field-event-date div.help-block {font-size: 0.9em;
-    padding: 0px 0px 0px 10px;
-    text-align: left;
+    padding: 0px;
+    text-align: center;
     font-weight: 300;
     line-height: 140%;
     text-transform: none;
     letter-spacing: 0px;
     color: #999;}
-form#events-node-form--2 div.pane-node-field-event-date div.form-item-field-event-date-und-0-show-repeat-settings {display:none;} /* temporary */
+
+form#events-node-form--2 div.pane-node-field-event-date div.form-item-field-event-date-und-0-show-repeat-settings label
+{float:left;}
+form#events-node-form--2 div#repeat-settings-fieldset div.form-radios {width:100%;}
+form#events-node-form--2 div#repeat-settings-fieldset input {width:25%;}
+form#events-node-form--2 div#repeat-settings-fieldset input.form-radio {float:left; width:inherit; display:inline; margin-right:12px;}
+
+div#repeat-settings-fieldset div.date-repeat-input,
+div#repeat-settings-fieldset select#edit-field-event-date-und-0-rrule-monthly-bymonthday-bymonth-child-bymonthday--2,
+div#repeat-settings-fieldset select#edit-field-event-date-und-0-rrule-yearly-bymonthday-bymonth-child-bymonthday--2,
+div#repeat-settings-fieldset input#edit-field-event-date-und-0-rrule-yearly-interval--2 {float:none; width:25%; text-align:center;}
+div#repeat-settings-fieldset div.date-repeat-input label {display:none;}
+
+div#repeat-settings-fieldset  {float:none; width:100%;}
+div#repeat-settings-fieldset div.date-clear {text-align:left;}
+div.date-clear.daily, div.date-clear.range-of-repeat,
+div#date-repeat-exceptions-field_event_date-und-0-rrule,
+div#date-repeat-additions-field_event_date-und-0-rrule
+{width:50%; border:1px solid #ccc; padding:6px 12px; border-radius:3px; margin-bottom: 12px;}
+div.date-clear.daily input.form-control.form-text,
+div.date-clear.range-of-repeat input.form-control.form-text {float:right; text-align:center; margin:0px !important;}
+input#edit-field-event-date-und-0-rrule-until-child-datetime--2-datepicker-popup-0,
+div#date-repeat-exceptions-field_event_date-und-0-rrule input,
+div#date-repeat-additions-field_event_date-und-0-rrule input
+{width:100% !important; text-align:center;}
+
+div#repeat-settings-fieldset  .form-item-field-event-date-und-0-rrule-show-exceptions,
+div#repeat-settings-fieldset  .form-item-field-event-date-und-0-rrule-show-additions {float:left;}
+
+div#repeat-settings-fieldset  .form-item-field-event-date-und-0-rrule-show-exceptions label,
+div#repeat-settings-fieldset  .form-item-field-event-date-und-0-rrule-show-additions label.edit-field-event-date-und-0-rrule-show-additions--2 {display:ruby !important;}
+
+div#repeat-settings-fieldset div.until div.date-prefix-inline {display:block; margin: 2px 0 !important;}
+div#repeat-settings-fieldset .range-of-repeat .until .form-wrapper {width:100%;}
+
+div#repeat-settings-fieldset div.container-inline {padding:6px 0px; }
+div#repeat-settings-fieldset div.container-inline.interval {}
+div#repeat-settings-fieldset div.container-inline-date div.form-item {width:100%; margin:0px;  }
+div.container-inline-date div.form-item div.date-padding {float:none;}
+div#repeat-settings-fieldset input#edit-field-event-date-und-0-rrule-daily-interval-child--2 {}
 
 @media(min-width:1200px){
 form#events-node-form--2 {/* padding:2.5%;  margin-top:18px; */}   
@@ -4217,12 +4256,28 @@ select#edit-field-city-und--2   {width:31% !important;}
 }
 
 @media(min-width:980px) and (max-width:1199px){
+div.date-clear.daily, div.date-clear.range-of-repeat,
+div#date-repeat-exceptions-field_event_date-und-0-rrule,
+div#date-repeat-additions-field_event_date-und-0-rrule
+{width:80%;}    
 }
 @media(min-width:768px) and (max-width:979px){
+div.date-clear.daily, div.date-clear.range-of-repeat,
+div#date-repeat-exceptions-field_event_date-und-0-rrule,
+div#date-repeat-additions-field_event_date-und-0-rrule
+{width:80%;}     
 }
 @media(min-width:481px) and (max-width:767px){
+div.date-clear.daily, div.date-clear.range-of-repeat,
+div#date-repeat-exceptions-field_event_date-und-0-rrule,
+div#date-repeat-additions-field_event_date-und-0-rrule
+{width:100%;}     
 }
 @media (max-width:480px){
+div.date-clear.daily, div.date-clear.range-of-repeat,
+div#date-repeat-exceptions-field_event_date-und-0-rrule,
+div#date-repeat-additions-field_event_date-und-0-rrule
+{width:100%;}     
 }
 
 
