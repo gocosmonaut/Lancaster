@@ -1,0 +1,4 @@
+div#gadget iframe {background:red; height:65px;}
+div#gadget:hover iframe {background:blue; height:180px;}
+.ui-datepicker {opacity:0 !important;}
+divgadget:hover iframe div.ui-datepicker.ui-widget {visibility: visible !important;}

@@ -78,5 +78,18 @@
   <?php print $page; ?>
   <?php print $page_bottom; ?>
 </body>
-    
+<script>
+//define function to load css
+var loadCss = function(){
+    var cssLink = document.createElement('link');
+    var defeatcache = (Math.random(100));
+    cssLink.rel = 'stylesheet';
+    cssLink.href = '../../../lancaster/sites/all/themes/travelsalem/css/booking.css?' + defeatcache;
+    var head = document.getElementsByTagName('head')[0];
+    head.parentNode.insertBefore(cssLink, head);
+};
+ 
+//call function on window load
+window.addEventListener('load', loadCss);
+</script>    
 </html>

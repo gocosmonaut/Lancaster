@@ -969,7 +969,7 @@ div#fullcalendar h4 a {color:white; background:#632548; text-transform:uppercase
 div#fullcalendar h4 a:hover {background:#788e4a;}
 
 @media(min-width:1200px){
-div#featured-events {max-width:1170px; width:100%; margin:0px auto; min-height: 390px; padding-top:20px;}
+div#featured-events {max-width:1170px; width:100%; margin:0px auto; min-height: 400px; padding-top:20px;}
 div#featured-events div.views-row { vertical-align:top;  width:23%; float:left; padding-top: 18px;}
 div#featured-events div.views-row-first, div#featured-events div.views-row-last {margin:0px;}
 div#featured-events div.views-row-2 {margin:0px 1.3333% 0px 2.66666%;}
