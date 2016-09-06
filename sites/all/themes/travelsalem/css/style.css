@@ -533,7 +533,7 @@ section#block-tb-megamenu-menu-secondary-menu div.tb-megamenu ul.tb-megamenu-nav
 section.block-tb-megamenu div.dropdown-menu.mega-dropdown-menu.nav-child div#tb-megamenu-column-2 {background:white;}
 
 @media(min-width:1200px){
-section#block-tb-megamenu-menu-secondary-menu {margin-bottom:2px;margin-top:0px;}
+section#block-tb-megamenu-menu-secondary-menu {margin-bottom:2px;margin-top:0px; min-width:720px;}
 section#block-tb-megamenu-menu-secondary-menu div.tb-megamenu ul.tb-megamenu-nav li.level-1.first a { padding:3px 10px;}
 section#block-tb-megamenu-menu-secondary-menu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a { padding:3px 10px;  letter-spacing:0.5px;  position:static;}
 section#block-tb-megamenu-menu-secondary-menu div.tb-megamenu ul.tb-megamenu-nav li.level-1.last a { padding-right:0px;}    
@@ -569,6 +569,7 @@ section#block-tb-megamenu-menu-secondary-menu {display:none;}
 /* Superfish Secondary */
 
 section#superfish-secondary {}
+.chrome section#superfish-secondary select {border:1px solid #ddd; padding:1px;}
 
 @media(min-width:1200px){
 section#superfish-secondary {display:none;}    
@@ -4325,12 +4326,12 @@ body.not-logged-in.page-node-add-listings div.tabbable.tabs-left.vertical-tabs
 }
 
 
-
 /* Footer Links */
 section#block-block-8 p.footer-primary {font-size:1.15em; padding-top:6px; margin-bottom:10px;}
 section#block-block-8 p.footer-primary a {padding:0px 6px;}
 section#block-block-8 p.footer-secondary  {font-size:1.05em;  margin-bottom:15px;  }
 section#block-block-8 p.footer-secondary a {font-size:1.05em;padding:0px 6px;}
+
 
 @media (max-width:480px){
  section#block-block-8 {width:96%; margin:0px auto;}   
@@ -4352,5 +4353,6 @@ section#block-block-9 p img {margin:0px 11px 10px;}
 @media (max-width:480px){
 section#block-block-9 p img {margin:0px 9px 10px;}    
 }
+
 
 

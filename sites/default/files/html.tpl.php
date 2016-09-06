@@ -68,52 +68,15 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <?php print $scripts; ?>
-    <!-- document.addEventListener("DOMContentLoaded", fucking); -->
-<script> 
-document.getElementById("shitty").addEventListener("onload", fucktard);  
-function fucktard() {
-document.getElementById("shitty").style.zIndex = "-11";        
-}        
-    
-document.getElementById("hih_gadget").addEventListener("onload", dildo);
-function dildo() {
-document.getElementById("hih_gadget").style.height = "56px";    
-}
-    
-document.getElementById("hih_gadget").addEventListener("onmouseover", fucking);    
-function fucking() {
-document.getElementById("hih_gadget").style.height = "215px";      
-document.getElementById("shitty").style.zIndex = "-11";       
-}
-document.getElementById("hih_gadget").addEventListener("onmouseout", goofchops);    
-function goofchops() {
-document.getElementById("hih_gadget").style.height = "49px";
-document.getElementById("shitty").style.zIndex = "5";       
-}    
- </script>
-<!--
-<script>
-document.addEventListener("DOMContentLoaded", queenly);
-    
-function queenly() {    
-var cssURL = '<style type="text/css"> @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,300);</style>';
-document.getElementsByTagName('head')[0].innerHTML = cssURL;
-var x = document.getElementById("hih_gadget");
-var y = (x.contentWindow || x.contentDocument);
-if (y.document)y = y.document;
-y.body.style.backgroundColor = "white";       
-}  
-}
-</script>    
--->
+
 </head>
-<body<?php print $body_attributes; ?> onload="dildo()">
+<body<?php print $body_attributes; ?>>
   <a name="topofpage" style="position:absolute; top:0;" ></a><div id="skip-link">
     <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
   </div>
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
-
-</body>   
+</body>
+    
 </html>
