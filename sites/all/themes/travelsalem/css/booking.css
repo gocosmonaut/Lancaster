@@ -15,6 +15,8 @@ div.ui-datepicker.ui-widget.ui-widget-content {background:orange;}
 }
 #block-block-17 h2 {display:none;}
 
+#hih_gadget_wrap {margin-top:0px !important;}
+
 /* SHOULD JUST BE A GRAPHIC */
 #block-block-17 input {background: url("http://gadgets.hotelinternethelp.com/assets/159/351/img/calendar.jpg") no-repeat scroll 50% center #FFFFFF;
     padding: 0 6px;
