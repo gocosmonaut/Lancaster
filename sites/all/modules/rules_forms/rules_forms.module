@@ -92,8 +92,8 @@ function rules_forms_form_alter(&$form, &$form_state, $form_id) {
     // Display form ID message if enabled for this session.
     $uri = drupal_get_destination();
     $link = l($form_id, RULES_FORMS_ADMIN_PATH . '/' . $form_id . '/activate/' . urlencode(trim($uri['destination'], '/')));
-    $msg = t('Activate events for');
-    drupal_set_message($msg . ' ' . $link, 'status', FALSE);
+    $msg = t('Activate events for !form.', array('!form' => $link));
+    drupal_set_message($msg, 'status', FALSE);
   }
 }
 

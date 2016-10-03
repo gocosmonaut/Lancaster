@@ -69,7 +69,7 @@ function rules_forms_condition_element_value($form, $form_state, $element, $valu
     $lines = explode("\r\n", $value);
     return rules_forms_equal_array_values($lines, $element_value);
   }
-  return $element_value === $value;
+  return $element_value == $value;
 }
 
 /**
@@ -101,7 +101,7 @@ function rules_forms_condition_element_changed($form, $form_state, $element) {
     // This will prevent the condition from being evaluated during build.
     if (isset($form_state['values']) && isset($form_state['values'][$element_name])) {
       $element_value = $form_state['values'][$element_name];
-      if (isset($build_values[$element]) && !empty($element_value)) {
+      if (isset($build_values[$element])) {
         while (is_array($element_value) && count($element_value) == 1) {
           $element_value = reset($element_value);
         }
@@ -157,9 +157,36 @@ function rules_forms_condition_button_clicked($form, $form_state, $element) {
  *   Indicates whether the input arrays are equal.
  */
 function rules_forms_equal_array_values($array1, $array2) {
-  $diff1 = array_diff($array1, $array2);
-  $diff2 = array_diff($array2, $array1);
+  $diff1 = array_udiff($array1, $array2, 'rules_forms_multi_array_compare');
+  $diff2 = array_udiff($array2, $array1, 'rules_forms_multi_array_compare');
   return empty($diff1) && empty($diff2);
+}
+
+/**
+ * Compares the first value with the second one.
+ *
+ * If $val1 is an array and $val2 is not, we return 1.
+ * If $val2 is an array and $val1 is not, we return -1.
+ * If both are arrays, we call a diff between those arrays.
+ * If none are arrays, simply compare the values.
+ *
+ * @param mixed $val1
+ *   The value to compare with $val2.
+ * @param mixed $val2
+ *   The value to compare with $val1.
+ *
+ * @return int
+ *   The result of the comparison.
+ */
+function rules_forms_multi_array_compare($val1, $val2) {
+  while (is_array($val1)) {
+    $val1 = reset($val1);
+  }
+  while (is_array($val2)) {
+    $val2 = reset($val2);
+  }
+
+  return strcmp($val1, $val2);
 }
 
 /**

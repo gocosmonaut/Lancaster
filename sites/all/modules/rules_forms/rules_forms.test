@@ -45,7 +45,7 @@ class RulesFormsInterfaceTestCase extends DrupalWebTestCase {
    */
   public function testFormActivation() {
     $this->drupalGet(RULES_FORMS_ADMIN_PATH);
-    $this->assertNoText(t('Forms where events are activated'), t('No forms are activated yet.'));
+    $this->assertNoText(t('Events enabled forms'), t('No forms are activated yet.'));
     $this->assertNoText(t('Form elements'));
 
     // Activate form event messages.
@@ -70,7 +70,7 @@ class RulesFormsInterfaceTestCase extends DrupalWebTestCase {
 
     // Ensure that the newly activated form is shown in administration.
     $this->drupalGet(RULES_FORMS_ADMIN_PATH);
-    $this->assertText(t('Forms where events are activated'), t('Forms have been activated.'));
+    $this->assertText(t('Events enabled forms'), t('Forms have been activated.'));
     $this->assertFieldByName('form_events[article_node_form]');
     $this->assertFieldByName('reset_form');
 

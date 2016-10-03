@@ -5,6 +5,8 @@
   outline-style: none !important;
 }
 
+
+
 /* Import the Open Sans webfont from Google CDN */
 @font-face {
   font-family: 'Open Sans';
@@ -2079,3 +2081,16 @@ div.krumo-wrapper ul {
 div.krumo-wrapper li {
   list-style: none outside none;
 }
+
+body.logged-in.adminimal-backend form  .form-item  div.description {    margin: 5px 0;
+    line-height: 1.5em;
+    font-size: 1.25em;
+    color: darkcyan;
+    font-family: "Rotis";
+    font-weight: 200;
+    padding-left: 0;}
+body.logged-in.adminimal-backend form legend span.fieldset-legend {    background-color:#eee;);
+    background-position: 5px 50%;
+    font-weight: 400;
+    background: #eee;
+    padding: 5px;}

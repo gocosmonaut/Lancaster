@@ -19,7 +19,7 @@ function rules_forms_admin_events($form, &$form_state) {
     '#type' => 'checkbox',
     '#title' => t('Enable event activation messages on forms'),
     '#default_value' => isset($_SESSION['rules_forms_message']) ? $_SESSION['rules_forms_message'] : FALSE,
-    '#description' => t('If checked, there will be a message on each form containing a link to activate events for the form. Only visible for your currently logged in user account.'),
+    '#description' => t('When checked, a message is shown on every form containing a link to activate events for that form. This message will only be visible for this session.'),
   );
   $form['general_settings']['enable_form_element_info'] = array(
     '#type' => 'checkbox',
@@ -47,9 +47,9 @@ function rules_forms_admin_events($form, &$form_state) {
     );
     $form['active_forms']['form_events'] = array(
       '#type' => 'checkboxes',
-      '#title' => t('Forms where events are activated'),
+      '#title' => t('Events enabled forms'),
       '#options' => $options,
-      '#description' => t('Forms that currently invoke events. Select forms to deactivate related events.'),
+      '#description' => t('Forms currently changeable by associated events. You may prevent associated events from changing forms by selecting them and clicking on "Deactivate events".'),
     );
     $form['active_forms']['events_deactivate'] = array(
       '#type' => 'submit',
@@ -75,7 +75,7 @@ function rules_forms_admin_events($form, &$form_state) {
     );
   }
   else {
-    drupal_set_message(t('To begin create form rules, enable the event activation messages below and navigate to the form you would like to activate events on.'), 'status', FALSE);
+    drupal_set_message(t('To start creating form rules enable the "Enable event activation messages on forms" setting below and navigate to the form you would like to activate events for.'), 'status', FALSE);
   }
   return $form;
 }
@@ -86,7 +86,7 @@ function rules_forms_admin_events($form, &$form_state) {
 function rules_forms_settings_submit($form_id, $form_state) {
   $_SESSION['rules_forms_message'] = (bool) $form_state['values']['enable_form_activation_message'];
   $_SESSION['rules_forms_element_info'] = (bool) $form_state['values']['enable_form_element_info'];
-  drupal_set_message(t('The settings have been saved.'));
+  drupal_set_message(t('The configuration options have been saved.'));
 }
 
 /**
@@ -97,7 +97,7 @@ function rules_forms_events_deactivate_submit($form_id, $form_state) {
   foreach ($deactivate_events as $key => $value) {
     rules_forms_deactivate_form($key);
   }
-  drupal_set_message(t('The event settings have been saved.'));
+  drupal_set_message(t('The configuration options have been saved.'));
 }
 
 /**
@@ -107,7 +107,7 @@ function rules_forms_elements_rebuild($form_id, $form_state) {
   $form_info = rules_forms_get_form_info($form_state['values']['reset_form']);
   $form_info['reset'] = TRUE;
   rules_forms_save_form_info($form_state['values']['reset_form'], $form_info);
-  drupal_set_message(t('Please revisit %form so Rules forms Support can re-evaluate element information.',
+  drupal_set_message(t('Please revisit %form so that Rules forms Support can re-evaluate the elements information.',
       array('%form' => $form_info['label'])));
   if (isset($form_info['path'])
       && drupal_lookup_path($form_info['path']) !== FALSE) {

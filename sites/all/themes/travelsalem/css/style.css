@@ -416,7 +416,7 @@ section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a {font-
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li ul li.level-3 a {border-bottom:1px solid #bbb;}}
 
 @media(min-width:1037px) and (max-width:1199px){
-header section.block-tb-megamenu {margin-top:30px;}    
+header section.block-tb-megamenu {margin-top:55px;}    
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1.first a { padding:2px 8px;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-1 a { padding:2px 8px; font-size:1.25em; letter-spacing:0.35px;}
 section.block-tb-megamenu div.tb-megamenu ul.tb-megamenu-nav li.level-2 a {font-size:1em; letter-spacing:0.5px; border-bottom:1px solid #bbb;}    
@@ -725,30 +725,98 @@ div#SalemCarousel .carousel-indicators {display:none;}
 
 /* Front - Wistia Videos */
 div#wistia-home {width:100%; max-width:1170px; margin:0px auto; text-align:center;}
-div#wistia-home div.video-left {width:80%; float:left;}
-div#wistia-home div.video-right {width:20%; margin-left:80%; padding-left:2%;}
-div#wistia-home div.video-right div.video-thumb {margin-bottom:10%;}
+div#wistia-home div.video-wrapper {position: absolute;}
+div#wistia-home div.video-wrapper div.video-thumb {width:23%; position:absolute; padding:0;}
+div#wistia-home div.video-wrapper div.video-thumb.first {left:0%;}
+div#wistia-home div.video-wrapper div.video-thumb.second {left:25.6666%;}
+div#wistia-home div.video-wrapper div.video-thumb.third {left:51.333%;}
+div#wistia-home div.video-wrapper div.video-thumb.last {right:0%;}
+div#wistia-home div.video-prompt {}
 
 @media(min-width:1200px){
-div#wistia-home {width:96%; margin:0px auto; padding:15px; background:#f0f0f0; border:1px solid #ccc; border-radius: 3px; min-height: 570px;}    
+div#wistia-home {width:96%; margin:0px auto; padding:15px; background:#f0f0f0; border:1px solid #ccc; border-radius: 3px;     min-height: 260px;}   
+div#wistia-home div.video-wrapper {  width: 97.25%; max-width: 1138px;}   
+div#wistia-home div.video-prompt {margin-top:200px;}    
 }
 @media(min-width:980px) and (max-width:1199px){
-div#wistia-home {width:96%; margin:0px auto; padding:15px 15px 3% 15px; background:#f0f0f0; border:1px solid #ccc; border-radius: 3px;}      
+div#wistia-home {width:96%; margin:0px auto; padding:15px 15px 3% 15px; background:#f0f0f0; border:1px solid #ccc; border-radius: 3px; min-height: 250px;}    
+div#wistia-home div.video-wrapper {  width: 93%; max-width: 1109px;}   
+div#wistia-home div.video-prompt {margin-top:190px;}      
 }
 @media(min-width:768px) and (max-width:979px){
-div#wistia-home {width:96%; margin:0px auto; padding:15px 15px 2% 15px; background:#f0f0f0; border:1px solid #ccc; border-radius: 3px;}         
+div#wistia-home {width:96%; margin:0px auto; padding:15px 15px 2% 15px; background:#f0f0f0; border:1px solid #ccc; border-radius: 3px;  min-height: 220px;}         
+div#wistia-home div.video-wrapper {  width: 93%; max-width: 910px;}   
+div#wistia-home div.video-prompt {margin-top:165px;}      
 }
 @media(min-width:481px) and (max-width:767px){
-div#wistia-home {width:96%; margin:0px auto; padding:15px 15px 2% 15px; background:#f0f0f0; border:1px solid #ccc; border-radius: 3px;}     
-div#wistia-home div.video-prompt img {width:100%; height:auto;}    
+div#wistia-home {width:96%; margin:0px auto; padding:15px 15px 2% 15px; background:#f0f0f0; border:1px solid #ccc; border-radius: 3px; min-height: 200px;}     
+div#wistia-home div.video-wrapper {  width: 91%; max-width: 695px;}     
+div#wistia-home div.video-prompt {margin-top:135px;} 
 }
 @media (max-width:480px){
-div#wistia-home {width:90%; margin:0px auto;}     
-div#wistia-home div.video-left {width:100%; margin-bottom:6%; padding:0%; }
-div#wistia-home div.video-right {width:100%; padding:0%; margin-left:0; float:left;} 
-div#wistia-home div.video-right div.video-thumb {margin-bottom:6%;}   
-div#wistia-home div.video-prompt img {margin-bottom:20px;}      
+div#wistia-home {width: 96%;
+    margin: 10px 2% 30px 2%;
+    padding: 15px 15px 2% 15px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    min-height: 1185px;
+    float: left;}   
+div#wistia-home div.video-wrapper {width: 88%; max-width: 469px; }   
+div#wistia-home div.video-wrapper div.video-thumb { float:left; position:relative !important; width:100%; margin:0px 0px 20px; left:0 !important; right:0 !important;} 
+div#wistia-home div.video-wrapper div.video-thumb.last {margin-bottom:8px;}    
+div#wistia-home div.video-prompt {position: absolute;
+    bottom: -30px;
+    left: 30%;
+    right: 30%;
+    padding-top: 30px;}      
 }
+
+@media (max-width:435px){
+div#wistia-home {min-height: 1095px; }
+}
+@media (max-width:400px){
+div#wistia-home {min-height: 1035px; }   
+}    
+@media (max-width:370px){
+div#wistia-home {min-height: 975px; } 
+  }  
+@media (max-width:321px){
+div#wistia-home {min-height: 875px; }     
+}
+/* old video html 
+
+<div class="video-wrapper">
+<div class="video-left"><script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+<div class="wistia_responsive_padding" style="padding:56.25% 0 28px 0;position:relative;">
+<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_np71bws3x4 seo=true popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;width:100%"></span></div>
+</div>
+</div>
+
+<div class="video-right">
+<div class="video-thumb"><script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+<div class="wistia_responsive_padding" style="padding:56.25% 0 28px 0;position:relative;">
+<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_iv6rdsgkl7 seo=true popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;width:100%"></span></div>
+</div>
+</div>
+
+<div class="video-thumb"><script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+<div class="wistia_responsive_padding" style="padding:56.25% 0 28px 0;position:relative;">
+<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_zxjw5xqb4u seo=true popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;width:100%"></span></div>
+</div>
+</div>
+
+<div class="video-thumb"><script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+<div class="wistia_responsive_padding" style="padding:56.25% 0 28px 0;position:relative;">
+<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_jyy3i3jhtf seo=true popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;width:100%">&nbsp;</span></div>
+</div>
+</div>
+
+<div class="video-prompt"><a href="videos"><img src="[site:url]sites/default/files/siteart/play.png" /></a></div>
+</div>
+</div>
+
+*/
 
 /* Video Pages */
 
@@ -1033,6 +1101,7 @@ div#featured-events div.views-row-first, div#featured-events div.views-row-last 
 div#featured-events div.views-row-2 {margin:0px 1.3333% 0px 2.66666%;}
 div#featured-events div.views-row-3 {margin:0px 2.6666% 0px 1.33333%;}
 div#featured-events div.views-row img {width:100%; height:auto; margin-bottom:12px; }
+div#featured-events h2.pane-title {font-size:1.6em;}    
 div#featured-events div.views-row div.views-field-title {margin-bottom:6px; }
 div#featured-events div.views-row div.views-field-title a { letter-spacing:0.25px; line-height:115%; font-size:1.3em;}
 
@@ -1049,6 +1118,7 @@ div#featured-events div.views-row-2 {margin:0px;}
 div#featured-events div.views-row-3 {margin:0px;}
 div#featured-events div.views-row-4 {margin-bottom:25px;}
 div#featured-events div.views-row img {width:100%; height:auto; margin-bottom:12px; }
+div#featured-events h2.pane-title {font-size:1.45em;}        
 div#featured-events div.views-row div.views-field-title {margin:0px auto 6px; width:96%;text-align:center; }
 div#featured-events div.views-row div.views-field-title a { letter-spacing:0.5px; line-height:115%; font-size:1.4em; }
 div#featured-events div.views-row div.views-field-field-event-date {text-align:center;}
@@ -2085,7 +2155,7 @@ div#standard-panel div.panel-col h1 {margin-top:0px;}
 /* RIGHT */
 
 body.two-sidebars aside.col-sm-3.right, div#standard-panel div.panel-col-last { padding:0px 0px 20px 15px ; width:15%;  max-width: 160px;}
-body.two-sidebars aside.col-sm-3.right h2.block-title, div#standard-panel div.panel-col-last div.inside h3  {padding:4px; margin:10px 0; font-size:1em; letter-spacing: 0.5px; }
+body.two-sidebars aside.col-sm-3.right h2.block-title, div#standard-panel div.panel-col-last div.inside h3  {padding:4px; margin:10px 0; font-size:.9em; letter-spacing: 0.5px; }
 body.two-sidebars aside.col-sm-3.right img, div#standard-panel div.panel-col-last div.inside img {width:100%; height:auto; max-width:160px;}        
 }
     
@@ -4115,9 +4185,12 @@ form#webform-client-form-40451 {width:90%; }
 form#webform-client-form-40451 input#edit-submitted-visitors-guide-zip {margin: 0 auto 36px; font-size:1.5em; width:85%;}   }	
 
 
-/* Submit an Event Form */
+/* Submit an Event Form 
 
-body.not-logged-in.page-node .alert-success, body.not-logged-in.page-node .alert-danger, body.not-logged-in.page-node div.error  {display:none;}
+body.not-logged-in.page-node .alert-success,
+body.not-logged-in.page-node .alert-danger,
+body.not-logged-in.page-node div.error  {display:none;} */
+
 
 body.page-add-an-event {}
 form#events-node-form--2 {}   
@@ -4375,3 +4448,64 @@ body.special-event div#booking-engine {display: none;}
 body.special-event div.field-name-field-picture-block-left img,
 body.special-event div.field-name-field-picture-block-right img {margin-bottom:15px;}
 body.special-event div.pane-ad-rotator {margin-bottom:15px;}
+
+div.specialevent-iframe  iframe {border:none; width:100%; height:900px; min-height:450px; }
+body.special-event.page-node-40982 div.specialevent-iframe  iframe {height:1700px; } /* temporary measure, specifically for Eclipse */
+body.special-event h2 {font-family: "Museo Light";
+    text-transform: uppercase;
+    font-weight: 200;
+    text-align: center;
+    color: black;
+    letter-spacing: 1.5px;
+    font-size: 1.4em; line-height:140%;}
+body.page-specialevent, body.page-specialevent.admin-menu.navbar-is-fixed-top {padding-top:0px !important;}
+body.page-specialevent header, body.page-specialevent div.highlighted, body.page-specialevent h1, body.page-specialevent footer, body.page-specialevent div.slicknav_menu,  body.page-specialevent div#backtotop {display:none;}
+body.page-specialevent div.main-container.container {margin-top:0px !important; width:100%;}
+body.page-specialevent div.main-container.container td {text-align: center; padding:16px 10px; vertical-align:top; line-height: 150%;}
+body.page-specialevent div.main-container.container td a {font-size: 1.3em;}
+body.page-specialevent div.main-container.container td div.views-field-field-event-image {height:170px; display:block;}
+body.page-specialevent div.main-container.container td img {margin:0px auto; height:auto;  }
+ body.page-specialevent div.main-container.container td img.img-responsive {   display: block;
+    height: auto !important;
+    width: 65%;
+    max-height: 160px;}
+body.special-event div.field-name-field-related-listings div.field-items div.field-item {border-bottom:1px solid #ccc; padding:6px 0px;}
+body.special-event div.field-name-field-related-listings div.field-items div.field-item:nth-child() {border:none;} /* doesn't work */
+body.special-event div.field-name-field-related-listings div.field-items div.field-item a  {line-height:145%;}
+
+@media(min-width:1200px){
+body.special-event div#booking-engine, body.special-event div.highlighted {display: none;}   
+body.page-specialevent header, body.page-specialevent div.highlighted, body.page-specialevent h1, body.page-specialevent footer, body.page-specialevent div.slicknav_menu,  body.page-specialevent div#backtotop {display:none;} 
+body.page-specialevent div.main-container.container td div.views-field-field-event-image {height:165px; display:block ;}  
+body.page-specialevent div.main-container.container td {text-align: center; padding:16px 10px; vertical-align:top; line-height: 150%;}    
+}
+
+@media(min-width:980px) and (max-width:1199px){
+body.special-event div#booking-engine, body.special-event div.highlighted {display: none;}    
+body.special-event  header#navbar {height:130px;}
+body.special-event   div.main-container.container {margin-top:64px;} 
+body.page-specialevent div.main-container.container {margin-top: 64px;}    
+body.page-specialevent header, body.page-specialevent div.highlighted, body.page-specialevent h1, body.page-specialevent footer, body.page-specialevent div.slicknav_menu,  body.page-specialevent div#backtotop {display:none;}  
+body.page-specialevent div.main-container.container td div.views-field-field-event-image {height:165px; display:block;} 
+body.page-specialevent div.main-container.container td {text-align: center; padding:16px 10px; vertical-align:top; line-height: 150%;}    
+}
+
+@media(min-width:768px) and (max-width:979px){
+body.special-event div#booking-engine, body.special-event div.highlighted.affix-top  {display: none;}        
+body.special-event   div.main-container.container {margin-top:50px;} 
+body.special-event  header#navbar {height:150px;}    
+body.page-specialevent header, body.page-specialevent div.highlighted, body.page-specialevent h1, body.page-specialevent footer, body.page-specialevent div.slicknav_menu,  body.page-specialevent div#backtotop {display:none;}  
+body.page-specialevent div.main-container.container td div.views-field-field-event-image {height:165px; display:block;}
+body.page-specialevent div.main-container.container td {text-align: center; padding:16px 10px; vertical-align:top; line-height: 150%;}    
+}
+
+@media(min-width:481px) and (max-width:767px){
+body.page-specialevent div.main-container.container td {text-align:left;}    
+body.page-specialevent div.main-container.container td div.views-field.views-field-field-event-image {}      
+}
+@media (max-width:480px){
+section#block-block-9 p img {margin:0px 9px 10px;}    
+}
+
+button#edit-submit--2.btn.btn-success {background: #788e4a url(../../../../default/files/siteart/submit_ffs.png) no-repeat center; text-indent:-9999px; width:150px; border:0; margin-top:20px;}
+button#edit-submit--2.btn.btn-success:hover {background: green url(../../../../default/files/siteart/submit_ffs.png) no-repeat center; 
