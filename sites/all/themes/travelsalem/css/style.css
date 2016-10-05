@@ -1349,17 +1349,20 @@ div.panel-col div.upcoming-block {}
 
 div.upcoming-block div.views-exposed-widget { float:none;}  
 
-div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper, 
+div.upcoming-block div#views-exposed-form div#edit-date-filter-wrapper, 
 div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper,
 div.upcoming-block div.views-exposed-form div#edit-field-event-region-tid-wrapper,
 div.upcoming-block div.views-exposed-form div#edit-field-event-audience-tid-wrapper
 {padding:1.5% 2%; float:left; border:1px solid #ddd; border-radius:3px;}
 
-div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper label,     
+div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper label,  
+div.upcoming-block div.views-exposed-form div#edit-field-event-date-value-wrapper label,
 div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper label,
 div.upcoming-block div.views-exposed-form div#edit-field-event-region-tid-wrapper label,
 div.upcoming-block div.views-exposed-form div#edit-field-event-audience-tid-wrapper label{
 text-transform:uppercase; letter-spacing:1px; font-family:"Rotis"; font-weight:normal; color: #788e4a; font-size:1.1em;}
+
+div.upcoming-block div.views-exposed-form div#edit-field-event-date-value-wrapper label {padding-bottom:14px;}
 
 div.upcoming-block div.views-exposed-form div.views-submit-button button,
 div.upcoming-block div.views-exposed-form div.views-reset-button button 
@@ -1380,7 +1383,20 @@ div.panel-col div.upcoming-block .container-inline-date .form-item div.date-padd
 
 div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper div.help-block,
 div.upcoming-block div.views-exposed-form div#edit-field-event-region-tid-wrapper div.help-block,
-div.upcoming-block div.views-exposed-form div#edit-field-event-audience-tid-wrapper div.help-block {display:none;}  
+div.upcoming-block div.views-exposed-form div#edit-field-event-audience-tid-wrapper div.help-block {display:none;} 
+
+div.upcoming-block div.views-field-field-event-date div.date-display-range {display:inline;}
+div.upcoming-block div.views-field-field-event-date-1 div.date-display-range {display:none;}
+div.upcoming-block div.views-field-field-event-date-1 div.date-repeat-instance div.date-display-range  {display:none;}
+div.upcoming-block div.views-field-field-event-date-1 div.date-repeat-instance span.date-display-single {display:none;}
+div.upcoming-block div.views-field-field-event-date-1 div.date-repeat-instance div.date-repeat-rule {
+    font-size: .85em;
+    text-transform: uppercase;
+    color: #666;
+    padding-top: 3px;
+    /* border-top: 1px solid #ddd; */
+    letter-spacing: 0.5px;
+    line-height: 140%;}
 
 @media(min-width:1200px){
     
@@ -1392,20 +1408,27 @@ div.upcoming-block div.form-item {}
 div.panel-col div.upcoming-block {}   
 
 div.upcoming-block div.views-exposed-widget { }  
-div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper {width:48%; float:left; height:210px;}
+div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper,
+div.upcoming-block div.views-exposed-form div#edit-field-event-date-value-wrapper
+{width:48%; float:left; height:210px;}
+    
 div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper,
 div.upcoming-block div.views-exposed-form div#edit-field-event-region-tid-wrapper    {margin-bottom:10px;}    
+    
 div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper,
 div.upcoming-block div.views-exposed-form div#edit-field-event-region-tid-wrapper,
 div.upcoming-block div.views-exposed-form div#edit-field-event-audience-tid-wrapper    
 {width: 48%; float: right; margin-left: 4%; height:100px;}
 
 div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper label,     
+div.upcoming-block div.views-exposed-form div#edit-field-event-date-filter-wrapper label,      
 div.upcoming-block div.views-exposed-form div#edit-field-event-category-tid-wrapper label,
 div.upcoming-block div.views-exposed-form div#edit-field-event-region-tid-wrapper label,
 div.upcoming-block div.views-exposed-form div#edit-field-event-audience-tid-wrapper label    {padding-bottom:8px;} 
     
-div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper label.control-label {float:left; text-align:left; width:35%; font-size:0.9em; padding-top:3px; color:black; font-family: "Museo Light";}
+div.upcoming-block div.views-exposed-form div#edit-date-filter-wrapper label.control-label,  
+div.upcoming-block div.views-exposed-form div#edit-field-event-date-value-min-inside-wrapper label.control-label,
+div.upcoming-block div.views-exposed-form div#edit-field-event-date-value-max-inside-wrapper label.control-label     {float:left; text-align:left; width:35%; font-size:0.9em; padding-top:3px; color:black; font-family: "Museo Light";}
     
     
 div.upcoming-block div.views-exposed-form div.views-submit-button {padding:0px; float:none;}
@@ -1415,7 +1438,9 @@ body.event div.view-empty {padding-top:10px;}
 div.upcoming-block div.views-exposed-form input {margin-right:0px;}
 div.upcoming-block div.views-exposed-form select {line-height:140%;}   
 
-div.upcoming-block div#edit-date-filter-min-wrapper {width:100%;}
+div.upcoming-block div#edit-date-filter-min-wrapper,
+div.upcoming-block div#edit-field-event-date-filter-min-wrapper    {width:100%;}
+div.upcoming-block div#edit-field-event-date-filter-max-wrapper     
 div.upcoming-block div#edit-date-filter-max-wrapper {width:100%;}
 div.panel-col div.upcoming-block .container-inline-date .form-item {width:100%; margin-right:0px;}
 div.panel-col div.upcoming-block .container-inline-date .form-item div.date-padding  { float:right; width:65%; }        
@@ -1646,7 +1671,7 @@ div.upcoming-block div.item-list ul li.views-row div.views-field-title  {padding
 div.upcoming-block div.item-list ul li.views-row div.views-field-title a {  font-size: 1.2em; line-height: 120%;  } 		
 }
 
-div.upcoming-block div.item-list div.views-field-field-event-date span {font-size:0.85em;}
+div.upcoming-block div.item-list div.views-field-field-event-date span {font-size:1em; color:black; }
 
 div.upcoming-block div.item-list img.img-responsive {width:85%; height:auto;}
 
@@ -1667,9 +1692,9 @@ div.upcoming-block div.item-list ul li.views-row div.views-field-title a {  font
 body.page-node-40255 div.upcoming-block div.item-list ul li.views-row div.views-field-title {padding-bottom:2px;}
 body.page-node-40255 div.upcoming-block div.item-list ul li.views-row div.views-field-title a {font-size:1.2em;}
 body.page-node-40255 div.upcoming-block div.item-list ul li.views-row div.views-field-field-event-image {}
-body.page-node-40255 div.upcoming-block div.item-list ul li.views-row div.views-field-body {display:block;}
+body.page-node-40255 div.upcoming-block div.item-list ul li.views-row div.views-field-body {display:block; padding-top:12px;}
 body.page-node-40255 div.upcoming-block div.item-list ul li.views-row div.views-field-body p {font-size:1em;}
-body.page-node-40255 div.upcoming-block div.item-list ul li.views-row div.views-field-field-event-date {padding-bottom:8px;}
+body.page-node-40255 div.upcoming-block div.item-list ul li.views-row div.views-field-field-event-date {padding-bottom:0px;}
 body.page-node-40255 div.upcoming-block div.item-list ul {width:100%;}
 body.page-node-40255 div.upcoming-block div.item-list ul li.views-row {width:100%;}
 body.page-node-40255 div.upcoming-block div.item-list ul li.views-row-last {border:0px;}
@@ -1682,7 +1707,8 @@ body.page-node-40255 div.upcoming-block div.item-list ul li.views-row-last {bord
 body.page-node-40255 div.upcoming-block div.item-list ul li.views-row div.views-field-field-event-image {float:left; margin:0px 15px 30px 0px;}   
 body.page-node-40255 div.upcoming-block div.item-list ul li.views-row div.views-field-title,    
 body.page-node-40255 div.upcoming-block div.item-list ul li.views-row div.views-field-body,
-body.page-node-40255 div.upcoming-block div.item-list ul li.views-row div.views-field-field-event-date {padding-left:125px;}    
+body.page-node-40255 div.upcoming-block div.item-list ul li.views-row div.views-field-field-event-date,
+body.page-node-40255 div.upcoming-block div.item-list ul li.views-row div.views-field-field-event-date-1 {padding-left:125px;}    
 }
 @media(min-width:980px) and (max-width:1199px){
 body.page-node-40255 div.upcoming-block div.item-list ul li.views-row {border-bottom:1px solid #ccc; padding-top:10px;}    
