@@ -113,12 +113,7 @@
       </div>
     <?php endif; ?>
       
-  </div>
-       <div id="booking-engine">
-    <?php if (!empty($page['booking'])): ?>
-            <?php print render($page['booking']); ?>
-          <?php endif; ?> 
-    </div>  
+  </div> 
 </header>
 
 <div class="main-container container" >
