@@ -54,8 +54,9 @@ function theme_date_repeat_display($vars) {
   $entity = !empty($vars['node']) ? $vars['node'] : NULL;
   $output = '';
   if (!empty($item['rrule'])) {
-    $output = date_repeat_rrule_description($item['rrule']);
+    
     $output = '<div class="date-repeat-rule">' . $output . '</div>';
+    $output = date_repeat_rrule_description($item['rrule']);
   }
   return $output;
 }
