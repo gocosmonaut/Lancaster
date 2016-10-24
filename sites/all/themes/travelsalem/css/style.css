@@ -651,8 +651,8 @@ div#booking-engine {height:240px; margin-top:100px;  }
 
 /* Sidebar Booking Engine */
 
-#booking-block-left {height: 285px;
-    margin: 15px 0;
+#booking-block-left {height: 335px;
+    margin: 0 0 30px;
     background: #e4e8da;
     padding: 10px 2px;
     border-top: 2px solid #788e4a;
@@ -1442,9 +1442,29 @@ div.upcoming-block div.views-field-field-event-date-1 div.date-repeat-instance d
     letter-spacing: 0.5px;
     line-height: 140%;}
 
+div.pane-upcoming-events-search-form.next-instance {margin-top:0px;
+    border-top: 2px solid white;
+    background: #788e4a;
+    text-align: center;
+    padding: 0px;
+    font-size: 1em;
+    font-family: "Museo Regular";
+    font-weight: 400;
+    line-height: 180%;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    width: 100%;
+    color: white;}
+
+div.pane-upcoming-events-search-form.next-instance div.view-header{ font-size: .8em;
+    /* padding: 2px 0 0 0; */
+    line-height: 115%;
+    padding-top: 6px;}
+
 @media(min-width:1200px){
     
 div.pane-upcoming-events-search-form {margin-top:24px;}
+
 
 section.block-views h2.block-title, div.pane-upcoming-events-search-form h2.pane-title {font-size:1.35em;}
 div.upcoming-block {width:100%; margin:0px auto;}
@@ -2372,15 +2392,31 @@ section#members-sidebar ul li a, div#members-sidebar ul li a { padding:6px !impo
 section#members-sidebar ul li ul li a, div#members-sidebar ul li ul li a {padding:18px; line-height:150%; max-width:none; background:#eee;}
 section#members-sidebar ul span.sf-sub-indicator, div#members-sidebar span.sf-sub-indicator {color:#333;}
 
+
+section.block-superfish.menu-block-wrapper {width:100%;}
+section.block-superfish.menu-block-wrapper ul {width:100%;}
+section.block-superfish.menu-block-wrapper ul li a {padding:6px 15px; background:white;}
+section.block-superfish.menu-block-wrapper ul li a:hover { background:#bbb; }
+section.block-superfish.menu-block-wrapper ul li ul {margin-left:60px; width:100%; z-index:11; border-left:1px solid #bbb;}
+section.block-superfish.menu-block-wrapper ul li ul li ul {margin-left:0px;}
+section.block-superfish.menu-block-wrapper ul li ul li a {background:#f0f0f0;}
+section.block-superfish.menu-block-wrapper ul li ul li ul li a  {background:#f6f6f6;}
+section.block-superfish.menu-block-wrapper ul li.last a {border-bottom:0px;}
+
 /* Menu Blocks */
 
 .menu-block-wrapper {width:100%;}
-.menu-block-wrapper ul li {display:block; position:relative; background:none; box-shadow:none; border:none; padding:0px; width:100%;}
+.menu-block-wrapper ul {width:100%;}
+.menu-block-wrapper ul li {display:block; position:relative; background:white; box-shadow:none; border:none;  width:100%;}
 .menu-block-wrapper ul li a {font-size: 1em; font-family: "museo regular";
     letter-spacing: 0.25px;
-    padding-bottom: 6px;
-    padding-top: 6px; color:black; border-bottom: 1px solid #bbb;}
+  padding:6px 15px; color:black; border-bottom: 1px solid #bbb;     line-height: 140%; }
+.menu-block-wrapper ul li ul {margin-left:60px !important; width:100%; z-index:11; border-left:1px solid #bbb;}
+.menu-block-wrapper ul li ul li ul {margin-left:0px !important;}
+.menu-block-wrapper ul li a:hover {background:#bbb; }
+.menu-block-wrapper ul li ul li ul li a  {background:#f6f6f6;}
 .menu-block-wrapper ul li.last.leaf a  {border-bottom:none;}
+.menu-block-wrapper ul li ul li a {background:#f0f0f0;}
 
 .menu-block-wrapper ul li a:hover, .menu-block-wrapper ul li a:focus {border-color:#bbb !important;}
 
@@ -2444,8 +2480,8 @@ div#standard-panel div#upcoming-column ul li div.views-field-field-event-date, d
 div#standard-panel div#upcoming-column ul li.views-row-last div.views-field-field-event-date,
 div.upcoming-subblock ul li.views-row-last div.views-field-field-event-date {border:none;}
 
-div#standard-panel p {margin:0px 0px 18px;}
-div#standard-panel div.pane-node-field-event-date {border-right:2px solid white; border-bottom:2px solid white; background:#ecf1fa; text-align:center; padding:4px 10px; font-size:1.15em; font-family:"Museo Regular"; font-weight:400;   line-height:140%; text-transform:uppercase; letter-spacing:0.5px; width:100%; color:black;}
+div#standard-panel p {margin:4px 0px 18px;}
+div#standard-panel div.pane-node-field-event-date { border-bottom:2px solid white; background:#ecf1fa; text-align:center; padding:4px 10px; font-size:1.15em; font-family:"Museo Regular"; font-weight:400;   line-height:140%; text-transform:uppercase; letter-spacing:0.5px; width:100%; color:black;}
 
 div#standard-panel div.field-name-field-event-image .img-responsive {max-width:none; width:100%; margin-bottom:10px;}
 
@@ -4590,4 +4626,11 @@ body.special-event div.field-name-field-picture-block-left img, body.special-eve
 body.page-specialevent div.main-container.container td div.views-field-field-event-image {height:120px;}
 
 button#edit-submit--2.btn.btn-success {background: #788e4a url(../../../../default/files/siteart/submit_ffs.png) no-repeat center; text-indent:-9999px; width:150px; border:0; margin-top:20px;}
-button#edit-submit--2.btn.btn-success:hover {background: green url(../../../../default/files/siteart/submit_ffs.png) no-repeat center; 
+button#edit-submit--2.btn.btn-success:hover {background: green url(../../../../default/files/siteart/submit_ffs.png) no-repeat center; }}
+
+div.video-categories-view h6 {visibility: hidden;     float: left;
+    width: 100%;; font-size:1px;}
+div.video-categories-view h6 iframe {visibility: visible;
+    height: 400px;
+    float: none;
+    width: 100%;}
